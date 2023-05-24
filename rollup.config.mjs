@@ -3,7 +3,8 @@ import resolve from "@rollup/plugin-node-resolve";
 import babel from "@rollup/plugin-babel";
 import pkg from "./package.json" assert { type: "json" };
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import typescript from '@rollup/plugin-typescript';
+import typescript from "@rollup/plugin-typescript";
+import { terser } from "rollup-plugin-terser";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 
@@ -13,8 +14,14 @@ export default {
   input: "./src/index.ts",
   output: [
     {
+      file: pkg.main, // (package.json) main 경로로 번들링.
+      format: "cjs", // cjs로 번들링
+      sourcemap: true,
+    },
+    {
       file: pkg.module, // (package.json) main 경로로 번들링.
-      format: "es", // es로 변들링
+      format: "esm", // es로 변들링
+      sourcemap: true,
     },
   ],
   plugins: [
@@ -27,7 +34,9 @@ export default {
     babel({
       extensions,
       include: ["src/**/*"],
-      babelHelpers: "bundled",
+      babelHelpers: "runtime",
+      skipPreflightCheck: true,
     }),
+    terser(),
   ],
 };
