@@ -7,6 +7,7 @@ import typescript from "@rollup/plugin-typescript";
 import { terser } from "rollup-plugin-terser";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
+const external = ["react", "react-dom", "styled-components", "classNames"];
 
 process.env.BABEL_ENV = "production";
 
@@ -39,4 +40,5 @@ export default {
     }),
     terser(),
   ],
+  external,
 };
