@@ -4,7 +4,7 @@ const config = {
     "../src/components/**/*.mdx",
     "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
   ],
-  presets: ['@storybook/preset-typescript'],
+  presets: ["@storybook/preset-typescript"],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -22,10 +22,10 @@ const config = {
   },
   module: {
     rules: [
-      {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader"],
-      },
+      // {
+      //   test: /\.scss$/,
+      //   use: ["style-loader", "css-loader"],
+      // },
     ],
   },
 };

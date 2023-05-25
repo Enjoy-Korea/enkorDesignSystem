@@ -5,7 +5,7 @@
   "module": "./build/index.esm.js",
   "types": "./build/types/index.d.ts",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -42,5 +42,10 @@
     "storybook": "^7.0.12",
     "styled-components": "^6.0.0-rc.1",
     "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "classnames": "^2.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
