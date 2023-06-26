@@ -1,5 +1,5 @@
 import commonjs from "@rollup/plugin-commonjs";
-import resolve from "@rollup/plugin-node-resolve";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 import babel from "@rollup/plugin-babel";
 import pkg from "./package.json" assert { type: "json" };
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
@@ -12,7 +12,7 @@ const external = ["react", "react-dom", "styled-components", "classNames"];
 process.env.BABEL_ENV = "production";
 
 export default {
-  input: "./src/index.ts",
+  input: "src/index.ts",
   output: [
     {
       file: pkg.main, // (package.json) main 경로로 번들링.
@@ -28,10 +28,8 @@ export default {
   plugins: [
     typescript(),
     peerDepsExternal(), //peerDependencies에 설치된 라이브러리들을 external모듈로 설정하여 번들 결과물에서 제외
-    resolve({ extensions }), //node_modules에서 모듈을 불러올 수 있도록 만드는 플러그인
-    commonjs({
-      include: "node_modules/**",
-    }), // commonJS로 만들어진 모듈을 사용 가능하게 하는 플러그인
+    nodeResolve({ extensions }), //node_modules에서 모듈을 불러올 수 있도록 만드는 플러그인
+    commonjs({ extensions: [".js", ".ts"] }), // commonJS로 만들어진 모듈을 사용 가능하게 하는 플러그인
     babel({
       extensions,
       include: ["src/**/*"],
