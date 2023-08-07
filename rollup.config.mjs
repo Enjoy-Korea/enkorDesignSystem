@@ -29,7 +29,7 @@ export default {
     typescript(),
     peerDepsExternal(), //peerDependencies에 설치된 라이브러리들을 external모듈로 설정하여 번들 결과물에서 제외
     nodeResolve({ extensions }), //node_modules에서 모듈을 불러올 수 있도록 만드는 플러그인
-    commonjs({ extensions: [".js", ".ts"] }), // commonJS로 만들어진 모듈을 사용 가능하게 하는 플러그인
+    commonjs({ extensions: [".js", ".ts", ".tsx", "jsx"] }), // commonJS로 만들어진 모듈을 사용 가능하게 하는 플러그인
     babel({
       extensions,
       include: ["src/**/*"],
