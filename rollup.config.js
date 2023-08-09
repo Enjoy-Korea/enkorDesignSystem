@@ -14,11 +14,11 @@ process.env.BABEL_ENV = "production";
 export default {
   input: "src/index.ts",
   output: [
-    {
-      file: pkg.main, // (package.json) main 경로로 번들링.
-      format: "cjs", // cjs로 번들링
-      sourcemap: true,
-    },
+    // {
+    //   file: pkg.main, // (package.json) main 경로로 번들링.
+    //   format: "cjs", // cjs로 번들링
+    //   sourcemap: true,
+    // },
     {
       file: pkg.module, // (package.json) main 경로로 번들링.
       format: "esm", // es로 변들링
@@ -26,16 +26,29 @@ export default {
     },
   ],
   plugins: [
-    typescript(),
+    // typescript(),
+
+    typescript({
+      // useTsconfigDeclarationDir: true,
+      tsconfig: "./tsconfig.json",
+    }),
+
     peerDepsExternal(), //peerDependencies에 설치된 라이브러리들을 external모듈로 설정하여 번들 결과물에서 제외
     nodeResolve({ extensions }), //node_modules에서 모듈을 불러올 수 있도록 만드는 플러그인
     commonjs({ extensions }), // commonJS로 만들어진 모듈을 사용 가능하게 하는 플러그인
+    // babel({
+    //   extensions,
+    //   include: ["src/**/*"],
+    //   babelHelpers: "bundled",
+    //   exclude: /node_modules/,
+    //   skipPreflightCheck: true,
+    // }),
+
     babel({
-      extensions,
-      include: ["src/**/*"],
-      babelHelpers: "runtime",
-      exclude: /node_modules/,
-      skipPreflightCheck: true,
+      babelHelpers: "bundled",
+      exclude: "node_modules/**/*.(ts|tsx|js|jsx)",
+      include: "src/**/*.(ts|tsx|js|jsx)",
+      extensions: [".ts", ".tsx", ".js", ".jsx", ".es", ".es6", ".mjs"],
     }),
     terser(),
   ],
