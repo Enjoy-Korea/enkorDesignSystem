@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./build/index.js",
   "module": "./build/index.esm.js",
-  "types": "./build/types/index.d.ts",
+  "types": "./build/index.d.ts",
   "license": "MIT",
   "type": "module",
   "scripts": {
