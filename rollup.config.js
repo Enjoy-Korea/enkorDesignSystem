@@ -26,8 +26,16 @@ export default {
   //   },
 
   // ],
+  makeAbsoluteExternalsRelative: true,
+  preserveEntrySignatures: "strict",
   output: {
-    interop: "auto",
+    esModule: true,
+    generatedCode: {
+      reservedNamesAsProps: false,
+    },
+    interop: "compat",
+    systemNullSetters: false,
+    dynamicImportInCjs: false,
   },
   plugins: [
     // typescript(),
