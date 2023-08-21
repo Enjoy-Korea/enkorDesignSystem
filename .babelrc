@@ -6,8 +6,5 @@
     "@babel/preset-typescript",
     "@babel/preset-flow"
   ],
-  "plugins": [
-    "babel-plugin-styled-components",
-    ["styled-components", { "ssr": true }]
-  ]
+  "plugins": ["babel-plugin-styled-components"]
 }
