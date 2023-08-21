@@ -14,11 +14,11 @@ process.env.BABEL_ENV = "production";
 export default {
   input: "src/index.ts",
   output: [
-    // {
-    //   file: pkg.main, // (package.json) main 경로로 번들링.
-    //   format: "cjs", // cjs로 번들링
-    //   sourcemap: true,
-    // },
+    {
+      file: pkg.main, // (package.json) main 경로로 번들링.
+      format: "cjs", // cjs로 번들링
+      sourcemap: true,
+    },
     {
       file: pkg.module, // (package.json) main 경로로 번들링.
       format: "esm", // es로 변들링
