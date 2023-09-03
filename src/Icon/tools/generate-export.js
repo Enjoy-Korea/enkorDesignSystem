@@ -11,9 +11,8 @@ const iconFiles = fs
   .readdirSync(generatedDir)
   .filter((file) => file.endsWith(".tsx"));
 
-// export 문 생성
-const generateExportCode = (fileName, alias) =>
-  `export { ${fileName} as ${alias} } from './generated/${fileName}';`;
+const generateExportCode = (fileName) =>
+  `export { default as ${fileName}Icon } from './generated/${fileName}';`;
 
 const generatedCodes = iconFiles
   .map((iconFile) => {

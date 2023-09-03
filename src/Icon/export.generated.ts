@@ -1,1 +1,1 @@
-export { Close as CloseIcon } from "./generated/Close";
+export { default as CloseIcon } from "./generated/Close";
