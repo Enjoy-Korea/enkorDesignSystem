@@ -1,7 +1,7 @@
 {
   "name": "enkor-design-system",
   "version": "1.0.0",
-  "main": "./build/index.js",
+  "main": "./build/index.cjs.js",
   "module": "./build/index.esm.js",
   "types": "./build/index.d.ts",
   "license": "MIT",

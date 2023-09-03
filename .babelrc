@@ -1,10 +1,8 @@
 {
-  // "presets": [["react-app", { "typescript": true }], "@babel/preset-flow"],
   "presets": [
-    "@babel/preset-env",
+    ["@babel/preset-env", { "modules": false }],
     "@babel/preset-react",
-    "@babel/preset-typescript",
-    "@babel/preset-flow"
+    "@babel/preset-typescript"
   ],
   "plugins": ["babel-plugin-styled-components"]
 }
