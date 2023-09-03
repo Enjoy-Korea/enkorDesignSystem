@@ -60,5 +60,37 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
+var Close = /*#__PURE__*/React.memo(function (_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b;
+    _a.fillColor;
+    var className = _a.className,
+    style = _a.style;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: "none",
+    style: style,
+    className: className,
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/React.createElement("path", {
+    stroke: "#8B8B8B",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m6 6 12 12M6 18 18 6 6 18Z"
+  }));
+});
+
+var LegacyIcon = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    Close: Close
+});
+
+var Icon = LegacyIcon;
+
 exports.Button = Button;
+exports.CloseIcon = Close;
+exports.Icon = Icon;
 //# sourceMappingURL=index.js.map
