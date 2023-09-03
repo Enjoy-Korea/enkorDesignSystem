@@ -3,6 +3,7 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import babel from "@rollup/plugin-babel";
 import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import svgr from "rollup-plugin-svgr";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 const external = ["react", "react-dom", "styled-components", "classnames"];
@@ -23,6 +24,7 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
+    svgr(),
     nodeResolve({ extensions }),
     commonjs({
       include: /node_modules/,

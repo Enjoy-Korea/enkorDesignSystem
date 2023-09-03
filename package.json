@@ -8,7 +8,10 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "generated-icon-export": "node src/Icon/tools/generate-export.js",
+    "generated-svgr": "cd src/Icon/svgs && npx @svgr/cli --template ../tools/svgr-cli.template.js --config-file ../tools/.svgrrc *.svg --out-dir ../generated --ext tsx",
+    "svgr": "yarn generated-svgr && yarn generated-icon-export"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
@@ -30,6 +33,9 @@
     "@storybook/react": "^7.0.12",
     "@storybook/react-webpack5": "^7.0.12",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@svgr/cli": "^8.1.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/rollup": "^8.1.0",
     "@types/styled-components": "^5.1.26",
     "babel": "^6.23.0",
     "babel-plugin-styled-components": "^2.1.3",
@@ -39,16 +45,20 @@
     "react-dom": "^18.2.0",
     "rollup": "^3.23.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-svgr": "^2.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "storybook": "^7.2.1",
     "typescript": "^5.0.4"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "styled-components": "^6.0.0-rc.1"
   },
   "peerDependencies": {
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "classnames": "^2.3.2"
+    "react-dom": "^18.2.0"
   }
 }
