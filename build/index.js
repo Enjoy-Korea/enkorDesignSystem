@@ -60,12 +60,14 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
-var Close = /*#__PURE__*/React.memo(function (_a) {
+var Close = function Close(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b;
     _a.fillColor;
-    var className = _a.className,
-    style = _a.style;
+    var _d = _a.className,
+    className = _d === void 0 ? '' : _d,
+    _e = _a.style,
+    style = _e === void 0 ? {} : _e;
   return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: size,
@@ -81,7 +83,7 @@ var Close = /*#__PURE__*/React.memo(function (_a) {
     strokeWidth: 2,
     d: "m6 6 12 12M6 18 18 6 6 18Z"
   }));
-});
+};
 
 var LegacyIcon = /*#__PURE__*/Object.freeze({
     __proto__: null,
