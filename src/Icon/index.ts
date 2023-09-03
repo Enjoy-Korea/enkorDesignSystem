@@ -1,5 +1,5 @@
 // Named exports from generated icons
-export * from "./export.generated";
+export { Close as CloseIcon } from "./generated/Close";
 
 // Type exports
 export * from "./types";
