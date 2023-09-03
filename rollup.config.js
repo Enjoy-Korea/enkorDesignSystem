@@ -4,7 +4,7 @@ import babel from "@rollup/plugin-babel";
 import pkg from "./package.json" assert { type: "json" };
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import typescript from "@rollup/plugin-typescript";
-import { terser } from "rollup-plugin-terser";
+// import { terser } from "rollup-plugin-terser";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 const external = ["react", "react-dom", "styled-components", "classNames"];
@@ -13,25 +13,19 @@ process.env.BABEL_ENV = "production";
 
 export default {
   input: "src/index.ts",
-  // output: [
-  //   {
-  //     file: pkg.main, // (package.json) main 경로로 번들링.
-  //     format: "cjs", // cjs로 번들링
-  //     sourcemap: true,
-  //   },
-  //   {
-  //     file: pkg.module, // (package.json) main 경로로 번들링.
-  //     format: "esm", // es로 변들링
-  //     sourcemap: true,
-  //   },
-  // ],
-
   output: [
     {
-      file: pkg.module, // 번들링한 파일을 저장 할 경로
-      format: "es", // ES Module 형태로 번들링함
+      file: pkg.main, // (package.json) main 경로로 번들링.
+      format: "cjs", // cjs로 번들링
+      sourcemap: true,
+    },
+    {
+      file: pkg.module, // (package.json) main 경로로 번들링.
+      format: "esm", // es로 변들링
+      sourcemap: true,
     },
   ],
+
   plugins: [
     // typescript(),
 
@@ -57,7 +51,7 @@ export default {
       include: "src/**/*.(ts|tsx|js|jsx)",
       extensions: [".ts", ".tsx", ".js", ".jsx", ".es", ".es6", ".mjs"],
     }),
-    terser(),
+    // terser(),
   ],
   external,
 };
