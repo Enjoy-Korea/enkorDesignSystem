@@ -61,4 +61,4 @@ var Button = function Button(_a) {
 var templateObject_1;
 
 exports.Button = Button;
-//# sourceMappingURL=index.cjs.js.map
+//# sourceMappingURL=index.js.map
