@@ -1,2 +1,2 @@
-export { Close as CloseIcon } from "./generated/Close";
+export * from "./export.generated";
 export * from "./types";
