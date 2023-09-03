@@ -85,14 +85,6 @@ var Close = function Close(_a) {
   }));
 };
 
-var LegacyIcon = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Close: Close
-});
-
-var Icon = LegacyIcon;
-
 exports.Button = Button;
 exports.CloseIcon = Close;
-exports.Icon = Icon;
 //# sourceMappingURL=index.js.map

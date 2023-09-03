@@ -1,41 +1,36 @@
 /* eslint-disable no-console */
+const fs = require("fs");
+const path = require("path");
 
-const fs = require('fs');
-const path = require('path');
+// 정의된 경로 확인
+const defaultPath = path.join(__dirname, "../");
+const generatedDir = path.join(defaultPath, "generated");
 
-const defaultPath = path.join(__dirname, '../');
-const iconFiles = fs.readdirSync(path.join(defaultPath, 'generated')).filter(file => file.includes('tsx'));
+// .tsx 확장자를 가진 파일만 필터링
+const iconFiles = fs
+  .readdirSync(generatedDir)
+  .filter((file) => file.endsWith(".tsx"));
 
-const generatedLegacyCodes = [
-  iconFiles
-    .map(iconFile => {
-      const fileName = iconFile.split('.')[0];
-      return `export { ${fileName} } from './generated/${fileName}';`;
-    })
-    .join('\n'),
-];
+// export 문 생성
+const generateExportCode = (fileName, alias) =>
+  `export { ${fileName} as ${alias} } from './generated/${fileName}';`;
 
-const generatedCodes = [
-  iconFiles
-    .map(iconFile => {
-      const fileName = iconFile.split('.')[0];
-      return `export { ${fileName} as ${fileName}Icon } from './generated/${fileName}';`;
-    })
-    .join('\n'),
-];
+const generatedCodes = iconFiles
+  .map((iconFile) => {
+    const fileName = path.basename(iconFile, ".tsx");
+    return generateExportCode(fileName, `${fileName}Icon`);
+  })
+  .join("\n");
 
-fs.writeFile(path.join(defaultPath, 'export-legacy.generated.ts'), generatedLegacyCodes.join('\n'), error => {
-  if (error) {
-    throw error;
+// 파일 쓰기: 오류가 발생하면 콘솔에 출력
+fs.writeFile(
+  path.join(defaultPath, "export.generated.ts"),
+  generatedCodes,
+  (error) => {
+    if (error) {
+      console.error("An error occurred:", error);
+      throw error;
+    }
+    console.log("export.generated.ts has been saved!");
   }
-
-  console.log('export-legacy.generated.ts has been saved!');
-});
-
-fs.writeFile(path.join(defaultPath, 'export.generated.ts'), generatedCodes.join('\n'), error => {
-  if (error) {
-    throw error;
-  }
-
-  console.log('export.generated.ts has been saved!');
-});
+);

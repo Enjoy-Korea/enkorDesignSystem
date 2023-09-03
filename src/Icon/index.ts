@@ -1,7 +1,9 @@
-import * as LegacyIcon from "./export-legacy.generated";
-
+// Named exports from generated icons
 export * from "./export.generated";
 
+// Type exports
 export * from "./types";
 
-export const Icon = LegacyIcon;
+// // Legacy Icons under a namespace
+// import * as LegacyIcon from "./export-legacy.generated";
+// export { LegacyIcon };

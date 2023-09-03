@@ -83,12 +83,5 @@ var Close = function Close(_a) {
   }));
 };
 
-var LegacyIcon = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Close: Close
-});
-
-var Icon = LegacyIcon;
-
-export { Button, Close as CloseIcon, Icon };
+export { Button, Close as CloseIcon };
 //# sourceMappingURL=index.esm.js.map
