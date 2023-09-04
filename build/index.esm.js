@@ -58,6 +58,36 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
+var ArrowCircleDown = function ArrowCircleDown(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m15 13-3 3m0 0-3-3m3 3V8m0 13a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z",
+    stroke: strokeColor
+  }));
+};
+
 var Close = function Close(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -88,5 +118,5 @@ var Close = function Close(_a) {
   }));
 };
 
-export { Button, Close };
+export { ArrowCircleDown, Button, Close };
 //# sourceMappingURL=index.esm.js.map
