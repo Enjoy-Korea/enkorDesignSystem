@@ -5,9 +5,6 @@
   "module": "./build/index.esm.js",
   "types": "./build/index.d.ts",
   "license": "MIT",
-  "exports": {
-    ".": "./index.ts"
-  },
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
