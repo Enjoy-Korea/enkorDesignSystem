@@ -65,7 +65,7 @@ var Close = function Close(_a) {
     size = _b === void 0 ? 24 : _b;
     _a.fillColor;
     var _d = _a.className,
-    className = _d === void 0 ? "" : _d,
+    className = _d === void 0 ? '' : _d,
     _e = _a.style,
     style = _e === void 0 ? {} : _e;
   return /*#__PURE__*/React.createElement("svg", {
@@ -86,5 +86,5 @@ var Close = function Close(_a) {
 };
 
 exports.Button = Button;
-exports.CloseIcon = Close;
+exports.Close = Close;
 //# sourceMappingURL=index.js.map

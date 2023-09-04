@@ -1,2 +1,2 @@
-export * from "./export.generated";
+export * from "./generated";
 export * from "./types";

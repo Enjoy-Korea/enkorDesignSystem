@@ -23,13 +23,13 @@ const generatedCodes = iconFiles
 
 // 파일 쓰기: 오류가 발생하면 콘솔에 출력
 fs.writeFile(
-  path.join(defaultPath, "export.generated.ts"),
+  path.join(defaultPath, "generated.ts"),
   generatedCodes,
   (error) => {
     if (error) {
       console.error("An error occurred:", error);
       throw error;
     }
-    console.log("export.generated.ts has been saved!");
+    console.log("generated.ts has been saved!");
   }
 );
