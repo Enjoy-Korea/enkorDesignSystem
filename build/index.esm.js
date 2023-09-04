@@ -58,11 +58,6 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
-var index$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Button: Button
-});
-
 var Close = function Close(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -93,12 +88,5 @@ var Close = function Close(_a) {
   }));
 };
 
-// Named exports from generated icons
-
-var index = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Close: Close
-});
-
-export { index$1 as component, index as icon };
+export { Button, Close };
 //# sourceMappingURL=index.esm.js.map

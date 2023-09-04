@@ -60,11 +60,6 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
-var index$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Button: Button
-});
-
 var Close = function Close(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -95,13 +90,6 @@ var Close = function Close(_a) {
   }));
 };
 
-// Named exports from generated icons
-
-var index = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Close: Close
-});
-
-exports.component = index$1;
-exports.icon = index;
+exports.Button = Button;
+exports.Close = Close;
 //# sourceMappingURL=index.js.map
