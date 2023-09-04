@@ -6,7 +6,7 @@
   "types": "./build/index.d.ts",
   "license": "MIT",
   "exports": {
-    ".": "./index.js"
+    ".": "./index.ts"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
