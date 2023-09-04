@@ -12,7 +12,7 @@ const iconFiles = fs
   .filter((file) => file.endsWith(".tsx"));
 
 const generateExportCode = (fileName) =>
-  `export { ${fileName} as ${fileName}Icon } from './generated/${fileName}';`;
+  `export { ${fileName} } from './generated/${fileName}';`;
 
 const generatedCodes = iconFiles
   .map((iconFile) => {

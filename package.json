@@ -9,8 +9,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build": "rollup -c",
-    "generated-icon-export": "node src/Icon/tools/generate-export.js",
-    "generated-svgr": "cd src/Icon/svgs && npx @svgr/cli --template ../tools/svgr-cli.template.js --config-file ../tools/.svgrrc *.svg --out-dir ../generated --ext tsx",
+    "generated-icon-export": "node src/icons/tools/generate-export.js",
+    "generated-svgr": "cd src/icons/svgs && npx @svgr/cli --template ../tools/svgr-cli.template.js --config-file ../tools/.svgrrc *.svg --out-dir ../generated --ext tsx",
     "svgr": "yarn generated-svgr && yarn generated-icon-export"
   },
   "devDependencies": {

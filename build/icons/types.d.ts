@@ -2,7 +2,8 @@
 export type IconProps = {
     size?: number;
     fillColor?: string;
-    accentColor?: string;
+    strokeColor?: string;
     className?: string;
+    viewBox?: string;
     style?: React.CSSProperties;
 };

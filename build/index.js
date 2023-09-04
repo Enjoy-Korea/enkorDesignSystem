@@ -60,31 +60,48 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
+var index$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    Button: Button
+});
+
 var Close = function Close(_a) {
   var _b = _a.size,
-    size = _b === void 0 ? 24 : _b;
-    _a.fillColor;
-    var _d = _a.className,
-    className = _d === void 0 ? '' : _d,
-    _e = _a.style,
-    style = _e === void 0 ? {} : _e;
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
   return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: size,
     height: size,
-    fill: "none",
+    fill: fillColor,
     style: style,
     className: className,
-    viewBox: "0 0 24 24"
+    viewBox: viewBox
   }, /*#__PURE__*/React.createElement("path", {
-    stroke: "#8B8B8B",
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    d: "m6 6 12 12M6 18 18 6 6 18Z"
+    d: "m6 6 12 12M6 18 18 6 6 18Z",
+    stroke: strokeColor
   }));
 };
 
-exports.Button = Button;
-exports.Close = Close;
+// Named exports from generated icons
+
+var index = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    Close: Close
+});
+
+exports.component = index$1;
+exports.icon = index;
 //# sourceMappingURL=index.js.map

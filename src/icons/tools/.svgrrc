@@ -3,14 +3,14 @@
   "prettier": false,
   "dimensions": true,
   "replaceAttrValues": {
-    "#1B1C1D": "{fillColor}",
-    "#DDE0E2": "{accentColor}"
+    "#1B1C1D": "{fillColor}"
   },
   "svgProps": {
     "width": "{size}",
     "height": "{size}",
     "style": "{style}",
+    "fill": "{fillColor}",
     "className": "{className}",
-    "viewBox": "0 0 24 24"
+    "viewBox": "{viewBox}"
   }
 }
