@@ -83,5 +83,5 @@ var Close = function Close(_a) {
   }));
 };
 
-export { Button, Close };
+export { Button, Close as CloseIcon };
 //# sourceMappingURL=index.esm.js.map

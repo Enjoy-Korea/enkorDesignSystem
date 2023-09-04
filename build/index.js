@@ -86,5 +86,5 @@ var Close = function Close(_a) {
 };
 
 exports.Button = Button;
-exports.Close = Close;
+exports.CloseIcon = Close;
 //# sourceMappingURL=index.js.map
