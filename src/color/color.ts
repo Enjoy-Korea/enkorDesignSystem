@@ -7,4 +7,4 @@ export const grayScale = {
   800: "#DDDDDD",
   900: "#ECECEC",
   1000: "#F5F5F5",
-};
+} as const;
