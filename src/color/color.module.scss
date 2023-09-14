@@ -2,6 +2,7 @@ $gray-scale: (
   black: #000000,
   300: #333333,
   main: #515151,
+  // black color
   500: #8b8b8b,
   600: #a8a8a8,
   700: #c1c1c1,
@@ -17,6 +18,46 @@ $yellow: (
   main: #ffd951,
   500: #ffe998,
   600: #fff1c3,
+  700: #fffdf4,
+  opacity: #fffdf4,
+);
+
+$blue: (
+  200: #fff1c3,
+  300: #0969df,
+  main: #2277dc,
+  500: #2586f9,
+  600: #e9f1fc,
+  700: #fffdf4,
+  opacity: #fffdf4,
+);
+
+$red: (
+  200: #1a62b8,
+  300: #206dcc,
+  main: #2277dc,
+  500: #2586f9,
+  600: #e9f1fc,
+  700: #fffdf4,
+  opacity: #fffdf4,
+);
+
+$orange: (
+  200: #1a62b8,
+  300: #206dcc,
+  main: #2277dc,
+  500: #2586f9,
+  600: #e9f1fc,
+  700: #fffdf4,
+  opacity: #fffdf4,
+);
+
+$green: (
+  200: #1a62b8,
+  300: #206dcc,
+  main: #2277dc,
+  500: #2586f9,
+  600: #e9f1fc,
   700: #fffdf4,
   opacity: #fffdf4,
 );
