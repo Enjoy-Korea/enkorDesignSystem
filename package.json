@@ -53,6 +53,8 @@
     "dist"
   ],
   "dependencies": {
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
     "styled-components": "^6.0.0-rc.1"
   },
   "peerDependencies": {
