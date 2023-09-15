@@ -1,4 +1,3 @@
-import * as component from "./components";
-import * as icon from "./icons";
-import * as color from "./color";
-export { component, icon, color };
+export * as component from "./components";
+export * as icon from "./icons";
+export * as color from "./color";
