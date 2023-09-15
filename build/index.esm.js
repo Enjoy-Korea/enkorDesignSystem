@@ -62,11 +62,6 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
-var index$2 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Button: Button
-});
-
 var ArrowCircleDown = function ArrowCircleDown(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -127,14 +122,6 @@ var Close = function Close(_a) {
   }));
 };
 
-// Named exports from generated icons
-
-var index$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ArrowCircleDown: ArrowCircleDown,
-    Close: Close
-});
-
 var grayScale = {
   black: "#000000",
   300: "#333333",
@@ -193,15 +180,5 @@ var green = {
   opacity: "#FFFDF4"
 };
 
-var index = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    blue: blue,
-    grayScale: grayScale,
-    green: green,
-    orange: orange,
-    red: red,
-    yellow: yellow
-});
-
-export { index as color, index$2 as component, index$1 as icon };
+export { ArrowCircleDown, Button, Close, blue, grayScale, green, orange, red, yellow };
 //# sourceMappingURL=index.esm.js.map

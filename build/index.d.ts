@@ -1,3 +1,3 @@
-export * as component from "./components";
-export * as icon from "./icons";
-export * as color from "./color";
+export * from "./components";
+export * from "./icons";
+export * from "./color";

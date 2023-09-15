@@ -64,11 +64,6 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
-var index$2 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Button: Button
-});
-
 var ArrowCircleDown = function ArrowCircleDown(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -129,14 +124,6 @@ var Close = function Close(_a) {
   }));
 };
 
-// Named exports from generated icons
-
-var index$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ArrowCircleDown: ArrowCircleDown,
-    Close: Close
-});
-
 var grayScale = {
   black: "#000000",
   300: "#333333",
@@ -195,17 +182,13 @@ var green = {
   opacity: "#FFFDF4"
 };
 
-var index = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    blue: blue,
-    grayScale: grayScale,
-    green: green,
-    orange: orange,
-    red: red,
-    yellow: yellow
-});
-
-exports.color = index;
-exports.component = index$2;
-exports.icon = index$1;
+exports.ArrowCircleDown = ArrowCircleDown;
+exports.Button = Button;
+exports.Close = Close;
+exports.blue = blue;
+exports.grayScale = grayScale;
+exports.green = green;
+exports.orange = orange;
+exports.red = red;
+exports.yellow = yellow;
 //# sourceMappingURL=index.js.map
