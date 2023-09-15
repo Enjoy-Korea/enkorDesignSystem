@@ -1,2 +1,2 @@
-export { ArrowCircleDown } from './generated/ArrowCircleDown';
-export { Close } from './generated/Close';
+export { ArrowCircleDown } from "./generated/ArrowCircleDown";
+export { Close } from "./generated/Close";

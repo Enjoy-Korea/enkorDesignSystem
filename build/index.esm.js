@@ -62,6 +62,11 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
+var index$2 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    Button: Button
+});
+
 var ArrowCircleDown = function ArrowCircleDown(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -122,5 +127,81 @@ var Close = function Close(_a) {
   }));
 };
 
-export { ArrowCircleDown, Button, Close };
+// Named exports from generated icons
+
+var index$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    ArrowCircleDown: ArrowCircleDown,
+    Close: Close
+});
+
+var grayScale = {
+  black: "#000000",
+  300: "#333333",
+  main: "#515151",
+  500: "#8B8B8B",
+  600: "#A8A8A8",
+  700: "#C1C1C1",
+  800: "#DDDDDD",
+  900: "#ECECEC",
+  1000: "#F5F5F5",
+  white: "#000000"
+};
+var yellow = {
+  200: "#FFD951",
+  300: "#FFB801",
+  main: "#FFD951",
+  500: "#FFE998",
+  600: "#FFF1C3",
+  700: "#FFFDF4",
+  opacity: "#FFFDF4"
+};
+var blue = {
+  200: "#FFF1C3",
+  300: "#0969DF",
+  main: "#2277DC",
+  500: "#2586F9",
+  600: "#E9F1FC",
+  700: "#FFFDF4",
+  opacity: "#FFFDF4"
+};
+var red = {
+  200: "#1A62B8",
+  300: "#206DCC",
+  main: "#2277DC",
+  500: "#2586F9",
+  600: "#E9F1FC",
+  700: "#FFFDF4",
+  opacity: "#FFFDF4"
+};
+var orange = {
+  200: "#1A62B8",
+  300: "#206DCC",
+  main: "#2277DC",
+  500: "#2586F9",
+  600: "#E9F1FC",
+  700: "#FFFDF4",
+  opacity: "#FFFDF4"
+};
+var green = {
+  200: "#1A62B8",
+  300: "#206DCC",
+  main: "#2277DC",
+  500: "#2586F9",
+  600: "#E9F1FC",
+  700: "#FFFDF4",
+  opacity: "#FFFDF4"
+};
+
+var index = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    blue: blue,
+    grayScale: grayScale,
+    green: green,
+    orange: orange,
+    red: red,
+    yellow: yellow
+});
+
+export { index as color, index$2 as component, index$1 as icon };
 //# sourceMappingURL=index.esm.js.map
