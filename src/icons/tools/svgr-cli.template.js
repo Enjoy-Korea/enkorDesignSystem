@@ -50,7 +50,7 @@ function defaultTemplate(api, opts, state) {
     
     export const ${IconComponentName} = ({
       size = 24,
-      fillColor = "",
+      fillColor = "none",
       strokeColor = "#515151",
       className = "",
       style = {},
