@@ -699,6 +699,36 @@ var ChatIcon = function ChatIcon(_a) {
   }));
 };
 
+var CheckIcon = function CheckIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m5 13 4 4L19 7",
+    stroke: strokeColor
+  }));
+};
+
 var CheckInIcon = function CheckInIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -909,6 +939,126 @@ var ChevronDoubleUpIcon = function ChevronDoubleUpIcon(_a) {
   }));
 };
 
+var ChevronDownIcon = function ChevronDownIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m19 9-7 7-7-7",
+    stroke: strokeColor
+  }));
+};
+
+var ChevronLeftIcon = function ChevronLeftIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m15 19-7-7 7-7",
+    stroke: strokeColor
+  }));
+};
+
+var ChevronRightIcon = function ChevronRightIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m9 5 7 7-7 7",
+    stroke: strokeColor
+  }));
+};
+
+var ChevronUpIcon = function ChevronUpIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m5 15 7-7 7 7",
+    stroke: strokeColor
+  }));
+};
+
 var CloseIcon = function CloseIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1029,6 +1179,96 @@ var DocumentAddIcon = function DocumentAddIcon(_a) {
   }));
 };
 
+var DotsCircleHorizontalIcon = function DotsCircleHorizontalIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var DotsHorizontalIcon = function DotsHorizontalIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var DotsVerticalIcon = function DotsVerticalIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z",
+    stroke: strokeColor
+  }));
+};
+
 var ExclamationCircleIcon = function ExclamationCircleIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1085,6 +1325,41 @@ var FemaleIcon = function FemaleIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M12.5 12.91c3.038 0 5.5-2.443 5.5-5.455C18 4.442 15.538 2 12.5 2S7 4.442 7 7.455c0 3.012 2.462 5.454 5.5 5.454Zm0 0v4.305m-4.583 0H12.5m0 0h4.583m-4.583 0V22",
+    stroke: strokeColor
+  }));
+};
+
+var GoToTopIcon = function GoToTopIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m17 13-5-5m0 0-5 5m5-5v12",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M5 4h14",
     stroke: strokeColor
   }));
 };
@@ -1149,6 +1424,36 @@ var MapIcon = function MapIcon(_a) {
   }));
 };
 
+var MenuIcon = function MenuIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 18h16M4 6h16H4Zm0 6h16H4Z",
+    stroke: strokeColor
+  }));
+};
+
 var ReplyIcon = function ReplyIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1205,6 +1510,42 @@ var RssIcon = function RssIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 0 1 7 7m-6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var SettingIcon = function SettingIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M13.675 4.317c-.426-1.756-2.924-1.756-3.35 0a1.723 1.723 0 0 1-2.572 1.065c-1.544-.94-3.31.827-2.37 2.37a1.724 1.724 0 0 1-1.066 2.573c-1.756.426-1.756 2.924 0 3.35a1.725 1.725 0 0 1 1.065 2.572c-.94 1.544.827 3.31 2.37 2.37a1.724 1.724 0 0 1 2.573 1.066c.426 1.756 2.924 1.756 3.35 0a1.725 1.725 0 0 1 2.572-1.065c1.544.94 3.31-.827 2.37-2.37a1.725 1.725 0 0 1 1.066-2.573c1.756-.426 1.756-2.924 0-3.35a1.724 1.724 0 0 1-1.065-2.572c.94-1.544-.827-3.31-2.37-2.37a1.724 1.724 0 0 1-2.573-1.066Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z",
     stroke: strokeColor
   }));
 };
@@ -1599,5 +1940,5 @@ var green = {
   opacity: "#FFFDF4"
 };
 
-export { AllGenderIcon, ArrowCircleDownIcon, ArrowCircleLeftIcon, ArrowCircleRightIcon, ArrowCircleUpIcon, ArrowDownIcon, ArrowLeftIcon, ArrowNarrowDownIcon, ArrowNarrowLeftIcon, ArrowNarrowRightIcon, ArrowNarrowUpIcon, ArrowRightIcon, ArrowUpIcon, ArrowsExpandIcon, BadgeCheckIcon, BagIcon, BanIcon, Button, CalendarIcon, ChatAlt2Icon, ChatAltIcon, ChatIcon, CheckInIcon, CheckInoutIcon, CheckOutIcon, ChevronDoubleDownIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon, ChevronDoubleUpIcon, CloseIcon, CreditCardIcon, DeviceMobileIcon, DocumentAddIcon, ExclamationCircleIcon, FemaleIcon, MaleIcon, MapIcon, ReplyIcon, RssIcon, ShieldCheckIcon, ShieldExclamationIcon, SimcardIcon, SparklesIcon, SpeakerPhoneIcon, StationIcon, TagIcon, UserGroupIcon, WalkingIcon, blue, grayScale, green, orange, red, yellow };
+export { AllGenderIcon, ArrowCircleDownIcon, ArrowCircleLeftIcon, ArrowCircleRightIcon, ArrowCircleUpIcon, ArrowDownIcon, ArrowLeftIcon, ArrowNarrowDownIcon, ArrowNarrowLeftIcon, ArrowNarrowRightIcon, ArrowNarrowUpIcon, ArrowRightIcon, ArrowUpIcon, ArrowsExpandIcon, BadgeCheckIcon, BagIcon, BanIcon, Button, CalendarIcon, ChatAlt2Icon, ChatAltIcon, ChatIcon, CheckIcon, CheckInIcon, CheckInoutIcon, CheckOutIcon, ChevronDoubleDownIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CloseIcon, CreditCardIcon, DeviceMobileIcon, DocumentAddIcon, DotsCircleHorizontalIcon, DotsHorizontalIcon, DotsVerticalIcon, ExclamationCircleIcon, FemaleIcon, GoToTopIcon, MaleIcon, MapIcon, MenuIcon, ReplyIcon, RssIcon, SettingIcon, ShieldCheckIcon, ShieldExclamationIcon, SimcardIcon, SparklesIcon, SpeakerPhoneIcon, StationIcon, TagIcon, UserGroupIcon, WalkingIcon, blue, grayScale, green, orange, red, yellow };
 //# sourceMappingURL=index.esm.js.map
