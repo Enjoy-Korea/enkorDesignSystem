@@ -24,8 +24,6 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 
-const Button = ({ label = "stay", children, ...rest }: ButtonProps) => (
+export const Button = ({ label = "stay", children, ...rest }: ButtonProps) => (
   <StyledButton {...rest}>{children}</StyledButton>
 );
-
-export default Button;

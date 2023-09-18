@@ -13,7 +13,9 @@ function defaultTemplate(api, opts, state) {
 
   const typeScriptTpl = babelTemplate.smart({ plugins: ["jsx", "typescript"] });
 
-  const IconComponentName = componentName.slice(3);
+  const IconComponentName = componentName.slice(3).endsWith("Icon")
+    ? componentName.slice(3)
+    : componentName.slice(3) + "Icon";
 
   const pathElement = jsx.children.find(
     (child) =>
@@ -50,7 +52,7 @@ function defaultTemplate(api, opts, state) {
     
     export const ${IconComponentName} = ({
       size = 24,
-      fillColor = "",
+      fillColor = "none",
       strokeColor = "#515151",
       className = "",
       style = {},
