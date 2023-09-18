@@ -1295,17 +1295,17 @@ var SimcardIcon = function SimcardIcon(_a) {
     d: "M5 20V8h17v9.23L19.167 20H5Z",
     stroke: strokeColor
   }), /*#__PURE__*/React.createElement("path", {
-    stroke: "#515151",
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    d: "M7.833 14v-3H11m-3.167 3v3H11m-3.167-3H11m0 0v-3m0 3v3m0-6h4.5v6H11M5 8v12h14.167L22 17.23V8H5Z"
+    d: "M7.833 14v-3H11m-3.167 3v3H11m-3.167-3H11m0 0v-3m0 3v3m0-6h4.5v6H11M5 8v12h14.167L22 17.23V8H5Z",
+    stroke: strokeColor
   }), /*#__PURE__*/React.createElement("path", {
-    stroke: "#515151",
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    d: "M4.833 17H2V5h17v2.77"
+    d: "M4.833 17H2V5h17v2.77",
+    stroke: strokeColor
   }));
 };
 
@@ -1531,13 +1531,13 @@ var WalkingIcon = function WalkingIcon(_a) {
     cx: 15,
     cy: 4,
     r: 2,
-    stroke: "#515151",
-    strokeWidth: 2
+    strokeWidth: 2,
+    stroke: strokeColor
   }), /*#__PURE__*/React.createElement("path", {
-    stroke: "#515151",
     strokeLinecap: "round",
     strokeWidth: 2,
-    d: "M10 8c0 2-1.5 4-3 4.5"
+    d: "M10 8c0 2-1.5 4-3 4.5",
+    stroke: strokeColor
   }));
 };
 

@@ -17,20 +17,22 @@ function defaultTemplate(api, opts, state) {
     ? componentName.slice(3)
     : componentName.slice(3) + "Icon";
 
-  const pathElement = jsx.children.find(
+  // Find all path and circle elements
+  const elementsToModify = jsx.children.filter(
     (child) =>
-      child.type === "JSXElement" && child.openingElement.name.name === "path"
+      child.type === "JSXElement" &&
+      (child.openingElement.name.name === "path" ||
+        child.openingElement.name.name === "circle")
   );
 
-  if (pathElement) {
-    // Remove existing 'stroke' attribute
-    pathElement.openingElement.attributes =
-      pathElement.openingElement.attributes.filter(
+  // Update stroke attribute for each path and circle element
+  elementsToModify.forEach((element) => {
+    element.openingElement.attributes =
+      element.openingElement.attributes.filter(
         (attribute) => !(attribute.name && attribute.name.name === "stroke")
       );
 
-    // Add a new JSXAttribute for stroke
-    pathElement.openingElement.attributes.push({
+    element.openingElement.attributes.push({
       type: "JSXAttribute",
       name: {
         type: "JSXIdentifier",
@@ -44,7 +46,7 @@ function defaultTemplate(api, opts, state) {
         },
       },
     });
-  }
+  });
 
   return typeScriptTpl.ast`
     import React from "react";
