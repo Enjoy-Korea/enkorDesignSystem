@@ -13,6 +13,10 @@
     "generated-svgr": "cd src/icons/svgs && npx @svgr/cli --template ../tools/svgr-cli.template.js --config-file ../tools/.svgrrc *.svg --out-dir ../generated --ext tsx",
     "svgr": "yarn generated-svgr && yarn generated-icon-export"
   },
+  "files": [
+    "build",
+    "README.md"
+  ],
   "devDependencies": {
     "@babel/core": "^7.22.10",
     "@babel/plugin-transform-runtime": "^7.21.4",
@@ -49,9 +53,6 @@
     "storybook": "^7.2.1",
     "typescript": "^5.0.4"
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
