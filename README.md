@@ -34,7 +34,7 @@
 
 #### 1. scss 파일 내 사용 방식
 
-```tsx
+```scss
 // 특정 .scss 파일
 @import "~enkor-design-system/src/color/color.module.scss";
 
@@ -63,52 +63,25 @@ const TestComponent = () => {
 
 ### Generate icon
 
-#### step1.
+#### 아이콘 추가 방법
 
 ```tsx
-src/icons/svgs 폴더안에 svg 파일을 넣는다.
+1. src/icons/svgs 폴더안에 svg 파일을 넣는다.
+
+2. 터미널에 'yarn svgr' 명령어를 입력한다.
+
+3. 'yarn build' 명령어를 입력하여 build 폴더를 최신화한다.
+
+4. 추가된 icon 컴포넌트를 commit, push 한다.
 ```
 
-#### step2.
+#### 사내 프로젝트 아이콘 사용방법
 
 ```tsx
-터미널에 아래 명령어를 입력한다.
+1. 디자인시스템을 사용하는 사내 프로젝트에 node_modules, yarn.lock을 제거한다.
 
-yarn svgr
-```
+2. 'yarn install' 명령어를 입력하여 dependenies를 재 설치한다.
 
-#### step3.
-
-```tsx
-아래 명령어를 입력하여 build 폴더를 최신화한다.
-
-yarn build
-```
-
-#### step4.
-
-```tsx
-추가된 icon 컴포넌트를 commit, push 한다.
-```
-
-#### step5.
-
-```tsx
-디자인시스템을 사용하는 사내 프로젝트에 node_modules, yarn.lock을 제거한다.
-```
-
-#### step6.
-
-```tsx
-아래 명령어를 입력하여 dependenies를 재 설치한다.
-
-yarn install
-```
-
-#### step7.
-
-```tsx
-추가한 icon을 아래와 같은 방법으로 사용한다.
-
-import { TestIcon } from 'enkor-design-system';
+3. 추가한 icon을 아래와 같은 방법으로 사용한다.
+   import { TestIcon } from 'enkor-design-system';
 ```
