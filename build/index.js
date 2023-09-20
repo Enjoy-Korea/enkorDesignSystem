@@ -1894,7 +1894,7 @@ var grayScale = {
   800: "#DDDDDD",
   900: "#ECECEC",
   1000: "#F5F5F5",
-  white: "#000000"
+  white: "#FFFFFF"
 };
 var yellow = {
   200: "#FFD951",
@@ -1906,40 +1906,40 @@ var yellow = {
   opacity: "#FFFDF4"
 };
 var blue = {
-  200: "#FFF1C3",
-  300: "#0969DF",
-  main: "#2277DC",
-  500: "#2586F9",
-  600: "#E9F1FC",
-  700: "#FFFDF4",
-  opacity: "#FFFDF4"
+  200: "#1A62B8",
+  300: "#066EEE",
+  main: "#2586F9",
+  500: "#74B0F6",
+  600: "#E4EEFD",
+  700: "#F2FAFF",
+  opacity: "#F2FAFF"
 };
 var red = {
-  200: "#1A62B8",
-  300: "#206DCC",
-  main: "#2277DC",
-  500: "#2586F9",
-  600: "#E9F1FC",
-  700: "#FFFDF4",
-  opacity: "#FFFDF4"
+  200: "#BF292D",
+  300: "#DC161A",
+  main: "#F03E41",
+  500: "#FB878C",
+  600: "#FFD6D7",
+  700: "#FFF2F3",
+  opacity: "#FFF2F3"
 };
 var orange = {
-  200: "#1A62B8",
-  300: "#206DCC",
-  main: "#2277DC",
-  500: "#2586F9",
-  600: "#E9F1FC",
-  700: "#FFFDF4",
-  opacity: "#FFFDF4"
+  200: "#DE5B00",
+  300: "#F18409",
+  main: "#FFA33C",
+  500: "#FFC275",
+  600: "#FFDCAF",
+  700: "#FFF7EC",
+  opacity: "#FFF7EC"
 };
 var green = {
-  200: "#1A62B8",
-  300: "#206DCC",
-  main: "#2277DC",
-  500: "#2586F9",
-  600: "#E9F1FC",
-  700: "#FFFDF4",
-  opacity: "#FFFDF4"
+  200: "#009024",
+  300: "#1AB62F",
+  main: "#4BD05D",
+  500: "#93EC9C",
+  600: "#C2F1C7",
+  700: "#F3FFF4",
+  opacity: "#F3FFF4"
 };
 
 exports.AllGenderIcon = AllGenderIcon;
