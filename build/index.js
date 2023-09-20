@@ -64,6 +64,94 @@ var Button = function Button(_a) {
 };
 var templateObject_1;
 
+var AdjustmentsIcon = function AdjustmentsIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12 6V4m0 2a2 2 0 0 0 0 4m0-4a2 2 0 0 1 0 4m0 0v10m-6-2a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4m12 14a2 2 0 0 0 0-4m0 4a2 2 0 0 1 0-4m0 4v2m0-6V4",
+    stroke: strokeColor
+  }));
+};
+
+var AirConditinerIcon = function AirConditinerIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12.001 2v19.63M14.53 4.103a4.884 4.884 0 0 1-2.53.701 4.884 4.884 0 0 1-2.529-.701M9.47 19.527a4.912 4.912 0 0 1 5.06 0M20.5 6.907l-17 9.815M19.942 10.15a4.911 4.911 0 0 1-2.528-4.382M4.057 13.481a4.911 4.911 0 0 1 2.529 4.382M3.5 6.907l17 9.815M4.057 10.15a4.91 4.91 0 0 0 2.529-4.382M19.942 13.481a4.911 4.911 0 0 0-2.528 4.382",
+    stroke: strokeColor
+  }));
+};
+
+var AlignIcon = function AlignIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    d: "M11.622 4.436a.5.5 0 0 1 .756 0l4.102 4.737a.5.5 0 0 1-.378.827H7.898a.5.5 0 0 1-.378-.827l4.102-4.737ZM12.378 19.564a.5.5 0 0 1-.756 0L7.52 14.827A.5.5 0 0 1 7.898 14h8.204a.5.5 0 0 1 .378.827l-4.102 4.737Z",
+    stroke: strokeColor
+  }));
+};
+
 var AllGenderIcon = function AllGenderIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -581,6 +669,229 @@ var BanIcon = function BanIcon(_a) {
   }));
 };
 
+var BathroomIcon = function BathroomIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M19.2 12.818h.488a1 1 0 0 1 .964 1.265l-1.25 4.546a1 1 0 0 1-.964.735H17.4m1.8-6.546H4.312a1 1 0 0 0-.964 1.265l1.25 4.546a1 1 0 0 0 .964.735H6.6m12.6-6.546V4a1 1 0 0 0-1-1h-3.4a1 1 0 0 0-1 1v1.727m0 0h2.7m-2.7 0h-2.7M6.6 19.364 5.7 21m.9-1.636h10.8m0 0L18.3 21",
+    stroke: strokeColor
+  }));
+};
+
+var BbqIcon = function BbqIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 8,
+    height: 2,
+    x: 8,
+    y: 11,
+    fill: "#515151",
+    rx: 1
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M12 17v6M8 17l-2 5.928M16 17l2 5.928",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M10 9v-.547c0-1.262.442-2.484 1.25-3.453l.29-.348c.62-.744.96-1.683.96-2.652v0M14 9v-.547c0-1.262.442-2.484 1.25-3.453l.29-.348c.62-.744.96-1.683.96-2.652v0",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M7.75 9v-.547c0-.409.046-.918.137-1.453H3a1 1 0 0 0-1 1v2a8 8 0 0 0 8 8h4a8 8 0 0 0 8-8V8a1 1 0 0 0-1-1h-4.35c-.262.367-.4.748-.4 1.453V9H20v1a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6V9h3.75Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }));
+};
+
+var BeddingSetIcon = function BeddingSetIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M3 7a4 4 0 0 1 4-4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M17.4 17.5H5a2 2 0 0 1-2-2V7a4 4 0 0 1 4-4h12a2 2 0 0 1 2 2v9.941",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M21 14H6",
+    stroke: strokeColor
+  }));
+};
+
+var BellIcon = function BellIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.001 6.001 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0H9m6 0v1a3 3 0 0 1-6 0v-1",
+    stroke: strokeColor
+  }));
+};
+
+var BilliardsIcon = function BilliardsIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: 7.58,
+    cy: 16.749,
+    r: 5.5,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "m15.702 16.285 2.121-2.122",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "m3.686 2.767 16.946 15.787a.882.882 0 1 1-1.247 1.247l-4.484-4.813a7.484 7.484 0 0 1 .108 3.05l2.913 3.127a2.882 2.882 0 1 0 4.074-4.074L5.05 1.303A2.063 2.063 0 0 0 2.134 4.22L6.91 9.344a7.557 7.557 0 0 1 3.034.322l-6.345-6.81a.063.063 0 0 1 .088-.09Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.5,
+    d: "M7.83 18.999v-4.5l-1.5 1",
+    stroke: strokeColor
+  }));
+};
+
+var BookmarkIcon = function BookmarkIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M5.586 3.586A2 2 0 0 0 5 5v16l7-3.5 7 3.5V5a2 2 0 0 0-2-2H7a2 2 0 0 0-1.414.586Z",
+    stroke: strokeColor
+  }));
+};
+
 var CalendarIcon = function CalendarIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -607,6 +918,78 @@ var CalendarIcon = function CalendarIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z",
+    stroke: strokeColor
+  }));
+};
+
+var CameraIcon = function CameraIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M3.586 7.586A2 2 0 0 0 3 9v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-.93a2 2 0 0 1-1.664-.89l-.812-1.22A2 2 0 0 0 13.93 4h-3.86a2 2 0 0 0-1.664.89l-.812 1.22A2 2 0 0 1 5.93 7H5a2 2 0 0 0-1.414.586Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M14.121 15.121A3 3 0 1 0 9.88 10.88a3 3 0 0 0 4.242 4.242Z",
+    stroke: strokeColor
+  }));
+};
+
+var ChairIcon = function ChairIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4.4 17.75v2.85M5.35 10.15V5.4c0-1.05.85-1.9 1.9-1.9h9.5c1.05 0 1.9.85 1.9 1.9v4.75",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M19.125 10.15a2.375 2.375 0 0 0-2.375 2.375v1.425h-9.5v-1.425a2.375 2.375 0 1 0-2.85 2.327v2.898h15.2v-2.898a2.376 2.376 0 0 0-.475-4.702ZM19.6 17.75v2.85",
     stroke: strokeColor
   }));
 };
@@ -1061,6 +1444,66 @@ var ChevronUpIcon = function ChevronUpIcon(_a) {
   }));
 };
 
+var CircleIcon = function CircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: 12,
+    cy: 12,
+    r: 7,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }));
+};
+
+var CloseCircleIcon = function CloseCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m10 14 2-2m0 0 2-2m-2 2-2-2m2 2 2 2m7-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
 var CloseIcon = function CloseIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1087,6 +1530,99 @@ var CloseIcon = function CloseIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "m6 6 12 12M6 18 18 6 6 18Z",
+    stroke: strokeColor
+  }));
+};
+
+var CloudIcon = function CloudIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4.172 17.828a4 4 0 0 1 1.948-6.731 5.002 5.002 0 1 1 9.78-2.096A5 5 0 1 1 16 19H7a4 4 0 0 1-2.828-1.172Z",
+    stroke: strokeColor
+  }));
+};
+
+var CollectionIcon = function CollectionIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M19 11H5m14 0a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2m14 0V9a2 2 0 0 0-2-2M5 11V9a2 2 0 0 1 2-2m10 0V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2m10 0H7",
+    stroke: strokeColor
+  }));
+};
+
+var CookingToolsIcon = function CookingToolsIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "square",
+    strokeWidth: 2,
+    d: "M4 3v18M17 4v17",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M4 3.238C4 3.107 4.107 3 4.238 3A4.762 4.762 0 0 1 9 7.762V15H4V3.238ZM21 6.692C21 8.732 19.21 15 17 15s-4-6.268-4-8.308C13 4.653 14.79 3 17 3s4 1.653 4 3.692Z",
     stroke: strokeColor
   }));
 };
@@ -1121,6 +1657,68 @@ var CreditCardIcon = function CreditCardIcon(_a) {
   }));
 };
 
+var DeskIcon = function DeskIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 19,
+    height: 4,
+    x: 2.5,
+    y: 3,
+    stroke: "#515151",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    rx: 1
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 8,
+    height: 10,
+    stroke: "#515151",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    rx: 1,
+    transform: "matrix(1 0 0 -1 11.5 17)"
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4.5 21V8a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 15.5,
+    cy: 9.5,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 15.5,
+    cy: 14.5,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M11.5 12h8",
+    stroke: strokeColor
+  }));
+};
+
 var DeviceMobileIcon = function DeviceMobileIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1151,6 +1749,119 @@ var DeviceMobileIcon = function DeviceMobileIcon(_a) {
   }));
 };
 
+var DinerWareIcon = function DinerWareIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M2.5 21a9 9 0 0 0 0-18",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 1.5,
+    d: "M2.5 17a5 5 0 1 0 0-10",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 1.5,
+    d: "M5.108 12.699A2.7 2.7 0 0 0 3.2 9.392",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M17.5 2.5v19M14.5 3v4.333c0 2.167 3 2.167 3 2.167s3 0 3-2.167V3",
+    stroke: strokeColor
+  }));
+};
+
+var DishWasherIcon = function DishWasherIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 19,
+    height: 19,
+    x: 2.5,
+    y: 2.5,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 6,
+    cy: 5.5,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 10,
+    cy: 5.5,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 14,
+    cy: 5.5,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M2.5 8.5h19",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 9,
+    cy: 15,
+    r: 4,
+    strokeWidth: 1.5,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 9,
+    cy: 15,
+    r: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 1.5,
+    d: "M15.75 11v8M18.25 11v8",
+    stroke: strokeColor
+  }));
+};
+
 var DocumentAddIcon = function DocumentAddIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1177,6 +1888,128 @@ var DocumentAddIcon = function DocumentAddIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M9 13h6m-3-3v6m5 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2Z",
+    stroke: strokeColor
+  }));
+};
+
+var DocumentDuplicateIcon = function DocumentDuplicateIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M8 7v8a2 2 0 0 0 2 2h6M8 7V5a2 2 0 0 1 2-2h4.586a1 1 0 0 1 .707.293l4.414 4.414a1 1 0 0 1 .293.707V15a2 2 0 0 1-2 2h-2M8 7H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2",
+    stroke: strokeColor
+  }));
+};
+
+var DoorlockIcon = function DoorlockIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 11,
+    height: 3,
+    x: 10.5,
+    y: 15,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 1.5
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M5.5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-2h-2v2a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v9h2V5a3 3 0 0 0-3-3h-8Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 6.5,
+    cy: 6,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 9.5,
+    cy: 6,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 12.5,
+    cy: 6,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 6.5,
+    cy: 9,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 9.5,
+    cy: 9,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 12.5,
+    cy: 9,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 6.5,
+    cy: 12,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 9.5,
+    cy: 12,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 12.5,
+    cy: 12,
+    r: 1,
+    fill: "#515151",
     stroke: strokeColor
   }));
 };
@@ -1271,6 +2104,135 @@ var DotsVerticalIcon = function DotsVerticalIcon(_a) {
   }));
 };
 
+var DownloadIcon = function DownloadIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4",
+    stroke: strokeColor
+  }));
+};
+
+var DressingTableIcon = function DressingTableIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 18,
+    height: 3,
+    x: 3,
+    y: 16,
+    stroke: "#515151",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    rx: 1
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 15a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1 2 2 0 0 0-2-2H6a2 2 0 0 0-2 2ZM5 22v-2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 1.5,
+    d: "M15 9h4l1 4h-6l1-4Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M8 8a4 4 0 1 1 7.874 1h2.043a6 6 0 1 0-2.6 4H14l.462-1.847A4 4 0 0 1 8 8Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M17 13v3",
+    stroke: strokeColor
+  }));
+};
+
+var DryingRackIcon = function DryingRackIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M3.5 3h15a2 2 0 1 1 0 4h-15V3Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M7.736 3A3 3 0 0 0 2.5 5v16a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V7h-2v13h-2V6.732A2 2 0 0 1 5.5 3h2.236Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M18.961 12.469a1.59 1.59 0 1 1 1.12 2.71H12.93m.465 5.547a1.59 1.59 0 1 0 1.121-2.71H12.5M19.783 20.726a1.589 1.589 0 1 0 1.121-2.71h-3.088",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M11 8v2M14 8v2M17 8v2",
+    stroke: strokeColor
+  }));
+};
+
 var ExclamationCircleIcon = function ExclamationCircleIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1301,6 +2263,132 @@ var ExclamationCircleIcon = function ExclamationCircleIcon(_a) {
   }));
 };
 
+var ExternalLinkIcon = function ExternalLinkIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14",
+    stroke: strokeColor
+  }));
+};
+
+var EyeIcon = function EyeIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7Z",
+    stroke: strokeColor
+  }));
+};
+
+var EyeOffIcon = function EyeOffIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M13.875 18.825c-.618.117-1.246.175-1.875.175-4.478 0-8.268-2.943-9.543-7A9.97 9.97 0 0 1 4.02 8.971m5.858.908a3 3 0 1 1 4.243 4.243M9.878 9.879l4.243 4.243M9.878 9.879l4.242 4.241m.001.002 3.291 3.29M9.88 9.88 6.59 6.59m0 0L3 3m3.59 3.59A9.953 9.953 0 0 1 12 5c4.478 0 8.268 2.943 9.543 7a10.024 10.024 0 0 1-4.132 5.411M6.59 6.59l10.821 10.821m0 0L21 21",
+    stroke: strokeColor
+  }));
+};
+
+var FastForwardIcon = function FastForwardIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12.227 12.447a.999.999 0 0 1-.294.353l-5.333 4A1 1 0 0 1 5 16V8a1 1 0 0 1 1.6-.8l5.333 4a.999.999 0 0 1 .294 1.247ZM20.227 12.447a.999.999 0 0 1-.294.353l-5.333 4A1 1 0 0 1 13 16V8a1 1 0 0 1 1.6-.8l5.333 4a.999.999 0 0 1 .294 1.247Z",
+    stroke: strokeColor
+  }));
+};
+
 var FemaleIcon = function FemaleIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1327,6 +2415,66 @@ var FemaleIcon = function FemaleIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M12.5 12.91c3.038 0 5.5-2.443 5.5-5.455C18 4.442 15.538 2 12.5 2S7 4.442 7 7.455c0 3.012 2.462 5.454 5.5 5.454Zm0 0v4.305m-4.583 0H12.5m0 0h4.583m-4.583 0V22",
+    stroke: strokeColor
+  }));
+};
+
+var Filter2Icon = function Filter2Icon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M7.39 6.225h13.171M3.439 12.448h10.366m0 0c0 1.227.983 2.223 2.195 2.223 1.212 0 2.195-.995 2.195-2.223m-4.39 0c0-1.228.983-2.223 2.195-2.223 1.212 0 2.195.995 2.195 2.223m0 0h2.366m-13.17 6.054h13.17M7.391 6.222c0 1.228-.984 2.223-2.196 2.223C3.983 8.445 3 7.45 3 6.223 3 4.995 3.983 4 5.195 4c1.212 0 2.195.995 2.195 2.223Zm0 12.278c0 1.227-.984 2.223-2.196 2.223C3.983 20.723 3 19.727 3 18.5c0-1.227.983-2.223 2.195-2.223 1.212 0 2.195.995 2.195 2.223Z",
+    stroke: strokeColor
+  }));
+};
+
+var ForkSpoonIcon = function ForkSpoonIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M7 2v20M4 2.5v5C4 10 7 10 7 10s3 0 3-2.5v-5M17 10v12M20 6c0 2.209-1.343 4-3 4s-3-1.791-3-4 1.343-4 3-4 3 1.791 3 4Z",
     stroke: strokeColor
   }));
 };
@@ -1362,6 +2510,645 @@ var GoToTopIcon = function GoToTopIcon(_a) {
     strokeLinecap: "round",
     strokeWidth: 2,
     d: "M5 4h14",
+    stroke: strokeColor
+  }));
+};
+
+var GolfIcon = function GolfIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: 15,
+    cy: 16,
+    r: 6,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 12,
+    cy: 17,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 14,
+    cy: 19,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 16,
+    cy: 17,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M3 2v20M3 11l8.738-3.574c.828-.34.828-1.513 0-1.852L3 2",
+    stroke: strokeColor
+  }));
+};
+
+var GymIcon = function GymIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M1 11.5h2M21 11.5h2M9 11.5h5",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("mask", {
+    id: "Gym_svg__a",
+    fill: "#fff"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 5,
+    height: 13,
+    x: 21.5,
+    y: 18.5,
+    rx: 1,
+    transform: "rotate(-180 21.5 18.5)"
+  })), /*#__PURE__*/React.createElement("rect", {
+    width: 5,
+    height: 13,
+    x: 21.5,
+    y: 18.5,
+    stroke: "#515151",
+    strokeWidth: 4,
+    mask: "url(#Gym_svg__a)",
+    rx: 1,
+    transform: "rotate(-180 21.5 18.5)"
+  }), /*#__PURE__*/React.createElement("mask", {
+    id: "Gym_svg__b",
+    fill: "#fff"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 5,
+    height: 19,
+    x: 18.5,
+    y: 21.5,
+    rx: 1,
+    transform: "rotate(-180 18.5 21.5)"
+  })), /*#__PURE__*/React.createElement("rect", {
+    width: 5,
+    height: 19,
+    x: 18.5,
+    y: 21.5,
+    stroke: "#515151",
+    strokeWidth: 4,
+    mask: "url(#Gym_svg__b)",
+    rx: 1,
+    transform: "rotate(-180 18.5 21.5)"
+  }), /*#__PURE__*/React.createElement("mask", {
+    id: "Gym_svg__c",
+    fill: "#fff"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 5,
+    height: 13,
+    x: 2.5,
+    y: 5.5,
+    rx: 1
+  })), /*#__PURE__*/React.createElement("rect", {
+    width: 5,
+    height: 13,
+    x: 2.5,
+    y: 5.5,
+    stroke: "#515151",
+    strokeWidth: 4,
+    mask: "url(#Gym_svg__c)",
+    rx: 1
+  }), /*#__PURE__*/React.createElement("mask", {
+    id: "Gym_svg__d",
+    fill: "#fff"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 5,
+    height: 19,
+    x: 5.5,
+    y: 2.5,
+    rx: 1
+  })), /*#__PURE__*/React.createElement("rect", {
+    width: 5,
+    height: 19,
+    x: 5.5,
+    y: 2.5,
+    stroke: "#515151",
+    strokeWidth: 4,
+    mask: "url(#Gym_svg__d)",
+    rx: 1
+  }));
+};
+
+var HeartIcon = function HeartIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M3.343 7.778a4.5 4.5 0 0 1 7.339-1.46L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.499 4.499 0 0 1-.975-4.904Z",
+    stroke: strokeColor
+  }));
+};
+
+var HomeIcon = function HomeIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m3 12 2-2m0 0 7-7 7 7M5 10v10a1 1 0 0 0 1 1h3m10-11 2 2m-2-2v10a1 1 0 0 1-1 1h-3m-6 0a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1m-6 0h6",
+    stroke: strokeColor
+  }));
+};
+
+var IdentificationIcon = function IdentificationIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M10 6H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-5m-4 0V5a2 2 0 1 1 4 0v1m-4 0a2 2 0 1 0 4 0m-5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 0 0-2.83 2M15 11h3m-3 4h2",
+    stroke: strokeColor
+  }));
+};
+
+var InformationCircleIcon = function InformationCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var IronIcon = function IronIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M3 21h18",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M3 16.09A9.09 9.09 0 0 1 12.09 7h7.274C20.267 7 21 7.733 21 8.636V15a2 2 0 0 1-2 2H3.91a.91.91 0 0 1-.91-.91Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M21 9V5a2 2 0 0 0-2-2H7",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 14,
+    cy: 13,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 17,
+    cy: 13,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }));
+};
+
+var LiftIcon = function LiftIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4.105 21V3h15.79v18M7.263 21V9h9.474v12M2 21h10m10 0H12m0 0V9m-1.579-3h3.158",
+    stroke: strokeColor
+  }));
+};
+
+var LinkIcon = function LinkIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M13.828 10.172a4 4 0 0 0-5.656 0l-4 4a4 4 0 1 0 5.656 5.656l1.102-1.1m-.758-4.9a4 4 0 0 0 5.656 0l4-4a4 4 0 0 0-5.656-5.656l-1.1 1.1",
+    stroke: strokeColor
+  }));
+};
+
+var LivingRoomIcon = function LivingRoomIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M6.5 13.5v-1.75a2.25 2.25 0 0 0-4.5 0v3.75a2 2 0 0 0 2 2m2.5-4h11m-11 0H12m5.5 0v-1.75a2.25 2.25 0 0 1 4.5 0v3.763a2 2 0 0 1-2 1.987m-2.5-4H12m8 4v3m0-3H4m0 0v3m8-15v8m0-8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v4m7-4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V10",
+    stroke: strokeColor
+  }));
+};
+
+var LocationIcon = function LocationIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M17.657 16.657 13.414 20.9a1.999 1.999 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0v0Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M14.121 13.121A3 3 0 1 0 9.88 8.88a3 3 0 0 0 4.242 4.242Z",
+    stroke: strokeColor
+  }));
+};
+
+var LockClosedIcon = function LockClosedIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12 15v2m-6 4h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2Zm10-10V7a4 4 0 1 0-8 0v4h8Z",
+    stroke: strokeColor
+  }));
+};
+
+var LockOpenIcon = function LockOpenIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M8 11V7a4 4 0 0 1 8 0m-4 8v2m-6 4h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2Z",
+    stroke: strokeColor
+  }));
+};
+
+var LoftIcon = function LoftIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M2 10.571 12 2l10 8.571m-20 0V22h11M2 10.571h11m9 0V22h-4.316M22 10.571h-4.316m-4.684 0h4.684m-4.684 0v3.81M13 22h4.684M13 22v-3.81m4.684-7.619v3.81m0 7.619v-3.81M13 14.381h4.684m-4.684 0v3.81m4.684-3.81v3.81m-4.684 0h4.684",
+    stroke: strokeColor
+  }));
+};
+
+var LundryDryerIcon = function LundryDryerIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 19,
+    height: 19,
+    x: 2.5,
+    y: 2.5,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 5.667,
+    cy: 5.667,
+    r: 0.792,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 12,
+    cy: 12,
+    r: 5.278,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 1.5,
+    d: "M15 12a3 3 0 0 0-3-3M9 12a3 3 0 0 0 3 3",
+    stroke: strokeColor
+  }));
+};
+
+var LundryWasherIcon = function LundryWasherIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 19,
+    height: 19,
+    x: 2.5,
+    y: 2.5,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 5.667,
+    cy: 5.667,
+    r: 0.792,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 12,
+    cy: 12,
+    r: 5.278,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M6.73 12.42c.79.263 2.878.535 4.9-.48 2.87-.94 4.217-.005 5.06.627",
     stroke: strokeColor
   }));
 };
@@ -1456,6 +3243,738 @@ var MenuIcon = function MenuIcon(_a) {
   }));
 };
 
+var MessageIcon = function MessageIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M5.422 12.275v6.43l2.995-2.756L12.695 21 22 3 2 8.602l3.422 3.673Zm0 0 7.273-3.673",
+    stroke: strokeColor
+  }));
+};
+
+var MicrophoneIcon = function MicrophoneIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M19 11a7 7 0 0 1-7 7m0 0a7 7 0 0 1-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 0 1-3-3V5a3 3 0 1 1 6 0v6a3 3 0 0 1-3 3Z",
+    stroke: strokeColor
+  }));
+};
+
+var MicrowaveIcon = function MicrowaveIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 20,
+    height: 16,
+    x: 2,
+    y: 4,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M5.158 7h10.526v9H5.158z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M19.395 8c0 .252-.223.5-.553.5-.33 0-.552-.248-.552-.5s.223-.5.552-.5c.33 0 .553.248.553.5ZM19.395 12c0 .252-.223.5-.553.5-.33 0-.552-.248-.552-.5s.223-.5.552-.5c.33 0 .553.248.553.5Z",
+    stroke: strokeColor
+  }));
+};
+
+var MinusCircleIcon = function MinusCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var MinusIcon = function MinusIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M18 12H6",
+    stroke: strokeColor
+  }));
+};
+
+var MoonIcon = function MoonIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M15.195 15.822a9 9 0 0 0 5.16-.468A9.003 9.003 0 0 1 12 21 9.003 9.003 0 0 1 8.646 3.646a9 9 0 0 0 6.549 12.176Z",
+    stroke: strokeColor
+  }));
+};
+
+var NewsPaperIcon = function NewsPaperIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8Z",
+    stroke: strokeColor
+  }));
+};
+
+var OfficeBuildingIcon = function OfficeBuildingIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2m-2 0h-5m-9 0H3m2 0h5m4 0v-5a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v5m4 0h-4M9 7h1m-1 4h1m4-4h1m-1 4h1",
+    stroke: strokeColor
+  }));
+};
+
+var OvenIcon = function OvenIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 19,
+    height: 19,
+    x: 2.5,
+    y: 2.5,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M5.5 11.5h13v7h-13z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 6,
+    cy: 5.5,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 10,
+    cy: 5.5,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 14,
+    cy: 5.5,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M2.5 8.5h19",
+    stroke: strokeColor
+  }));
+};
+
+var PaperClipIcon = function PaperClipIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m15.172 7-6.586 6.586a2 2 0 1 0 2.828 2.828l6.414-6.586a4 4 0 0 0-5.656-5.656l-6.415 6.585a6 6 0 1 0 8.486 8.486L20.5 13",
+    stroke: strokeColor
+  }));
+};
+
+var ParkingIcon = function ParkingIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M9 16.5v-4m0 0V7h3.75a2.75 2.75 0 0 1 2.75 2.75v0a2.75 2.75 0 0 1-2.75 2.75H9Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 12,
+    cy: 12,
+    r: 9,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }));
+};
+
+var PauseCircleIcon = function PauseCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M10 9v6m4-6v6m7-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var PencilAltIcon = function PencilAltIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828l8.586-8.586Z",
+    stroke: strokeColor
+  }));
+};
+
+var PencilIcon = function PencilIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m15.232 5.232 3.536 3.536m-2.036-5.036a2.5 2.5 0 0 1 3.536 3.536L6.5 21.036H3v-3.572L16.732 3.732Z",
+    stroke: strokeColor
+  }));
+};
+
+var PhotographIcon = function PhotographIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m4 16 4.586-4.586a2 2 0 0 1 2.828 0L16 16m-2-2 1.586-1.586a2 2 0 0 1 2.828 0L20 14m-6-6h.01M6 20h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z",
+    stroke: strokeColor
+  }));
+};
+
+var PingpongIcon = function PingpongIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: 6,
+    cy: 5.5,
+    r: 3,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("mask", {
+    id: "Pingpong_svg__a",
+    fill: "#fff"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M4.353 10.73a9.471 9.471 0 0 0 2.782 6.812 9.471 9.471 0 0 0 6.812 2.782l-9.594-9.595Z",
+    clipRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    d: "m4.353 10.73 1.414-1.415L2.4 5.948l-.047 4.762 2 .02Zm9.594 9.594.02 2 4.761-.047-3.367-3.367-1.414 1.414Zm-5.398-4.196a7.471 7.471 0 0 1-2.197-5.379l-4-.04a11.472 11.472 0 0 0 3.368 8.247l2.829-2.828Zm5.378 2.196a7.471 7.471 0 0 1-5.378-2.196L5.72 18.956a11.472 11.472 0 0 0 8.247 3.368l-.04-4Zm1.434.586L5.767 9.315l-2.829 2.829 9.595 9.594 2.828-2.828Z",
+    mask: "url(#Pingpong_svg__a)",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    d: "m6.91 15.409 2.357 2.357-3.67 4.522a2 2 0 0 1-2.967.154l-.397-.397a2 2 0 0 1 .154-2.967l4.523-3.67Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M7.914 10.12a4.986 4.986 0 0 1-2.48.349l9.76 9.76a9.457 9.457 0 0 0 5.374-2.687 9.5 9.5 0 0 0 0-13.435A9.504 9.504 0 0 0 9.786 2.235c.437.505.773 1.099.98 1.75a7.503 7.503 0 1 1 5.083 14.07L7.914 10.12Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }));
+};
+
+var PlayCircleIcon = function PlayCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m11.555 9.036 3.197 2.132a1.003 1.003 0 0 1 0 1.665l-3.197 2.132A1 1 0 0 1 10 14.133V9.87a1 1 0 0 1 1.555-.834Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M20.315 15.444a9 9 0 1 0-16.63-6.888 9 9 0 0 0 16.63 6.888Z",
+    stroke: strokeColor
+  }));
+};
+
+var PlayIcon = function PlayIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M19.5 12.866a1 1 0 0 0 0-1.732l-12-6.928a1 1 0 0 0-1.5.866v13.856a1 1 0 0 0 1.5.866l12-6.928Z",
+    stroke: strokeColor
+  }));
+};
+
+var PlusCircleIcon = function PlusCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var PlusIcon = function PlusIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12 6v6m0 0v6m0-6h6m-6 0H6",
+    stroke: strokeColor
+  }));
+};
+
+var QuestionMarkCircleIcon = function QuestionMarkCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M9.566 9.5c0-1 .51-2.13 1.99-2.5 2-.5 3.603 1.223 3.444 3-.223 2.5-3.434 2.5-3.434 2.5s-.01.947-.01 1.5m0 3h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var RefreshIcon = function RefreshIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 4v5h.582m0 0a8.001 8.001 0 0 1 15.356 2M4.582 9H9m11 11v-5h-.581m0 0a8.003 8.003 0 0 1-15.357-2m15.357 2H15",
+    stroke: strokeColor
+  }));
+};
+
 var ReplyIcon = function ReplyIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1486,6 +4005,66 @@ var ReplyIcon = function ReplyIcon(_a) {
   }));
 };
 
+var RewindIcon = function RewindIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M11.772 11.553c.069-.14.17-.26.294-.353h.001l5.333-4A1 1 0 0 1 19 8v8a1 1 0 0 1-1.6.8l-5.334-4a.999.999 0 0 1-.294-1.247ZM3.772 11.553a1 1 0 0 1 .294-.353l5.334-4A1 1 0 0 1 11 8v8a1 1 0 0 1-1.6.8l-5.334-4a1 1 0 0 1-.294-1.247Z",
+    stroke: strokeColor
+  }));
+};
+
+var RooftopIcon = function RooftopIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M2 22v-3h5m15 3v-3h-5m-5 0V8.667M12 19H7m5 0h5M12 8.667H5V6.762L12 2l7 4.762v1.905h-7ZM9 12h6M5 11v4h2m2 0H7m0 0v4m12-8v4h-2m-2 0h2m0 0v4",
+    stroke: strokeColor
+  }));
+};
+
 var RssIcon = function RssIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1512,6 +4091,142 @@ var RssIcon = function RssIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 0 1 7 7m-6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var SaunaIcon = function SaunaIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("circle", {
+    cx: 8,
+    cy: 4.75,
+    r: 2.5,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M11.706 13.75c-.466-1.778-2.006-3-3.706-3-1.7 0-3.24 1.222-3.706 3H2.25c.504-2.845 2.887-5 5.75-5s5.246 2.155 5.75 5h-2.044Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M2 13.75h20v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-7Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M15 9.75v-.547c0-1.262.442-2.484 1.25-3.453v0a5.393 5.393 0 0 0 1.25-3.453V1.75M19 9.75v-.547c0-1.262.442-2.484 1.25-3.453v0a5.393 5.393 0 0 0 1.25-3.453V1.75",
+    stroke: strokeColor
+  }));
+};
+
+var SaveIcon = function SaveIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M8 7H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3m-1 4-3 3m0 0-3-3m3 3V4",
+    stroke: strokeColor
+  }));
+};
+
+var SearchCircleIcon = function SearchCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m8 16 2.879-2.879m0 0a3 3 0 1 0 4.278-4.208 3 3 0 0 0-4.278 4.208ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var SearchIcon = function SearchIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m21 21-6-6m2-5a7.001 7.001 0 0 1-11.95 4.95A7 7 0 1 1 17 10Z",
     stroke: strokeColor
   }));
 };
@@ -1548,6 +4263,36 @@ var SettingIcon = function SettingIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z",
+    stroke: strokeColor
+  }));
+};
+
+var ShareIcon = function ShareIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684Zm0-9.316a3 3 0 1 0 5.366-2.683 3 3 0 0 0-5.366 2.683Z",
     stroke: strokeColor
   }));
 };
@@ -1612,6 +4357,165 @@ var ShieldExclamationIcon = function ShieldExclamationIcon(_a) {
   }));
 };
 
+var ShoppingBagIcon = function ShoppingBagIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M16 11V7a4 4 0 1 0-8 0v4M5 9h14l1 12H4L5 9Z",
+    stroke: strokeColor
+  }));
+};
+
+var ShoppingCartIcon = function ShoppingCartIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M3 3h2l.4 2m0 0H21l-4 8H7M5.4 5 7 13m0 0-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var ShuttleBusIcon = function ShuttleBusIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("mask", {
+    id: "ShuttleBus_svg__a",
+    fill: "#fff"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M22 4a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h.897a2.77 2.77 0 0 0 2.77-2.77.1.1 0 0 1 .1-.1h6.466a.1.1 0 0 1 .1.1 2.77 2.77 0 0 0 2.77 2.77H19a3 3 0 0 0 3-3V4Z",
+    clipRule: "evenodd"
+  })), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    d: "M5 3h14v-4H5v4ZM4 20V4H0v16h4Zm1.897 1H5v4h.897v-4Zm4.77-.77a1.9 1.9 0 0 1-1.9 1.9v-4a2.1 2.1 0 0 0-2.1 2.1h4Zm-1.9 1.9h6.466v-4H8.767v4Zm6.466 0a1.9 1.9 0 0 1-1.9-1.9h4a2.1 2.1 0 0 0-2.1-2.1v4ZM19 21h-.897v4H19v-4Zm1-17v16h4V4h-4Zm-1 21a5 5 0 0 0 5-5h-4a1 1 0 0 1-1 1v4Zm-5.667-4.77a4.77 4.77 0 0 0 4.77 4.77v-4a.77.77 0 0 1-.77-.77h-4ZM5.897 25a4.77 4.77 0 0 0 4.77-4.77h-4a.77.77 0 0 1-.77.77v4ZM0 20a5 5 0 0 0 5 5v-4a1 1 0 0 1-1-1H0ZM19 3a1 1 0 0 1 1 1h4a5 5 0 0 0-5-5v4ZM5-1a5 5 0 0 0-5 5h4a1 1 0 0 1 1-1v-4Z",
+    mask: "url(#ShuttleBus_svg__a)",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M3 12h19",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M15 15.5h3M6 15.5h3M12 12V5",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 2,
+    height: 6,
+    x: 21,
+    y: 6,
+    fill: "#515151",
+    rx: 1
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 2,
+    height: 6,
+    x: 1,
+    y: 6,
+    fill: "#515151",
+    rx: 1
+  }));
+};
+
+var SimCard1Icon = function SimCard1Icon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#fff",
+    d: "M5 20V8h17v9.23L19.167 20H5Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M7.833 14v-3H11m-3.167 3v3H11m-3.167-3H11m0 0v-3m0 3v3m0-6h4.5v6H11M5 8v12h14.167L22 17.23V8H5Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4.833 17H2V5h17v2.77",
+    stroke: strokeColor
+  }));
+};
+
 var SimcardIcon = function SimcardIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1648,6 +4552,72 @@ var SimcardIcon = function SimcardIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M4.833 17H2V5h17v2.77",
+    stroke: strokeColor
+  }));
+};
+
+var SingleBedroomIcon = function SingleBedroomIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4.636 11.667H4a1 1 0 0 0-1 1v4.666a1 1 0 0 0 1 1h1.455m-.819-6.666V6a1 1 0 0 1 1-1h12.728a1 1 0 0 1 1 1v5.667m-14.728 0H9m10.364 0H20a1 1 0 0 1 1 1v4.666a1 1 0 0 1-1 1h-1.454m.818-6.666H15m-6 0V8.5h6v3.167m-6 0h6m-9.545 6.666V20m0-1.667h13.09m0 0V20",
+    stroke: strokeColor
+  }));
+};
+
+var SpaIcon = function SpaIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m12.943 13.111-.786-.855a3.205 3.205 0 0 1 .393-4.7v0a3.205 3.205 0 0 0 .393-4.701L12.157 2M7.993 13.111l-.786-.855a3.205 3.205 0 0 1 .393-4.7v0a3.205 3.205 0 0 0 .393-4.701L7.207 2M17.343 13.111l-.786-.855a3.205 3.205 0 0 1 .393-4.7v0a3.206 3.206 0 0 0 .393-4.701L16.557 2",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M4.623 10.96C3.521 11.975 3 13.124 3 14.223c0 1.325.757 2.722 2.376 3.867 1.615 1.142 3.95 1.91 6.624 1.91 2.673 0 5.009-.768 6.623-1.91C20.244 16.944 21 15.547 21 14.222c0-1.325-.757-2.721-2.377-3.867a8.87 8.87 0 0 0-.957-.587c.13-.517.514-1.048 1.27-1.583 2.48 1.426 4.064 3.6 4.064 6.037C23 18.518 18.075 22 12 22S1 18.518 1 14.222c0-2.416 1.559-4.576 4.004-6.002-.435.765-.542 1.761-.38 2.74Z",
+    clipRule: "evenodd",
     stroke: strokeColor
   }));
 };
@@ -1708,6 +4678,82 @@ var SpeakerPhoneIcon = function SpeakerPhoneIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M11 5.882V19.24a1.76 1.76 0 0 1-3.417.592l-2.147-6.15m0 0A3.999 3.999 0 0 1 7 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.066-3-9.168-3H7c-.537 0-1.069-.108-1.564-.318ZM18 13a3 3 0 0 0 0-6v6Z",
+    stroke: strokeColor
+  }));
+};
+
+var SquashIcon = function SquashIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "m10.92 19.494.883-5.006-1.97-.347-.883 5.006a3.443 3.443 0 0 1-.956 1.836l-2.39 2.39a2.062 2.062 0 0 0 2.916 2.916l2.39-2.39c.5-.5 1.14-.833 1.836-.956l4.28-.755c.083-.53.25-1.034.485-1.495l-.106-.603-5.006.884a5.442 5.442 0 0 0-2.903 1.51l-2.39 2.39a.062.062 0 0 1-.088-.087l2.39-2.39a5.442 5.442 0 0 0 1.511-2.903Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M21.602 17.979 23.3 16.28a5.436 5.436 0 1 0-7.688-7.688l-2.253 2.254a5.436 5.436 0 0 0 4.52 9.238 4.973 4.973 0 0 0-.843 2.04 7.436 7.436 0 0 1-5.092-12.693l2.254-2.253a7.436 7.436 0 1 1 10.517 10.516l-.707.707a4.982 4.982 0 0 0-2.406-.422Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 21.966,
+    cy: 22.966,
+    r: 3,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    d: "m14.532 14.608 4.95-4.95M17.361 17.436l4.949-4.949M17.361 9.658l4.949 4.95M14.532 12.486l4.95 4.95",
+    stroke: strokeColor
+  }));
+};
+
+var StarIcon = function StarIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12.951 2.927c-.299-.92-1.602-.92-1.902 0L9.53 7.601a1 1 0 0 1-.95.69H3.664c-.968 0-1.372 1.24-.588 1.81l3.976 2.888a1 1 0 0 1 .363 1.118l-1.518 4.674c-.3.921.755 1.688 1.538 1.118l3.976-2.888a1 1 0 0 1 1.176 0l3.976 2.888c.783.57 1.838-.196 1.538-1.118l-1.518-4.674a1 1 0 0 1 .363-1.118l3.976-2.888c.783-.57.381-1.81-.588-1.81H15.42a1 1 0 0 1-.95-.69l-1.519-4.674Z",
     stroke: strokeColor
   }));
 };
@@ -1783,6 +4829,219 @@ var StationIcon = function StationIcon(_a) {
   }))));
 };
 
+var StopCircleIcon = function StopCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M20.315 15.444a9 9 0 1 0-16.63-6.888 9 9 0 0 0 16.63 6.888Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M9 10a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4Z",
+    stroke: strokeColor
+  }));
+};
+
+var StoveIcon = function StoveIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 19,
+    height: 19,
+    x: 2.5,
+    y: 2.5,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 8,
+    cy: 8,
+    r: 2.25,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 16,
+    cy: 8,
+    r: 2.25,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 8,
+    cy: 16,
+    r: 2.25,
+    strokeWidth: 2,
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 14.56,
+    cy: 17,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 18,
+    cy: 17,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }));
+};
+
+var SunIcon = function SunIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364-.707-.707M6.343 6.343l-.707-.707m12.728 0-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var SurfaceIcon = function SurfaceIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 19,
+    height: 19,
+    x: 2.5,
+    y: 2.5,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M6.5 12.5v5h5M12.5 6.5h5v5",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M6.5 17.5 17.62 6.379",
+    stroke: strokeColor
+  }));
+};
+
+var SwimmingPoolIcon = function SwimmingPoolIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "m1 16.084 1.068-.92c1.139-.981 2.86-.887 3.905.193v0c1.085 1.122 2.896 1.152 3.997.046v0a2.796 2.796 0 0 1 3.96.007v0a2.816 2.816 0 0 0 3.987.007l.076-.076a2.915 2.915 0 0 1 3.97-.152l1.037.895M1 21.084l1.068-.92c1.139-.981 2.86-.887 3.905.193v0c1.085 1.122 2.896 1.152 3.997.046v0a2.796 2.796 0 0 1 3.96.007v0a2.816 2.816 0 0 0 3.987.007l.076-.076a2.915 2.915 0 0 1 3.97-.152l1.037.895",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    d: "M11 9.917a1 1 0 1 0 2 0h-2Zm0-4.5v4.5h2v-4.5h-2ZM7 15V5.417H5V15h2ZM9 3.417a2 2 0 0 1 2 2h2a4 4 0 0 0-4-4v2Zm0-2a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2v-2Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M11.68 4.066c-.117.36-.18.744-.18 1.142v2.709a1 1 0 0 0 .5.866V5.417c0-.486-.116-.945-.32-1.351Zm2.165.112a1.708 1.708 0 0 1 3.071 1.03v4.709a1 1 0 1 0 2 0V5.208a3.708 3.708 0 0 0-6.007-2.91c.435.546.759 1.184.936 1.88Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M12 6.417h6",
+    stroke: strokeColor
+  }));
+};
+
 var TagIcon = function TagIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1813,6 +5072,269 @@ var TagIcon = function TagIcon(_a) {
   }));
 };
 
+var TerraceIcon = function TerraceIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M19 9h2V5L3 2v7h16Zm0 0v13M3 22h1.636M21 22h-8m-8.364-8v4m0 4v-4m0 4H10m-5.364-4H10v4m0 0h3m-3-7h3m3 0h-3m0 0v7",
+    stroke: strokeColor
+  }));
+};
+
+var ThumbDownIcon = function ThumbDownIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m16.999 4-3.76-.94a2 2 0 0 0-.485-.06H8.736a2 2 0 0 0-1.789 1.106l-3.5 7A2 2 0 0 0 5.236 14H12m4.999-10L17 13l-3.392 5.088A3.616 3.616 0 0 0 13 20.096a.905.905 0 0 1-.905.904h-.096a2 2 0 0 1-2-2v-5m7-10H19a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2.5",
+    stroke: strokeColor
+  }));
+};
+
+var ThumbUpIcon = function ThumbUpIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M14 10h4.764a2 2 0 0 1 1.789 2.894l-3.5 7A1.999 1.999 0 0 1 15.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 0 0-2-2h-.095c-.5 0-.905.405-.905.905a3.61 3.61 0 0 1-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h2.5",
+    stroke: strokeColor
+  }));
+};
+
+var ToastMachineIcon = function ToastMachineIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "m3.009 11.759-1 .008M8.111 20.665v1.333M15.889 20.665v1.333",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M3.222 10.443a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v7.222a2 2 0 0 1-2 2H5.222a2 2 0 0 1-2-2v-7.222Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#515151",
+    fillRule: "evenodd",
+    d: "M7.17 1.75a2.726 2.726 0 0 0-1.54 4.975c.049.167.12.324.211.469a4.05 4.05 0 0 1 .381-.018H18c.128 0 .255.006.38.018.092-.145.163-.302.212-.47a2.726 2.726 0 0 0-1.54-4.975H7.17Zm-.726 2.726c0-.401.325-.726.726-.726h9.882a.726.726 0 0 1 .255 1.406l-.74.278.081.63H7.574l.08-.63-.74-.278a.726.726 0 0 1-.47-.68Z",
+    clipRule: "evenodd",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 17.667,
+    cy: 16.332,
+    r: 1.111,
+    fill: "#515151",
+    stroke: strokeColor
+  }));
+};
+
+var TranslateIcon = function TranslateIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 0 1 6.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129",
+    stroke: strokeColor
+  }));
+};
+
+var TrashIcon = function TrashIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M10 11v6m4-6v6M4 7h16m-1 0-.867 12.142A2 2 0 0 1 16.138 21H7.862a2 2 0 0 1-1.995-1.858L5 7h14Zm-4 0V4a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3h6Z",
+    stroke: strokeColor
+  }));
+};
+
+var TvIcon = function TvIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 18,
+    height: 13,
+    x: 3,
+    y: 4,
+    stroke: "#515151",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M19 21H5M9 21v-4M15 21v-4",
+    stroke: strokeColor
+  }));
+};
+
+var UserAddIcon = function UserAddIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M18 9v3-3Zm0 3v3-3Zm0 0h3-3Zm0 0h-3 3Zm-5-5a4 4 0 1 1-8 0 4 4 0 0 1 8 0v0ZM3 20a6 6 0 1 1 12 0v1H3v-1Z",
+    stroke: strokeColor
+  }));
+};
+
 var UserGroupIcon = function UserGroupIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -1839,6 +5361,156 @@ var UserGroupIcon = function UserGroupIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M17 20h5v-2a3 3 0 0 0-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857m0 0a5.003 5.003 0 0 0-9.288 0M7 20H2v-2a3 3 0 0 1 5.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857M15 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM7 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z",
+    stroke: strokeColor
+  }));
+};
+
+var UserIcon = function UserIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M14.828 9.828a4 4 0 1 0-5.656-5.656 4 4 0 0 0 5.656 5.656ZM7.05 16.05A7 7 0 0 1 19 21H5a7 7 0 0 1 2.05-4.95Z",
+    stroke: strokeColor
+  }));
+};
+
+var UserRemoveIcon = function UserRemoveIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M21 12h-6m-2-5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-4 7a6 6 0 0 0-6 6v1h12v-1a6 6 0 0 0-6-6Z",
+    stroke: strokeColor
+  }));
+};
+
+var VideoCameraIcon = function VideoCameraIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m15 10 4.553-2.276A1 1 0 0 1 21 8.618v6.764a1 1 0 0 1-1.447.894L15 14v-4ZM5 18h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2Z",
+    stroke: strokeColor
+  }));
+};
+
+var VolumeOffIcon = function VolumeOffIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 15h1.586l4.707 4.707c.63.63 1.707.184 1.707-.707V5c0-.891-1.077-1.337-1.707-.707L5.586 9H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1ZM19 12l2 2m-4 0 2-2-2 2Zm2-2 2-2-2 2Zm0 0-2-2 2 2Z",
+    stroke: strokeColor
+  }));
+};
+
+var VolumeUpIcon = function VolumeUpIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M15.536 8.464a5.001 5.001 0 0 1 0 7.072m2.828-9.9a9 9 0 0 1 0 12.728M5.586 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15Z",
     stroke: strokeColor
   }));
 };
@@ -1880,6 +5552,245 @@ var WalkingIcon = function WalkingIcon(_a) {
     strokeLinecap: "round",
     strokeWidth: 2,
     d: "M10 8c0 2-1.5 4-3 4.5",
+    stroke: strokeColor
+  }));
+};
+
+var WardrobeIcon = function WardrobeIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 19,
+    x: 4,
+    y: 2,
+    stroke: "#515151",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 4a2 2 0 0 1 2-2h6v12H4V4ZM4 14h16v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-5ZM12 2h6a2 2 0 0 1 2 2v10h-8V2Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 9,
+    cy: 8,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 15,
+    cy: 8,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 12,
+    cy: 17,
+    r: 1,
+    fill: "#515151",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M7 22v1M17 22v1",
+    stroke: strokeColor
+  }));
+};
+
+var WaterDispenser2Icon = function WaterDispenser2Icon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeMiterlimit: 10,
+    strokeWidth: 2,
+    d: "M13.5 16.262c0 1.09-.676 1.778-1.75 1.778-1.074 0-1.75-.687-1.75-1.778 0-1.172 1.255-2.753 1.64-3.21a.146.146 0 0 1 .11-.052.143.143 0 0 1 .11.052c.386.457 1.64 2.038 1.64 3.21Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 15,
+    height: 19,
+    x: 4.5,
+    y: 2,
+    stroke: "#515151",
+    strokeWidth: 2,
+    rx: 2
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M9 6h6v2a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2V6ZM4.5 6h15",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M3 21h18",
+    stroke: strokeColor
+  }));
+};
+
+var WaterDispenserIcon = function WaterDispenserIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M4 6h6v13H4z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 20a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H4v1Z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeWidth: 2,
+    d: "M4 6h16V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v2ZM15 6h2v1h-2z",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeMiterlimit: 10,
+    strokeWidth: 2,
+    d: "M18 13.883c0 1.3-.773 2.117-2 2.117-1.227 0-2-.818-2-2.117 0-1.395 1.434-3.277 1.873-3.821A.166.166 0 0 1 16 10c.024 0 .048.005.07.016.022.01.041.026.057.046.44.544 1.873 2.426 1.873 3.82Z",
+    stroke: strokeColor
+  }));
+};
+
+var WifiIcon = function WifiIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M8.111 16.404a5.5 5.5 0 0 1 7.778 0M12 20h.01m-7.08-7.07c3.904-3.906 10.236-3.906 14.141 0M1.394 9.392c5.857-5.857 15.355-5.857 21.213 0",
+    stroke: strokeColor
+  }));
+};
+
+var ZoomInIcon = function ZoomInIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m21 21-6-6m-5-8v3m0 0v3m0-3h3m-3 0H7m10 0a7.001 7.001 0 0 1-11.95 4.95A7 7 0 1 1 17 10Z",
+    stroke: strokeColor
+  }));
+};
+
+var ZoomOutIcon = function ZoomOutIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M13 10H7m14 11-6-6 6 6Zm-4-11a7.001 7.001 0 0 1-11.95 4.95A7 7 0 1 1 17 10Z",
     stroke: strokeColor
   }));
 };
@@ -1942,6 +5853,9 @@ var green = {
   opacity: "#F3FFF4"
 };
 
+exports.AdjustmentsIcon = AdjustmentsIcon;
+exports.AirConditinerIcon = AirConditinerIcon;
+exports.AlignIcon = AlignIcon;
 exports.AllGenderIcon = AllGenderIcon;
 exports.ArrowCircleDownIcon = ArrowCircleDownIcon;
 exports.ArrowCircleLeftIcon = ArrowCircleLeftIcon;
@@ -1959,8 +5873,16 @@ exports.ArrowsExpandIcon = ArrowsExpandIcon;
 exports.BadgeCheckIcon = BadgeCheckIcon;
 exports.BagIcon = BagIcon;
 exports.BanIcon = BanIcon;
+exports.BathroomIcon = BathroomIcon;
+exports.BbqIcon = BbqIcon;
+exports.BeddingSetIcon = BeddingSetIcon;
+exports.BellIcon = BellIcon;
+exports.BilliardsIcon = BilliardsIcon;
+exports.BookmarkIcon = BookmarkIcon;
 exports.Button = Button;
 exports.CalendarIcon = CalendarIcon;
+exports.CameraIcon = CameraIcon;
+exports.ChairIcon = ChairIcon;
 exports.ChatAlt2Icon = ChatAlt2Icon;
 exports.ChatAltIcon = ChatAltIcon;
 exports.ChatIcon = ChatIcon;
@@ -1976,31 +5898,127 @@ exports.ChevronDownIcon = ChevronDownIcon;
 exports.ChevronLeftIcon = ChevronLeftIcon;
 exports.ChevronRightIcon = ChevronRightIcon;
 exports.ChevronUpIcon = ChevronUpIcon;
+exports.CircleIcon = CircleIcon;
+exports.CloseCircleIcon = CloseCircleIcon;
 exports.CloseIcon = CloseIcon;
+exports.CloudIcon = CloudIcon;
+exports.CollectionIcon = CollectionIcon;
+exports.CookingToolsIcon = CookingToolsIcon;
 exports.CreditCardIcon = CreditCardIcon;
+exports.DeskIcon = DeskIcon;
 exports.DeviceMobileIcon = DeviceMobileIcon;
+exports.DinerWareIcon = DinerWareIcon;
+exports.DishWasherIcon = DishWasherIcon;
 exports.DocumentAddIcon = DocumentAddIcon;
+exports.DocumentDuplicateIcon = DocumentDuplicateIcon;
+exports.DoorlockIcon = DoorlockIcon;
 exports.DotsCircleHorizontalIcon = DotsCircleHorizontalIcon;
 exports.DotsHorizontalIcon = DotsHorizontalIcon;
 exports.DotsVerticalIcon = DotsVerticalIcon;
+exports.DownloadIcon = DownloadIcon;
+exports.DressingTableIcon = DressingTableIcon;
+exports.DryingRackIcon = DryingRackIcon;
 exports.ExclamationCircleIcon = ExclamationCircleIcon;
+exports.ExternalLinkIcon = ExternalLinkIcon;
+exports.EyeIcon = EyeIcon;
+exports.EyeOffIcon = EyeOffIcon;
+exports.FastForwardIcon = FastForwardIcon;
 exports.FemaleIcon = FemaleIcon;
+exports.Filter2Icon = Filter2Icon;
+exports.ForkSpoonIcon = ForkSpoonIcon;
 exports.GoToTopIcon = GoToTopIcon;
+exports.GolfIcon = GolfIcon;
+exports.GymIcon = GymIcon;
+exports.HeartIcon = HeartIcon;
+exports.HomeIcon = HomeIcon;
+exports.IdentificationIcon = IdentificationIcon;
+exports.InformationCircleIcon = InformationCircleIcon;
+exports.IronIcon = IronIcon;
+exports.LiftIcon = LiftIcon;
+exports.LinkIcon = LinkIcon;
+exports.LivingRoomIcon = LivingRoomIcon;
+exports.LocationIcon = LocationIcon;
+exports.LockClosedIcon = LockClosedIcon;
+exports.LockOpenIcon = LockOpenIcon;
+exports.LoftIcon = LoftIcon;
+exports.LundryDryerIcon = LundryDryerIcon;
+exports.LundryWasherIcon = LundryWasherIcon;
 exports.MaleIcon = MaleIcon;
 exports.MapIcon = MapIcon;
 exports.MenuIcon = MenuIcon;
+exports.MessageIcon = MessageIcon;
+exports.MicrophoneIcon = MicrophoneIcon;
+exports.MicrowaveIcon = MicrowaveIcon;
+exports.MinusCircleIcon = MinusCircleIcon;
+exports.MinusIcon = MinusIcon;
+exports.MoonIcon = MoonIcon;
+exports.NewsPaperIcon = NewsPaperIcon;
+exports.OfficeBuildingIcon = OfficeBuildingIcon;
+exports.OvenIcon = OvenIcon;
+exports.PaperClipIcon = PaperClipIcon;
+exports.ParkingIcon = ParkingIcon;
+exports.PauseCircleIcon = PauseCircleIcon;
+exports.PencilAltIcon = PencilAltIcon;
+exports.PencilIcon = PencilIcon;
+exports.PhotographIcon = PhotographIcon;
+exports.PingpongIcon = PingpongIcon;
+exports.PlayCircleIcon = PlayCircleIcon;
+exports.PlayIcon = PlayIcon;
+exports.PlusCircleIcon = PlusCircleIcon;
+exports.PlusIcon = PlusIcon;
+exports.QuestionMarkCircleIcon = QuestionMarkCircleIcon;
+exports.RefreshIcon = RefreshIcon;
 exports.ReplyIcon = ReplyIcon;
+exports.RewindIcon = RewindIcon;
+exports.RooftopIcon = RooftopIcon;
 exports.RssIcon = RssIcon;
+exports.SaunaIcon = SaunaIcon;
+exports.SaveIcon = SaveIcon;
+exports.SearchCircleIcon = SearchCircleIcon;
+exports.SearchIcon = SearchIcon;
 exports.SettingIcon = SettingIcon;
+exports.ShareIcon = ShareIcon;
 exports.ShieldCheckIcon = ShieldCheckIcon;
 exports.ShieldExclamationIcon = ShieldExclamationIcon;
+exports.ShoppingBagIcon = ShoppingBagIcon;
+exports.ShoppingCartIcon = ShoppingCartIcon;
+exports.ShuttleBusIcon = ShuttleBusIcon;
+exports.SimCard1Icon = SimCard1Icon;
 exports.SimcardIcon = SimcardIcon;
+exports.SingleBedroomIcon = SingleBedroomIcon;
+exports.SpaIcon = SpaIcon;
 exports.SparklesIcon = SparklesIcon;
 exports.SpeakerPhoneIcon = SpeakerPhoneIcon;
+exports.SquashIcon = SquashIcon;
+exports.StarIcon = StarIcon;
 exports.StationIcon = StationIcon;
+exports.StopCircleIcon = StopCircleIcon;
+exports.StoveIcon = StoveIcon;
+exports.SunIcon = SunIcon;
+exports.SurfaceIcon = SurfaceIcon;
+exports.SwimmingPoolIcon = SwimmingPoolIcon;
 exports.TagIcon = TagIcon;
+exports.TerraceIcon = TerraceIcon;
+exports.ThumbDownIcon = ThumbDownIcon;
+exports.ThumbUpIcon = ThumbUpIcon;
+exports.ToastMachineIcon = ToastMachineIcon;
+exports.TranslateIcon = TranslateIcon;
+exports.TrashIcon = TrashIcon;
+exports.TvIcon = TvIcon;
+exports.UserAddIcon = UserAddIcon;
 exports.UserGroupIcon = UserGroupIcon;
+exports.UserIcon = UserIcon;
+exports.UserRemoveIcon = UserRemoveIcon;
+exports.VideoCameraIcon = VideoCameraIcon;
+exports.VolumeOffIcon = VolumeOffIcon;
+exports.VolumeUpIcon = VolumeUpIcon;
 exports.WalkingIcon = WalkingIcon;
+exports.WardrobeIcon = WardrobeIcon;
+exports.WaterDispenser2Icon = WaterDispenser2Icon;
+exports.WaterDispenserIcon = WaterDispenserIcon;
+exports.WifiIcon = WifiIcon;
+exports.ZoomInIcon = ZoomInIcon;
+exports.ZoomOutIcon = ZoomOutIcon;
 exports.blue = blue;
 exports.grayScale = grayScale;
 exports.green = green;
