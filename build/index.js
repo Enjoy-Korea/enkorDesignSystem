@@ -4476,86 +4476,6 @@ var ShuttleBusIcon = function ShuttleBusIcon(_a) {
   }));
 };
 
-var SimCard1Icon = function SimCard1Icon(_a) {
-  var _b = _a.size,
-    size = _b === void 0 ? 24 : _b,
-    _c = _a.fillColor,
-    fillColor = _c === void 0 ? "none" : _c,
-    _d = _a.strokeColor,
-    strokeColor = _d === void 0 ? "#515151" : _d,
-    _e = _a.className,
-    className = _e === void 0 ? "" : _e,
-    _f = _a.style,
-    style = _f === void 0 ? {} : _f,
-    _g = _a.viewBox,
-    viewBox = _g === void 0 ? "0 0 24 24" : _g;
-  return /*#__PURE__*/React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: size,
-    height: size,
-    fill: fillColor,
-    style: style,
-    className: className,
-    viewBox: viewBox
-  }, /*#__PURE__*/React.createElement("path", {
-    fill: "#fff",
-    d: "M5 20V8h17v9.23L19.167 20H5Z",
-    stroke: strokeColor
-  }), /*#__PURE__*/React.createElement("path", {
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    strokeWidth: 2,
-    d: "M7.833 14v-3H11m-3.167 3v3H11m-3.167-3H11m0 0v-3m0 3v3m0-6h4.5v6H11M5 8v12h14.167L22 17.23V8H5Z",
-    stroke: strokeColor
-  }), /*#__PURE__*/React.createElement("path", {
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    strokeWidth: 2,
-    d: "M4.833 17H2V5h17v2.77",
-    stroke: strokeColor
-  }));
-};
-
-var SimcardIcon = function SimcardIcon(_a) {
-  var _b = _a.size,
-    size = _b === void 0 ? 24 : _b,
-    _c = _a.fillColor,
-    fillColor = _c === void 0 ? "none" : _c,
-    _d = _a.strokeColor,
-    strokeColor = _d === void 0 ? "#515151" : _d,
-    _e = _a.className,
-    className = _e === void 0 ? "" : _e,
-    _f = _a.style,
-    style = _f === void 0 ? {} : _f,
-    _g = _a.viewBox,
-    viewBox = _g === void 0 ? "0 0 24 24" : _g;
-  return /*#__PURE__*/React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: size,
-    height: size,
-    fill: fillColor,
-    style: style,
-    className: className,
-    viewBox: viewBox
-  }, /*#__PURE__*/React.createElement("path", {
-    fill: "#fff",
-    d: "M5 20V8h17v9.23L19.167 20H5Z",
-    stroke: strokeColor
-  }), /*#__PURE__*/React.createElement("path", {
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    strokeWidth: 2,
-    d: "M7.833 14v-3H11m-3.167 3v3H11m-3.167-3H11m0 0v-3m0 3v3m0-6h4.5v6H11M5 8v12h14.167L22 17.23V8H5Z",
-    stroke: strokeColor
-  }), /*#__PURE__*/React.createElement("path", {
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    strokeWidth: 2,
-    d: "M4.833 17H2V5h17v2.77",
-    stroke: strokeColor
-  }));
-};
-
 var SingleBedroomIcon = function SingleBedroomIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -5983,8 +5903,6 @@ exports.ShieldExclamationIcon = ShieldExclamationIcon;
 exports.ShoppingBagIcon = ShoppingBagIcon;
 exports.ShoppingCartIcon = ShoppingCartIcon;
 exports.ShuttleBusIcon = ShuttleBusIcon;
-exports.SimCard1Icon = SimCard1Icon;
-exports.SimcardIcon = SimcardIcon;
 exports.SingleBedroomIcon = SingleBedroomIcon;
 exports.SpaIcon = SpaIcon;
 exports.SparklesIcon = SparklesIcon;
