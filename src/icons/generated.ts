@@ -30,6 +30,7 @@ export { ChairIcon } from './generated/ChairIcon';
 export { ChatAlt2Icon } from './generated/ChatAlt2Icon';
 export { ChatAltIcon } from './generated/ChatAltIcon';
 export { ChatIcon } from './generated/ChatIcon';
+export { CheckCircleIcon } from './generated/CheckCircleIcon';
 export { CheckIcon } from './generated/CheckIcon';
 export { CheckInIcon } from './generated/CheckInIcon';
 export { CheckInoutIcon } from './generated/CheckInoutIcon';
