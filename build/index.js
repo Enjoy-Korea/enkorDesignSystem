@@ -1084,6 +1084,36 @@ var ChatIcon = function ChatIcon(_a) {
   }));
 };
 
+var CheckCircleIcon = function CheckCircleIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m9 12 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
+    stroke: strokeColor
+  }));
+};
+
 var CheckIcon = function CheckIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -5846,6 +5876,7 @@ exports.ChairIcon = ChairIcon;
 exports.ChatAlt2Icon = ChatAlt2Icon;
 exports.ChatAltIcon = ChatAltIcon;
 exports.ChatIcon = ChatIcon;
+exports.CheckCircleIcon = CheckCircleIcon;
 exports.CheckIcon = CheckIcon;
 exports.CheckInIcon = CheckInIcon;
 exports.CheckInoutIcon = CheckInoutIcon;
