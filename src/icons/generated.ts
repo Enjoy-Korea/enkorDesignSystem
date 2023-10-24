@@ -139,6 +139,7 @@ export { ShuttleBusIcon } from './generated/ShuttleBusIcon';
 export { SimCardIcon } from './generated/SimCardIcon';
 export { SingleBedroomIcon } from './generated/SingleBedroomIcon';
 export { SmokingIcon } from './generated/SmokingIcon';
+export { SolidQuestionMarkCircleIcon } from './generated/SolidQuestionMarkCircleIcon';
 export { SpaIcon } from './generated/SpaIcon';
 export { SparklesIcon } from './generated/SparklesIcon';
 export { SpeakerPhoneIcon } from './generated/SpeakerPhoneIcon';
