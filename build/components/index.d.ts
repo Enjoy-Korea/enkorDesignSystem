@@ -1,1 +1,1 @@
-export { Button } from "./Button/Button";
+export { Typo } from "./Typo/Typo";
