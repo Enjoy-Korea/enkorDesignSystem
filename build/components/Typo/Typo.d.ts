@@ -1,6 +1,5 @@
 import React, { HTMLAttributes, ReactNode } from "react";
-import { grayScale, yellow, blue, red, orange, green } from "../../colors";
-export type ColorType = (typeof grayScale)[keyof typeof grayScale] | (typeof yellow)[keyof typeof yellow] | (typeof blue)[keyof typeof blue] | (typeof red)[keyof typeof red] | (typeof orange)[keyof typeof orange] | (typeof green)[keyof typeof green];
+import { ColorType } from "../../colors/types";
 export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
     children: ReactNode | string;
     name: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
