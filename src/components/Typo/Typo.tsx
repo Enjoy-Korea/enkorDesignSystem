@@ -8,8 +8,8 @@ import styled from "styled-components";
 import { grayScale } from "../../colors";
 import { ColorType } from "../../colors/types";
 
-export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
-  children: ReactNode | string;
+export interface HeadingProps
+  extends PropsWithChildren<HTMLAttributes<HTMLHeadingElement>> {
   name: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   color?: ColorType;
 }
@@ -64,8 +64,8 @@ export const Heading = ({
   return <StyledHeading {...rest}>{children}</StyledHeading>;
 };
 
-export interface TextProps extends HTMLAttributes<HTMLElement> {
-  children: ReactNode | string;
+export interface TextProps
+  extends PropsWithChildren<HTMLAttributes<HTMLElement>> {
   name:
     | "strongM"
     | "strongS"
