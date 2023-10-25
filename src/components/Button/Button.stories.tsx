@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Button from './Button';
+import { Button } from "./Button";
 
 export default {
-  title: 'components/Button',
+  title: "components/Button",
   component: Button,
 };
 
@@ -12,7 +12,7 @@ export const button = () => {
 };
 
 button.story = {
-  name: 'Default'
+  name: "Default",
 };
 
 export const primaryButton = () => {
