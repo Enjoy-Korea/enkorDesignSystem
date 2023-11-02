@@ -11,7 +11,11 @@
     "build": "rollup -c",
     "generated-icon-export": "node src/icons/tools/generate-export.js",
     "generated-svgr": "cd src/icons/svgs && npx @svgr/cli --template ../tools/svgr-cli.template.js --config-file ../tools/.svgrrc *.svg --out-dir ../generated --ext tsx",
-    "svgr": "yarn generated-svgr && yarn generated-icon-export"
+    "svgr": "yarn generated-svgr && yarn generated-icon-export",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint:all": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "eslint --fix --ext .ts,.tsx .",
+    "prettier": "prettier --cache --write ."
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
