@@ -78,6 +78,7 @@
     ],
 
     // import order
+    "import/newline-after-import": ["warn", { "count": 1 }],
     "import/order": [
       "warn",
       {

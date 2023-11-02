@@ -1,5 +1,7 @@
 import React from "react";
+
 import type { IconProps } from "../types";
+
 export const ToastMachineIcon = ({
   size = 24,
   fillColor = "none",

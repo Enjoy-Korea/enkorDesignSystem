@@ -1,5 +1,7 @@
 import React from "react";
+
 import type { IconProps } from "../types";
+
 export const NoSmokingIcon = ({
   size = 24,
   fillColor = "none",
