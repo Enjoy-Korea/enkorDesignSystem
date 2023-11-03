@@ -1,5 +1,7 @@
 import React from "react";
+
 import type { IconProps } from "../types";
+
 export const ChatIcon = ({
   size = 24,
   fillColor = "none",

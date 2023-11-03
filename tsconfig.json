@@ -21,6 +21,6 @@
     // "emitDeclarationOnly": true,
     "jsx": "react"
   },
-  "include": ["src", "node_modules/*"],
+  "include": ["src/**/*", "node_modules/*"],
   "exclude": ["node_modules", "build", "src/**/*.stories.tsx"]
 }

@@ -22,14 +22,14 @@ function defaultTemplate(api, opts, state) {
     (child) =>
       child.type === "JSXElement" &&
       (child.openingElement.name.name === "path" ||
-        child.openingElement.name.name === "circle")
+        child.openingElement.name.name === "circle"),
   );
 
   // Update stroke attribute for each path and circle element
   elementsToModify.forEach((element) => {
     element.openingElement.attributes =
       element.openingElement.attributes.filter(
-        (attribute) => !(attribute.name && attribute.name.name === "stroke")
+        (attribute) => !(attribute.name && attribute.name.name === "stroke"),
       );
 
     element.openingElement.attributes.push({

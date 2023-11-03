@@ -1,12 +1,9 @@
-import React, {
-  HTMLAttributes,
-  PropsWithChildren,
-  ReactElement,
-  ReactNode,
-} from "react";
+import React, { HTMLAttributes, PropsWithChildren } from "react";
+
 import styled from "styled-components";
-import { grayScale } from "../../colors";
+
 import { ColorType } from "../../colors/types";
+import { grayScale } from "../../colors";
 
 export interface HeadingProps
   extends PropsWithChildren<HTMLAttributes<HTMLHeadingElement>> {

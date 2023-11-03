@@ -31,7 +31,7 @@ fs.writeFileSync(path.join(defaultPath, "generated.ts"), "", "utf8");
 // 기존 generated.ts 파일에서 export 문을 추출하여 existingExports Set에 저장
 const existingExportContent = fs.readFileSync(
   path.join(defaultPath, "generated.ts"),
-  "utf8"
+  "utf8",
 );
 const existingExports = new Set();
 existingExportContent.split("\n").forEach((line) => {
@@ -74,7 +74,7 @@ if (newExportCode) {
   // 기존 파일 내용 읽기
   const existingContent = fs.readFileSync(
     path.join(defaultPath, "generated.ts"),
-    "utf8"
+    "utf8",
   );
 
   // 새로운 export 코드 추가
@@ -92,6 +92,6 @@ if (newExportCode) {
         throw error;
       }
       console.log("generated.ts has been updated!");
-    }
+    },
   );
 }
