@@ -148,10 +148,42 @@ var Heading = function Heading(_a) {
       weight: "600"
     }
   };
+  var filterMobileHeadingStyle = {
+    h1: {
+      size: "32px",
+      lineHeight: "40px",
+      weight: "700"
+    },
+    h2: {
+      size: "28px",
+      lineHeight: "36px",
+      weight: "700"
+    },
+    h3: {
+      size: "24px",
+      lineHeight: "32px",
+      weight: "700"
+    },
+    h4: {
+      size: "22px",
+      lineHeight: "28px",
+      weight: "600"
+    },
+    h5: {
+      size: "18px",
+      lineHeight: "24px",
+      weight: "600"
+    },
+    h6: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "600"
+    }
+  };
   var StyledHeading = styled[name].withConfig({
     displayName: "Typo__StyledHeading",
     componentId: "sc-1g34h81-0"
-  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n  "], ["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n  "])), filterHeadingStyle[name].size, filterHeadingStyle[name].lineHeight, filterHeadingStyle[name].weight, color);
+  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n\n    @media screen and (max-width: 1024px) {\n      font-size: ", ";\n      line-height: ", ";\n      font-weight: ", ";\n    }\n  "], ["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n\n    @media screen and (max-width: 1024px) {\n      font-size: ", ";\n      line-height: ", ";\n      font-weight: ", ";\n    }\n  "])), filterHeadingStyle[name].size, filterHeadingStyle[name].lineHeight, filterHeadingStyle[name].weight, color, filterMobileHeadingStyle[name].size, filterMobileHeadingStyle[name].lineHeight, filterMobileHeadingStyle[name].weight);
   return /*#__PURE__*/React.createElement(StyledHeading, __assign({}, rest), children);
 };
 var Text = function Text(_a) {
@@ -208,10 +240,57 @@ var Text = function Text(_a) {
       weight: "400"
     }
   };
+  var filterMobileTextStyle = {
+    strongM: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "600"
+    },
+    strongS: {
+      size: "14px",
+      lineHeight: "20px",
+      weight: "600"
+    },
+    l: {
+      size: "16px",
+      lineHeight: "26px",
+      weight: "400"
+    },
+    spacedM: {
+      size: "16px",
+      lineHeight: "26px",
+      weight: "400"
+    },
+    m: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "400"
+    },
+    spacedS: {
+      size: "14px",
+      lineHeight: "22px",
+      weight: "400"
+    },
+    s: {
+      size: "14px",
+      lineHeight: "20px",
+      weight: "400"
+    },
+    xs: {
+      size: "12px",
+      lineHeight: "16px",
+      weight: "400"
+    },
+    xxs: {
+      size: "10px",
+      lineHeight: "14px",
+      weight: "400"
+    }
+  };
   var StyledText = styled[element].withConfig({
     displayName: "Typo__StyledText",
     componentId: "sc-1g34h81-1"
-  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n  "], ["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n  "])), filterTextStyle[name].size, filterTextStyle[name].lineHeight, filterTextStyle[name].weight, color);
+  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n    \n    @media screen and (max-width: 1024px) {\n      font-size: ", ";\n      line-height: ", ";\n      font-weight: ", ";\n    }\n  "], ["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n    \n    @media screen and (max-width: 1024px) {\n      font-size: ", ";\n      line-height: ", ";\n      font-weight: ", ";\n    }\n  "])), filterTextStyle[name].size, filterTextStyle[name].lineHeight, filterTextStyle[name].weight, color, filterMobileTextStyle[name].size, filterMobileTextStyle[name].lineHeight, filterMobileTextStyle[name].weight);
   return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest), children);
 };
 var Typo = {
@@ -275,7 +354,7 @@ var AirConditinerIcon = function AirConditinerIcon(_a) {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    d: "M12.001 2v19.63M14.53 4.103a4.884 4.884 0 0 1-2.53.701 4.884 4.884 0 0 1-2.529-.701M9.47 19.527a4.912 4.912 0 0 1 5.06 0M20.5 6.907l-17 9.815M19.942 10.15a4.911 4.911 0 0 1-2.528-4.382M4.057 13.481a4.911 4.911 0 0 1 2.529 4.382M3.5 6.907l17 9.815M4.057 10.15a4.91 4.91 0 0 0 2.529-4.382M19.942 13.481a4.911 4.911 0 0 0-2.528 4.382",
+    d: "M12.001 2v19.63M14.53 4.103a4.884 4.884 0 0 1-2.53.701 4.884 4.884 0 0 1-2.529-.701M9.47 19.527a4.912 4.912 0 0 1 5.06 0M20.5 6.907l-17 9.815M19.943 10.15a4.911 4.911 0 0 1-2.53-4.382M4.057 13.481a4.911 4.911 0 0 1 2.529 4.382M3.5 6.907l17 9.815M4.057 10.15a4.91 4.91 0 0 0 2.529-4.382M19.943 13.481a4.911 4.911 0 0 0-2.53 4.382",
     stroke: strokeColor
   }));
 };
@@ -2743,7 +2822,7 @@ var Filter2Icon = function Filter2Icon(_a) {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    d: "M7.39 6.225h13.171M3.439 12.448h10.366m0 0c0 1.227.983 2.223 2.195 2.223 1.212 0 2.195-.995 2.195-2.223m-4.39 0c0-1.228.983-2.223 2.195-2.223 1.212 0 2.195.995 2.195 2.223m0 0h2.366m-13.17 6.054h13.17M7.391 6.222c0 1.228-.984 2.223-2.196 2.223C3.983 8.445 3 7.45 3 6.223 3 4.995 3.983 4 5.195 4c1.212 0 2.195.995 2.195 2.223Zm0 12.278c0 1.227-.984 2.223-2.196 2.223C3.983 20.723 3 19.727 3 18.5c0-1.227.983-2.223 2.195-2.223 1.212 0 2.195.995 2.195 2.223Z",
+    d: "M7.39 6.225h13.171M3.439 12.448h10.366m0 0c0 1.227.983 2.223 2.195 2.223 1.212 0 2.195-.995 2.195-2.223m-4.39 0c0-1.228.983-2.223 2.195-2.223 1.212 0 2.195.995 2.195 2.223m0 0h2.366m-13.17 6.054h13.17M7.391 6.222c0 1.228-.984 2.223-2.196 2.223C3.983 8.445 3 7.45 3 6.223 3 4.995 3.983 4 5.195 4c1.212 0 2.195.995 2.195 2.223Zm0 12.278c0 1.227-.984 2.223-2.196 2.223C3.983 20.723 3 19.728 3 18.5c0-1.227.983-2.222 2.195-2.222 1.212 0 2.195.995 2.195 2.222Z",
     stroke: strokeColor
   }));
 };
@@ -3597,7 +3676,7 @@ var MessageIcon = function MessageIcon(_a) {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    d: "M5.422 12.275v6.43l2.995-2.756L12.695 21 22 3 2 8.602l3.422 3.673Zm0 0 7.273-3.673",
+    d: "M5.422 12.276v6.428l2.995-2.755L12.695 21 22 3 2 8.602l3.422 3.673Zm0 0 7.273-3.674",
     stroke: strokeColor
   }));
 };
@@ -5106,14 +5185,14 @@ var SolidQuestionMarkCircleIcon = function SolidQuestionMarkCircleIcon(_a) {
     className: className,
     viewBox: viewBox
   }, /*#__PURE__*/React.createElement("circle", {
-    cx: 7,
-    cy: 7,
-    r: 7,
-    fill: "#ececec",
+    cx: 12,
+    cy: 12,
+    r: 12,
+    fill: "#ECECEC",
     stroke: strokeColor
   }), /*#__PURE__*/React.createElement("path", {
-    fill: "#8b8b8b",
-    d: "M7.182 8.598h-1.09c.004-.375.037-.682.1-.92a1.97 1.97 0 0 1 .322-.662 7.12 7.12 0 0 1 .592-.68l.492-.516a2.26 2.26 0 0 0 .369-.527c.094-.191.141-.42.141-.686s-.049-.502-.146-.697-.234-.346-.422-.451-.412-.158-.686-.158a1.71 1.71 0 0 0-.645.123 1.11 1.11 0 0 0-.492.381c-.125.168-.189.389-.193.662H4.439c.008-.441.117-.82.328-1.137a2.08 2.08 0 0 1 .867-.727 2.87 2.87 0 0 1 1.219-.252c.496 0 .918.09 1.266.27a1.85 1.85 0 0 1 .803.773c.184.332.275.727.275 1.184 0 .352-.072.676-.217.973s-.322.568-.545.826a9.72 9.72 0 0 1-.709.738 1.5 1.5 0 0 0-.434.674 2.83 2.83 0 0 0-.111.809zm-1.137 1.857a.64.64 0 0 1 .164-.445c.109-.121.268-.182.475-.182s.371.061.48.182a.64.64 0 0 1 .164.445c0 .168-.055.313-.164.434s-.27.182-.48.182-.365-.06-.475-.182-.164-.266-.164-.434z",
+    fill: "#8B8B8B",
+    d: "M12.61 14.746h-1.832c.007-.645.063-1.173.168-1.583.111-.416.292-.796.542-1.139.25-.342.581-.732.995-1.17.302-.315.578-.61.827-.886.256-.283.463-.585.621-.908.158-.329.237-.722.237-1.179 0-.464-.083-.864-.247-1.2a1.712 1.712 0 0 0-.71-.776c-.308-.181-.692-.272-1.152-.272-.38 0-.742.07-1.084.212a1.87 1.87 0 0 0-.827.655c-.21.289-.319.669-.325 1.14H8c.013-.76.197-1.412.552-1.957a3.517 3.517 0 0 1 1.458-1.25C10.62 4.144 11.304 4 12.06 4c.833 0 1.543.155 2.127.464.591.309 1.041.752 1.35 1.33.309.572.463 1.25.463 2.037 0 .604-.121 1.162-.364 1.673a6.437 6.437 0 0 1-.917 1.421 16.56 16.56 0 0 1-1.192 1.27c-.361.343-.604.73-.729 1.16-.125.43-.187.894-.187 1.391Zm-1.91 3.196c0-.303.091-.558.275-.767.184-.208.45-.312.798-.312.355 0 .624.104.808.312.184.209.276.464.276.767 0 .288-.092.537-.276.745-.184.209-.453.313-.808.313-.348 0-.614-.104-.798-.312a1.09 1.09 0 0 1-.275-.746Z",
     stroke: strokeColor
   }));
 };
@@ -5148,7 +5227,7 @@ var SpaIcon = function SpaIcon(_a) {
   }), /*#__PURE__*/React.createElement("path", {
     fill: "#515151",
     fillRule: "evenodd",
-    d: "M4.623 10.96C3.521 11.975 3 13.124 3 14.223c0 1.325.757 2.722 2.376 3.867 1.615 1.142 3.95 1.91 6.624 1.91 2.673 0 5.009-.768 6.623-1.91C20.244 16.944 21 15.547 21 14.222c0-1.325-.757-2.721-2.377-3.867a8.87 8.87 0 0 0-.957-.587c.13-.517.514-1.048 1.27-1.583 2.48 1.426 4.064 3.6 4.064 6.037C23 18.518 18.075 22 12 22S1 18.518 1 14.222c0-2.416 1.559-4.576 4.004-6.002-.435.765-.542 1.761-.38 2.74Z",
+    d: "M4.623 10.96C3.521 11.975 3 13.124 3 14.223c0 1.325.757 2.722 2.376 3.867 1.615 1.142 3.95 1.91 6.624 1.91 2.673 0 5.009-.768 6.624-1.91C20.244 16.944 21 15.547 21 14.222c0-1.325-.757-2.721-2.376-3.867a8.87 8.87 0 0 0-.958-.587c.13-.517.514-1.048 1.27-1.583 2.48 1.426 4.064 3.6 4.064 6.037C23 18.518 18.075 22 12 22S1 18.518 1 14.222c0-2.416 1.559-4.576 4.004-6.002-.435.765-.542 1.761-.38 2.74Z",
     clipRule: "evenodd",
     stroke: strokeColor
   }));
@@ -6072,7 +6151,7 @@ var WalkingIcon = function WalkingIcon(_a) {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    d: "M13 8a8.227 8.227 0 0 1-.761 3.444 9.002 9.002 0 0 1-2.168 2.92 10.14 10.14 0 0 1-3.244 1.95A10.972 10.972 0 0 1 3 17M17 22a7.001 7.001 0 0 0-7-7M20 14c-1.857 0-3.637-.632-4.95-1.757C13.737 11.117 13 9.59 13 8",
+    d: "M13 8a8.227 8.227 0 0 1-.761 3.444 9.002 9.002 0 0 1-2.168 2.92 10.14 10.14 0 0 1-3.244 1.95A10.972 10.972 0 0 1 3 17M17 22a7.001 7.001 0 0 0-7-7M20 14c-1.857 0-3.637-.632-4.95-1.757C13.738 11.117 13 9.59 13 8",
     stroke: strokeColor
   }), /*#__PURE__*/React.createElement("circle", {
     cx: 15,
@@ -6232,7 +6311,7 @@ var WaterDispenserIcon = function WaterDispenserIcon(_a) {
   }), /*#__PURE__*/React.createElement("path", {
     strokeMiterlimit: 10,
     strokeWidth: 2,
-    d: "M18 13.883c0 1.3-.773 2.117-2 2.117-1.227 0-2-.818-2-2.117 0-1.395 1.434-3.277 1.873-3.821A.166.166 0 0 1 16 10c.024 0 .048.005.07.016.022.01.041.026.057.046.44.544 1.873 2.426 1.873 3.82Z",
+    d: "M18 13.883c0 1.3-.773 2.117-2 2.117-1.227 0-2-.818-2-2.117 0-1.395 1.434-3.277 1.874-3.821A.166.166 0 0 1 16 10c.024 0 .048.005.07.016.022.01.041.026.057.046.44.544 1.873 2.426 1.873 3.82Z",
     stroke: strokeColor
   }));
 };
