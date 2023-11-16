@@ -216,9 +216,7 @@ var Heading = function Heading(_a) {
     color = _b === void 0 ? grayScale.main : _b,
     children = _a.children,
     rest = __rest(_a, ["name", "color", "children"]);
-  var StyledHeading = React.useMemo(function () {
-    return StyledHeadings[name];
-  }, [name]);
+  var StyledHeading = StyledHeadings[name];
   if (!StyledHeading) return null;
   return /*#__PURE__*/React.createElement(StyledHeading, __assign({
     color: color
@@ -358,9 +356,7 @@ var Text = function Text(_a) {
     _b = _a.element,
     element = _b === void 0 ? "p" : _b,
     rest = __rest(_a, ["name", "color", "children", "element"]);
-  var StyledText = React.useMemo(function () {
-    return createStyledText(name, element, color);
-  }, [name, element, color]);
+  var StyledText = createStyledText(name, element, color);
   if (!StyledText) return null;
   return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest), children);
 };

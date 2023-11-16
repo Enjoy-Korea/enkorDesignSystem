@@ -82,7 +82,7 @@ export const Heading = ({
   children,
   ...rest
 }: HeadingProps) => {
-  const StyledHeading = useMemo(() => StyledHeadings[name], [name]);
+  const StyledHeading = StyledHeadings[name];
 
   if (!StyledHeading) return null;
 
@@ -189,10 +189,7 @@ export const Text = ({
   element = "p",
   ...rest
 }: TextProps) => {
-  const StyledText = useMemo(
-    () => createStyledText(name, element, color),
-    [name, element, color],
-  );
+  const StyledText = createStyledText(name, element, color);
 
   if (!StyledText) return null;
 
