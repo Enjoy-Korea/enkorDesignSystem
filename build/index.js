@@ -110,13 +110,8 @@ var green = {
   opacity: "#F3FFF4"
 };
 
-var Heading = function Heading(_a) {
-  var name = _a.name,
-    _b = _a.color,
-    color = _b === void 0 ? grayScale.main : _b,
-    children = _a.children,
-    rest = __rest(_a, ["name", "color", "children"]);
-  var filterHeadingStyle = {
+var baseHeadingStyle = {
+  desktop: {
     h1: {
       size: "36px",
       lineHeight: "44px",
@@ -147,21 +142,90 @@ var Heading = function Heading(_a) {
       lineHeight: "24px",
       weight: "600"
     }
-  };
-  var StyledHeading = styled[name].withConfig({
-    displayName: "Typo__StyledHeading",
-    componentId: "sc-1g34h81-0"
-  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n  "], ["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n  "])), filterHeadingStyle[name].size, filterHeadingStyle[name].lineHeight, filterHeadingStyle[name].weight, color);
-  return /*#__PURE__*/React.createElement(StyledHeading, __assign({}, rest), children);
+  },
+  mobile: {
+    h1: {
+      size: "32px",
+      lineHeight: "40px",
+      weight: "700"
+    },
+    h2: {
+      size: "28px",
+      lineHeight: "36px",
+      weight: "700"
+    },
+    h3: {
+      size: "24px",
+      lineHeight: "32px",
+      weight: "700"
+    },
+    h4: {
+      size: "22px",
+      lineHeight: "28px",
+      weight: "600"
+    },
+    h5: {
+      size: "18px",
+      lineHeight: "24px",
+      weight: "600"
+    },
+    h6: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "600"
+    }
+  }
 };
-var Text = function Text(_a) {
+var createStyledHeading = function createStyledHeading(name) {
+  return styled[name].withConfig({
+    displayName: "Typo",
+    componentId: "sc-1g34h81-0"
+  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), baseHeadingStyle.desktop[name].size, baseHeadingStyle.desktop[name].lineHeight, baseHeadingStyle.desktop[name].weight, function (props) {
+    return props.color || grayScale.main;
+  }, baseHeadingStyle.mobile[name].size, baseHeadingStyle.mobile[name].lineHeight, baseHeadingStyle.mobile[name].weight);
+};
+var StyledHeadings = {
+  h1: createStyledHeading("h1"),
+  h2: createStyledHeading("h2"),
+  h3: createStyledHeading("h3"),
+  h4: createStyledHeading("h4"),
+  h5: createStyledHeading("h5"),
+  h6: createStyledHeading("h6")
+};
+/**
+ *  - desktop(데스크탑 환경)
+ *    - h1: { size: 36px, lineHeight: 44px, weight: 700 }
+ *    - h2: { size: 32px, lineHeight: 40px, weight: 700 }
+ *    - h3: { size: 28px, lineHeight: 36px, weight: 700 }
+ *    - h4: { size: 24px, lineHeight: 32px, weight: 600 }
+ *    - h5: { size: 20px, lineHeight: 28px, weight: 600 }
+ *    - h6: { size: 18px, lineHeight: 24px, weight: 600 }
+
+ *  -------------------------------------------------------------------
+ *  - mobile(모바일 환경)
+ *    - h1: { size: 32px, lineHeight: 40px, weight: 700 }
+ *    - h2: { size: 28px, lineHeight: 36px, weight: 700 }
+ *    - h3: { size: 24px, lineHeight: 32px, weight: 700 }
+ *    - h4: { size: 22px, lineHeight: 28px, weight: 600 }
+ *    - h5: { size: 18px, lineHeight: 24px, weight: 600 }
+ *    - h6: { size: 16px, lineHeight: 22px, weight: 600 }
+ */
+var Heading = function Heading(_a) {
   var name = _a.name,
-    color = _a.color,
+    _b = _a.color,
+    color = _b === void 0 ? grayScale.main : _b,
     children = _a.children,
-    _b = _a.element,
-    element = _b === void 0 ? "p" : _b,
-    rest = __rest(_a, ["name", "color", "children", "element"]);
-  var filterTextStyle = {
+    rest = __rest(_a, ["name", "color", "children"]);
+  var StyledHeading = React.useMemo(function () {
+    return StyledHeadings[name];
+  }, [name]);
+  if (!StyledHeading) return null;
+  return /*#__PURE__*/React.createElement(StyledHeading, __assign({
+    color: color
+  }, rest), children);
+};
+var baseTextStyle = {
+  desktop: {
     strongM: {
       size: "16px",
       lineHeight: "22px",
@@ -172,23 +236,23 @@ var Text = function Text(_a) {
       lineHeight: "20px",
       weight: "600"
     },
-    l: {
-      size: "18px",
-      lineHeight: "30px",
-      weight: "400"
-    },
     spacedM: {
       size: "16px",
       lineHeight: "26px",
       weight: "400"
     },
-    m: {
-      size: "16px",
+    spacedS: {
+      size: "14px",
       lineHeight: "22px",
       weight: "400"
     },
-    spacedS: {
-      size: "14px",
+    l: {
+      size: "18px",
+      lineHeight: "30px",
+      weight: "400"
+    },
+    m: {
+      size: "16px",
       lineHeight: "22px",
       weight: "400"
     },
@@ -207,13 +271,100 @@ var Text = function Text(_a) {
       lineHeight: "14px",
       weight: "400"
     }
-  };
-  var StyledText = styled[element].withConfig({
-    displayName: "Typo__StyledText",
+  },
+  mobile: {
+    strongM: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "600"
+    },
+    strongS: {
+      size: "14px",
+      lineHeight: "20px",
+      weight: "600"
+    },
+    spacedM: {
+      size: "16px",
+      lineHeight: "26px",
+      weight: "400"
+    },
+    spacedS: {
+      size: "14px",
+      lineHeight: "22px",
+      weight: "400"
+    },
+    l: {
+      size: "16px",
+      lineHeight: "26px",
+      weight: "400"
+    },
+    m: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "400"
+    },
+    s: {
+      size: "14px",
+      lineHeight: "20px",
+      weight: "400"
+    },
+    xs: {
+      size: "12px",
+      lineHeight: "16px",
+      weight: "400"
+    },
+    xxs: {
+      size: "10px",
+      lineHeight: "14px",
+      weight: "400"
+    }
+  }
+};
+var createStyledText = function createStyledText(name, element, color) {
+  return styled[element].withConfig({
+    displayName: "Typo",
     componentId: "sc-1g34h81-1"
-  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n  "], ["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n  "])), filterTextStyle[name].size, filterTextStyle[name].lineHeight, filterTextStyle[name].weight, color);
+  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), baseTextStyle.desktop[name].size, baseTextStyle.desktop[name].lineHeight, baseTextStyle.desktop[name].weight, color !== null && color !== void 0 ? color : grayScale.main, baseTextStyle.mobile[name].size, baseTextStyle.mobile[name].lineHeight, baseTextStyle.mobile[name].weight);
+};
+/**
+ *  - desktop(데스크탑 환경)
+ *    - strongM: { size: 16px, lineHeight: 22px, weight: 600 }
+ *    - strongS: { size: 14px, lineHeight: 20px, weight: 600 }
+ *    - spacedM: { size: 16px, lineHeight: 26px, weight: 400 }
+ *    - spacedS: { size: 14px, lineHeight: 22px, weight: 400 }
+ *    - l: { size: 18px, lineHeight: 30px, weight: 400 }
+ *    - m: { size: 16px, lineHeight: 22px, weight: 400 }
+ *    - s: { size: 14px, lineHeight: 20px, weight: 400 }
+ *    - xs: { size: 12px, lineHeight: 16px, weight: 400 }
+ *    - xxs: { size: 10px, lineHeight: 14px, weight: 400 }
+ *
+ *  -------------------------------------------------------------------
+ *
+ *  - mobile(모바일 환경)
+ *    - strongM: { size: 16px, lineHeight: 22px, weight: 600 }
+ *    - strongS: { size: 14px, lineHeight: 20px, weight: 600 }
+ *    - spacedM: { size: 16px, lineHeight: 26px, weight: 400 }
+ *    - spacedS: { size: 14px, lineHeight: 22px, weight: 400 }
+ *    - l: { size: 16px, lineHeight: 26px, weight: 400 }
+ *    - m: { size: 16px, lineHeight: 22px, weight: 400 }
+ *    - s: { size: 14px, lineHeight: 20px, weight: 400 }
+ *    - xs: { size: 12px, lineHeight: 16px, weight: 400 }
+ *    - xxs: { size: 10px, lineHeight: 14px, weight: 400 }
+ */
+var Text = function Text(_a) {
+  var name = _a.name,
+    color = _a.color,
+    children = _a.children,
+    _b = _a.element,
+    element = _b === void 0 ? "p" : _b,
+    rest = __rest(_a, ["name", "color", "children", "element"]);
+  var StyledText = React.useMemo(function () {
+    return createStyledText(name, element, color);
+  }, [name, element, color]);
+  if (!StyledText) return null;
   return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest), children);
 };
+// ------------------------------------------------------------
 var Typo = {
   Heading: Heading,
   Text: Text
