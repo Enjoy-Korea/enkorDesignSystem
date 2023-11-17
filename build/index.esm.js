@@ -182,14 +182,6 @@ var createStyledHeading = function createStyledHeading(name) {
     return props.color || grayScale.main;
   }, baseHeadingStyle.mobile[name].size, baseHeadingStyle.mobile[name].lineHeight, baseHeadingStyle.mobile[name].weight);
 };
-var StyledHeadings = {
-  h1: createStyledHeading("h1"),
-  h2: createStyledHeading("h2"),
-  h3: createStyledHeading("h3"),
-  h4: createStyledHeading("h4"),
-  h5: createStyledHeading("h5"),
-  h6: createStyledHeading("h6")
-};
 /**
  *  - desktop(데스크탑 환경)
  *    - h1: { size: 36px, lineHeight: 44px, weight: 700 }
@@ -200,6 +192,7 @@ var StyledHeadings = {
  *    - h6: { size: 18px, lineHeight: 24px, weight: 600 }
 
  *  -------------------------------------------------------------------
+
  *  - mobile(모바일 환경)
  *    - h1: { size: 32px, lineHeight: 40px, weight: 700 }
  *    - h2: { size: 28px, lineHeight: 36px, weight: 700 }
@@ -214,7 +207,7 @@ var Heading = function Heading(_a) {
     color = _b === void 0 ? grayScale.main : _b,
     children = _a.children,
     rest = __rest(_a, ["name", "color", "children"]);
-  var StyledHeading = StyledHeadings[name];
+  var StyledHeading = createStyledHeading(name);
   if (!StyledHeading) return null;
   return /*#__PURE__*/React.createElement(StyledHeading, __assign({
     color: color

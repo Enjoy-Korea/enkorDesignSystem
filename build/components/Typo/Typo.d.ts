@@ -14,6 +14,7 @@ export interface HeadingProps extends PropsWithChildren<HTMLAttributes<HTMLHeadi
  *    - h6: { size: 18px, lineHeight: 24px, weight: 600 }
 
  *  -------------------------------------------------------------------
+
  *  - mobile(모바일 환경)
  *    - h1: { size: 32px, lineHeight: 40px, weight: 700 }
  *    - h2: { size: 28px, lineHeight: 36px, weight: 700 }

@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, PropsWithChildren, useMemo } from "react";
+import React, { HTMLAttributes, PropsWithChildren } from "react";
 
 import styled from "styled-components";
 
@@ -48,15 +48,6 @@ const createStyledHeading = (name: HeadingProps["name"]) => styled[name]`
   }
 `;
 
-const StyledHeadings = {
-  h1: createStyledHeading("h1"),
-  h2: createStyledHeading("h2"),
-  h3: createStyledHeading("h3"),
-  h4: createStyledHeading("h4"),
-  h5: createStyledHeading("h5"),
-  h6: createStyledHeading("h6"),
-};
-
 /**
  *  - desktop(데스크탑 환경)
  *    - h1: { size: 36px, lineHeight: 44px, weight: 700 }
@@ -67,6 +58,7 @@ const StyledHeadings = {
  *    - h6: { size: 18px, lineHeight: 24px, weight: 600 }
 
  *  -------------------------------------------------------------------
+
  *  - mobile(모바일 환경)
  *    - h1: { size: 32px, lineHeight: 40px, weight: 700 }
  *    - h2: { size: 28px, lineHeight: 36px, weight: 700 }
@@ -82,7 +74,7 @@ export const Heading = ({
   children,
   ...rest
 }: HeadingProps) => {
-  const StyledHeading = StyledHeadings[name];
+  const StyledHeading = createStyledHeading(name);
 
   if (!StyledHeading) return null;
 
