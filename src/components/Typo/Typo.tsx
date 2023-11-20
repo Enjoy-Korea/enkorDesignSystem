@@ -13,43 +13,41 @@ export interface HeadingProps
   color?: ColorType;
 }
 
-const desktopHeadingStyle = {
-  h1: { size: "36px", lineHeight: "44px", weight: "700" },
-  h2: { size: "32px", lineHeight: "40px", weight: "700" },
-  h3: { size: "28px", lineHeight: "36px", weight: "700" },
-  h4: { size: "24px", lineHeight: "32px", weight: "600" },
-  h5: { size: "20px", lineHeight: "28px", weight: "600" },
-  h6: { size: "18px", lineHeight: "24px", weight: "600" },
+const baseHeadingStyle = {
+  desktop: {
+    h1: { size: "36px", lineHeight: "44px", weight: "700" },
+    h2: { size: "32px", lineHeight: "40px", weight: "700" },
+    h3: { size: "28px", lineHeight: "36px", weight: "700" },
+    h4: { size: "24px", lineHeight: "32px", weight: "600" },
+    h5: { size: "20px", lineHeight: "28px", weight: "600" },
+    h6: { size: "18px", lineHeight: "24px", weight: "600" },
+  },
+  mobile: {
+    h1: { size: "32px", lineHeight: "40px", weight: "700" },
+    h2: { size: "28px", lineHeight: "36px", weight: "700" },
+    h3: { size: "24px", lineHeight: "32px", weight: "700" },
+    h4: { size: "22px", lineHeight: "28px", weight: "600" },
+    h5: { size: "18px", lineHeight: "24px", weight: "600" },
+    h6: { size: "16px", lineHeight: "22px", weight: "600" },
+  },
 };
 
-const mobileHeadingStyle = {
-  h1: { size: "32px", lineHeight: "40px", weight: "700" },
-  h2: { size: "28px", lineHeight: "36px", weight: "700" },
-  h3: { size: "24px", lineHeight: "32px", weight: "700" },
-  h4: { size: "22px", lineHeight: "28px", weight: "600" },
-  h5: { size: "18px", lineHeight: "24px", weight: "600" },
-  h6: { size: "16px", lineHeight: "22px", weight: "600" },
-};
+const createStyledHeading = (
+  name: HeadingProps["name"],
+  color: TextProps["color"],
+) => styled.h1`
+  font-size: ${baseHeadingStyle.desktop[name].size};
+  line-height: ${baseHeadingStyle.desktop[name].lineHeight};
+  font-weight: ${baseHeadingStyle.desktop[name].weight};
 
-const createStyledHeading = ({
-  heading,
-  element,
-}: {
-  heading: HeadingProps["name"];
-  element: HeadingProps["name"];
-}) => styled[element]`
-  font-size: ${desktopHeadingStyle[heading].size};
-  line-height: ${desktopHeadingStyle[heading].lineHeight};
-  font-weight: ${desktopHeadingStyle[heading].weight};
-
-  color: ${(props) => props.color || grayScale.main};
+  color: ${color ?? grayScale.main};
 
   margin: 0;
 
   @media screen and (max-width: 1024px) {
-    font-size: ${mobileHeadingStyle[heading].size};
-    line-height: ${mobileHeadingStyle[heading].lineHeight};
-    font-weight: ${mobileHeadingStyle[heading].weight};
+    font-size: ${baseHeadingStyle.mobile[name].size};
+    line-height: ${baseHeadingStyle.mobile[name].lineHeight};
+    font-weight: ${baseHeadingStyle.mobile[name].weight};
   }
 `;
 
@@ -59,13 +57,12 @@ export const Heading = ({
   children,
   ...rest
 }: HeadingProps) => {
-  const StyledHeading = createStyledHeading({ heading: name, element: name });
-  // eslint-disable-next-line no-console
-  console.log(`headingTest-${name}`, children);
+  const StyledHeading = createStyledHeading(name, color);
+
   if (!StyledHeading) return null;
 
   return (
-    <StyledHeading color={color} {...rest} id="test-heading-1">
+    <StyledHeading as={name} {...rest}>
       {children}
     </StyledHeading>
   );
@@ -89,47 +86,47 @@ export interface TextProps
   element?: "span" | "p";
 }
 
-const desktopTextStyle = {
-  strongM: { size: "16px", lineHeight: "22px", weight: "600" },
-  strongS: { size: "14px", lineHeight: "20px", weight: "600" },
-  spacedM: { size: "16px", lineHeight: "26px", weight: "400" },
-  spacedS: { size: "14px", lineHeight: "22px", weight: "400" },
-  l: { size: "18px", lineHeight: "30px", weight: "400" },
-  m: { size: "16px", lineHeight: "22px", weight: "400" },
-  s: { size: "14px", lineHeight: "20px", weight: "400" },
-  xs: { size: "12px", lineHeight: "16px", weight: "400" },
-  xxs: { size: "10px", lineHeight: "14px", weight: "400" },
-};
-
-const mobileTextStyle = {
-  strongM: { size: "16px", lineHeight: "22px", weight: "600" },
-  strongS: { size: "14px", lineHeight: "20px", weight: "600" },
-  spacedM: { size: "16px", lineHeight: "26px", weight: "400" },
-  spacedS: { size: "14px", lineHeight: "22px", weight: "400" },
-  l: { size: "16px", lineHeight: "26px", weight: "400" },
-  m: { size: "16px", lineHeight: "22px", weight: "400" },
-  s: { size: "14px", lineHeight: "20px", weight: "400" },
-  xs: { size: "12px", lineHeight: "16px", weight: "400" },
-  xxs: { size: "10px", lineHeight: "14px", weight: "400" },
+const commonTextStyle = {
+  desktop: {
+    strongM: { size: "16px", lineHeight: "22px", weight: "600" },
+    strongS: { size: "14px", lineHeight: "20px", weight: "600" },
+    spacedM: { size: "16px", lineHeight: "26px", weight: "400" },
+    spacedS: { size: "14px", lineHeight: "22px", weight: "400" },
+    l: { size: "18px", lineHeight: "30px", weight: "400" },
+    m: { size: "16px", lineHeight: "22px", weight: "400" },
+    s: { size: "14px", lineHeight: "20px", weight: "400" },
+    xs: { size: "12px", lineHeight: "16px", weight: "400" },
+    xxs: { size: "10px", lineHeight: "14px", weight: "400" },
+  },
+  mobile: {
+    strongM: { size: "16px", lineHeight: "22px", weight: "600" },
+    strongS: { size: "14px", lineHeight: "20px", weight: "600" },
+    spacedM: { size: "16px", lineHeight: "26px", weight: "400" },
+    spacedS: { size: "14px", lineHeight: "22px", weight: "400" },
+    l: { size: "16px", lineHeight: "26px", weight: "400" },
+    m: { size: "16px", lineHeight: "22px", weight: "400" },
+    s: { size: "14px", lineHeight: "20px", weight: "400" },
+    xs: { size: "12px", lineHeight: "16px", weight: "400" },
+    xxs: { size: "10px", lineHeight: "14px", weight: "400" },
+  },
 };
 
 const createStyledText = (
   name: TextProps["name"],
-  element: TextProps["element"],
   color: TextProps["color"],
-) => styled[element as "span" | "p"]`
-  font-size: ${desktopTextStyle[name].size};
-  line-height: ${desktopTextStyle[name].lineHeight};
-  font-weight: ${desktopTextStyle[name].weight};
+) => styled.p`
+  font-size: ${commonTextStyle.desktop[name].size};
+  line-height: ${commonTextStyle.desktop[name].lineHeight};
+  font-weight: ${commonTextStyle.desktop[name].weight};
 
   color: ${color ?? grayScale.main};
 
   margin: 0;
 
   @media screen and (max-width: 1024px) {
-    font-size: ${mobileTextStyle[name].size};
-    line-height: ${mobileTextStyle[name].lineHeight};
-    font-weight: ${mobileTextStyle[name].weight};
+    font-size: ${commonTextStyle.mobile[name].size};
+    line-height: ${commonTextStyle.mobile[name].lineHeight};
+    font-weight: ${commonTextStyle.mobile[name].weight};
   }
 `;
 
@@ -140,12 +137,15 @@ export const Text = ({
   element = "p",
   ...rest
 }: TextProps) => {
-  const StyledText = createStyledText(name, element, color);
-  // eslint-disable-next-line no-console
-  console.log(`textTest-${name}`, children);
+  const StyledText = createStyledText(name, color);
+
   if (!StyledText) return null;
 
-  return <StyledText {...rest}>{children}</StyledText>;
+  return (
+    <StyledText as={element} {...rest}>
+      {children}
+    </StyledText>
+  );
 };
 
 // ------------------------------------------------------------

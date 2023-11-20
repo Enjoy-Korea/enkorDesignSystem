@@ -108,79 +108,77 @@ var green = {
   opacity: "#F3FFF4"
 };
 
-var desktopHeadingStyle = {
-  h1: {
-    size: "36px",
-    lineHeight: "44px",
-    weight: "700"
+var baseHeadingStyle = {
+  desktop: {
+    h1: {
+      size: "36px",
+      lineHeight: "44px",
+      weight: "700"
+    },
+    h2: {
+      size: "32px",
+      lineHeight: "40px",
+      weight: "700"
+    },
+    h3: {
+      size: "28px",
+      lineHeight: "36px",
+      weight: "700"
+    },
+    h4: {
+      size: "24px",
+      lineHeight: "32px",
+      weight: "600"
+    },
+    h5: {
+      size: "20px",
+      lineHeight: "28px",
+      weight: "600"
+    },
+    h6: {
+      size: "18px",
+      lineHeight: "24px",
+      weight: "600"
+    }
   },
-  h2: {
-    size: "32px",
-    lineHeight: "40px",
-    weight: "700"
-  },
-  h3: {
-    size: "28px",
-    lineHeight: "36px",
-    weight: "700"
-  },
-  h4: {
-    size: "24px",
-    lineHeight: "32px",
-    weight: "600"
-  },
-  h5: {
-    size: "20px",
-    lineHeight: "28px",
-    weight: "600"
-  },
-  h6: {
-    size: "18px",
-    lineHeight: "24px",
-    weight: "600"
+  mobile: {
+    h1: {
+      size: "32px",
+      lineHeight: "40px",
+      weight: "700"
+    },
+    h2: {
+      size: "28px",
+      lineHeight: "36px",
+      weight: "700"
+    },
+    h3: {
+      size: "24px",
+      lineHeight: "32px",
+      weight: "700"
+    },
+    h4: {
+      size: "22px",
+      lineHeight: "28px",
+      weight: "600"
+    },
+    h5: {
+      size: "18px",
+      lineHeight: "24px",
+      weight: "600"
+    },
+    h6: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "600"
+    }
   }
 };
-var mobileHeadingStyle = {
-  h1: {
-    size: "32px",
-    lineHeight: "40px",
-    weight: "700"
-  },
-  h2: {
-    size: "28px",
-    lineHeight: "36px",
-    weight: "700"
-  },
-  h3: {
-    size: "24px",
-    lineHeight: "32px",
-    weight: "700"
-  },
-  h4: {
-    size: "22px",
-    lineHeight: "28px",
-    weight: "600"
-  },
-  h5: {
-    size: "18px",
-    lineHeight: "24px",
-    weight: "600"
-  },
-  h6: {
-    size: "16px",
-    lineHeight: "22px",
-    weight: "600"
-  }
-};
-var createStyledHeading = function createStyledHeading(_a) {
-  var heading = _a.heading,
-    element = _a.element;
-  return styled[element].withConfig({
+var createStyledHeading = function createStyledHeading(name, color) {
+  return styled.h1.withConfig({
     displayName: "Typo",
     componentId: "sc-1g34h81-0"
-  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), desktopHeadingStyle[heading].size, desktopHeadingStyle[heading].lineHeight, desktopHeadingStyle[heading].weight, function (props) {
-    return props.color || grayScale.main;
-  }, mobileHeadingStyle[heading].size, mobileHeadingStyle[heading].lineHeight, mobileHeadingStyle[heading].weight);
+  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), baseHeadingStyle.desktop[name].size, baseHeadingStyle.desktop[name].lineHeight, baseHeadingStyle.desktop[name].weight, color !== null && color !== void 0 ? color : grayScale.main, baseHeadingStyle.mobile[name].size, baseHeadingStyle.mobile[name].lineHeight, baseHeadingStyle.mobile[name].weight);
 };
 var Heading = function Heading(_a) {
   var name = _a.name,
@@ -188,118 +186,113 @@ var Heading = function Heading(_a) {
     color = _b === void 0 ? grayScale.main : _b,
     children = _a.children,
     rest = __rest(_a, ["name", "color", "children"]);
-  var StyledHeading = createStyledHeading({
-    heading: name,
-    element: name
-  });
-  // eslint-disable-next-line no-console
-  console.log("headingTest-".concat(name), children);
+  var StyledHeading = createStyledHeading(name, color);
   if (!StyledHeading) return null;
   return /*#__PURE__*/React.createElement(StyledHeading, __assign({
-    color: color
-  }, rest, {
-    id: "test-heading-1"
-  }), children);
+    as: name
+  }, rest), children);
 };
-var desktopTextStyle = {
-  strongM: {
-    size: "16px",
-    lineHeight: "22px",
-    weight: "600"
+var commonTextStyle = {
+  desktop: {
+    strongM: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "600"
+    },
+    strongS: {
+      size: "14px",
+      lineHeight: "20px",
+      weight: "600"
+    },
+    spacedM: {
+      size: "16px",
+      lineHeight: "26px",
+      weight: "400"
+    },
+    spacedS: {
+      size: "14px",
+      lineHeight: "22px",
+      weight: "400"
+    },
+    l: {
+      size: "18px",
+      lineHeight: "30px",
+      weight: "400"
+    },
+    m: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "400"
+    },
+    s: {
+      size: "14px",
+      lineHeight: "20px",
+      weight: "400"
+    },
+    xs: {
+      size: "12px",
+      lineHeight: "16px",
+      weight: "400"
+    },
+    xxs: {
+      size: "10px",
+      lineHeight: "14px",
+      weight: "400"
+    }
   },
-  strongS: {
-    size: "14px",
-    lineHeight: "20px",
-    weight: "600"
-  },
-  spacedM: {
-    size: "16px",
-    lineHeight: "26px",
-    weight: "400"
-  },
-  spacedS: {
-    size: "14px",
-    lineHeight: "22px",
-    weight: "400"
-  },
-  l: {
-    size: "18px",
-    lineHeight: "30px",
-    weight: "400"
-  },
-  m: {
-    size: "16px",
-    lineHeight: "22px",
-    weight: "400"
-  },
-  s: {
-    size: "14px",
-    lineHeight: "20px",
-    weight: "400"
-  },
-  xs: {
-    size: "12px",
-    lineHeight: "16px",
-    weight: "400"
-  },
-  xxs: {
-    size: "10px",
-    lineHeight: "14px",
-    weight: "400"
+  mobile: {
+    strongM: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "600"
+    },
+    strongS: {
+      size: "14px",
+      lineHeight: "20px",
+      weight: "600"
+    },
+    spacedM: {
+      size: "16px",
+      lineHeight: "26px",
+      weight: "400"
+    },
+    spacedS: {
+      size: "14px",
+      lineHeight: "22px",
+      weight: "400"
+    },
+    l: {
+      size: "16px",
+      lineHeight: "26px",
+      weight: "400"
+    },
+    m: {
+      size: "16px",
+      lineHeight: "22px",
+      weight: "400"
+    },
+    s: {
+      size: "14px",
+      lineHeight: "20px",
+      weight: "400"
+    },
+    xs: {
+      size: "12px",
+      lineHeight: "16px",
+      weight: "400"
+    },
+    xxs: {
+      size: "10px",
+      lineHeight: "14px",
+      weight: "400"
+    }
   }
 };
-var mobileTextStyle = {
-  strongM: {
-    size: "16px",
-    lineHeight: "22px",
-    weight: "600"
-  },
-  strongS: {
-    size: "14px",
-    lineHeight: "20px",
-    weight: "600"
-  },
-  spacedM: {
-    size: "16px",
-    lineHeight: "26px",
-    weight: "400"
-  },
-  spacedS: {
-    size: "14px",
-    lineHeight: "22px",
-    weight: "400"
-  },
-  l: {
-    size: "16px",
-    lineHeight: "26px",
-    weight: "400"
-  },
-  m: {
-    size: "16px",
-    lineHeight: "22px",
-    weight: "400"
-  },
-  s: {
-    size: "14px",
-    lineHeight: "20px",
-    weight: "400"
-  },
-  xs: {
-    size: "12px",
-    lineHeight: "16px",
-    weight: "400"
-  },
-  xxs: {
-    size: "10px",
-    lineHeight: "14px",
-    weight: "400"
-  }
-};
-var createStyledText = function createStyledText(name, element, color) {
-  return styled[element].withConfig({
+var createStyledText = function createStyledText(name, color) {
+  return styled.p.withConfig({
     displayName: "Typo",
     componentId: "sc-1g34h81-1"
-  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), desktopTextStyle[name].size, desktopTextStyle[name].lineHeight, desktopTextStyle[name].weight, color !== null && color !== void 0 ? color : grayScale.main, mobileTextStyle[name].size, mobileTextStyle[name].lineHeight, mobileTextStyle[name].weight);
+  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), commonTextStyle.desktop[name].size, commonTextStyle.desktop[name].lineHeight, commonTextStyle.desktop[name].weight, color !== null && color !== void 0 ? color : grayScale.main, commonTextStyle.mobile[name].size, commonTextStyle.mobile[name].lineHeight, commonTextStyle.mobile[name].weight);
 };
 var Text = function Text(_a) {
   var name = _a.name,
@@ -308,11 +301,11 @@ var Text = function Text(_a) {
     _b = _a.element,
     element = _b === void 0 ? "p" : _b,
     rest = __rest(_a, ["name", "color", "children", "element"]);
-  var StyledText = createStyledText(name, element, color);
-  // eslint-disable-next-line no-console
-  console.log("textTest-".concat(name), children);
+  var StyledText = createStyledText(name, color);
   if (!StyledText) return null;
-  return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest), children);
+  return /*#__PURE__*/React.createElement(StyledText, __assign({
+    as: element
+  }, rest), children);
 };
 // ------------------------------------------------------------
 /**
