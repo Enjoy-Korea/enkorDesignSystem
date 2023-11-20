@@ -110,65 +110,73 @@ var green = {
   opacity: "#F3FFF4"
 };
 
+var ElementMapper = {
+  t1: "h1",
+  t2: "h2",
+  t3: "h3",
+  t4: "h4",
+  t5: "h5",
+  t6: "h6"
+};
 var desktopHeadingStyle = {
-  h1: {
+  t1: {
     size: "36px",
     lineHeight: "44px",
     weight: "700"
   },
-  h2: {
+  t2: {
     size: "32px",
     lineHeight: "40px",
     weight: "700"
   },
-  h3: {
+  t3: {
     size: "28px",
     lineHeight: "36px",
     weight: "700"
   },
-  h4: {
+  t4: {
     size: "24px",
     lineHeight: "32px",
     weight: "600"
   },
-  h5: {
+  t5: {
     size: "20px",
     lineHeight: "28px",
     weight: "600"
   },
-  h6: {
+  t6: {
     size: "18px",
     lineHeight: "24px",
     weight: "600"
   }
 };
 var mobileHeadingStyle = {
-  h1: {
+  t1: {
     size: "32px",
     lineHeight: "40px",
     weight: "700"
   },
-  h2: {
+  t2: {
     size: "28px",
     lineHeight: "36px",
     weight: "700"
   },
-  h3: {
+  t3: {
     size: "24px",
     lineHeight: "32px",
     weight: "700"
   },
-  h4: {
+  t4: {
     size: "22px",
     lineHeight: "28px",
     weight: "600"
   },
-  h5: {
+  t5: {
     size: "18px",
     lineHeight: "24px",
     weight: "600"
   },
-  h6: {
+  t6: {
     size: "16px",
     lineHeight: "22px",
     weight: "600"
@@ -190,9 +198,10 @@ var Heading = function Heading(_a) {
     color = _b === void 0 ? grayScale.main : _b,
     children = _a.children,
     rest = __rest(_a, ["name", "color", "children"]);
+  var element = ElementMapper[name];
   var StyledHeading = createStyledHeading({
     heading: name,
-    element: name
+    element: element
   });
   // eslint-disable-next-line no-console
   console.log("headingTest-".concat(name), children);
@@ -200,7 +209,7 @@ var Heading = function Heading(_a) {
   return /*#__PURE__*/React.createElement(StyledHeading, __assign({
     color: color
   }, rest, {
-    id: "test-heading-1"
+    id: "test-heading-2"
   }), children);
 };
 var desktopTextStyle = {
@@ -314,7 +323,9 @@ var Text = function Text(_a) {
   // eslint-disable-next-line no-console
   console.log("textTest-".concat(name), children);
   if (!StyledText) return null;
-  return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest), children);
+  return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest, {
+    id: "test-text-2"
+  }), children);
 };
 // ------------------------------------------------------------
 /**

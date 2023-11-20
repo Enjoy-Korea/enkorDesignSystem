@@ -9,26 +9,35 @@ import { grayScale } from "../../colors";
 
 export interface HeadingProps
   extends PropsWithChildren<HTMLAttributes<HTMLHeadingElement>> {
-  name: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  name: "t1" | "t2" | "t3" | "t4" | "t5" | "t6";
   color?: ColorType;
 }
 
+export const ElementMapper = {
+  t1: "h1",
+  t2: "h2",
+  t3: "h3",
+  t4: "h4",
+  t5: "h5",
+  t6: "h6",
+} as const;
+
 const desktopHeadingStyle = {
-  h1: { size: "36px", lineHeight: "44px", weight: "700" },
-  h2: { size: "32px", lineHeight: "40px", weight: "700" },
-  h3: { size: "28px", lineHeight: "36px", weight: "700" },
-  h4: { size: "24px", lineHeight: "32px", weight: "600" },
-  h5: { size: "20px", lineHeight: "28px", weight: "600" },
-  h6: { size: "18px", lineHeight: "24px", weight: "600" },
+  t1: { size: "36px", lineHeight: "44px", weight: "700" },
+  t2: { size: "32px", lineHeight: "40px", weight: "700" },
+  t3: { size: "28px", lineHeight: "36px", weight: "700" },
+  t4: { size: "24px", lineHeight: "32px", weight: "600" },
+  t5: { size: "20px", lineHeight: "28px", weight: "600" },
+  t6: { size: "18px", lineHeight: "24px", weight: "600" },
 };
 
 const mobileHeadingStyle = {
-  h1: { size: "32px", lineHeight: "40px", weight: "700" },
-  h2: { size: "28px", lineHeight: "36px", weight: "700" },
-  h3: { size: "24px", lineHeight: "32px", weight: "700" },
-  h4: { size: "22px", lineHeight: "28px", weight: "600" },
-  h5: { size: "18px", lineHeight: "24px", weight: "600" },
-  h6: { size: "16px", lineHeight: "22px", weight: "600" },
+  t1: { size: "32px", lineHeight: "40px", weight: "700" },
+  t2: { size: "28px", lineHeight: "36px", weight: "700" },
+  t3: { size: "24px", lineHeight: "32px", weight: "700" },
+  t4: { size: "22px", lineHeight: "28px", weight: "600" },
+  t5: { size: "18px", lineHeight: "24px", weight: "600" },
+  t6: { size: "16px", lineHeight: "22px", weight: "600" },
 };
 
 const createStyledHeading = ({
@@ -36,7 +45,7 @@ const createStyledHeading = ({
   element,
 }: {
   heading: HeadingProps["name"];
-  element: HeadingProps["name"];
+  element: (typeof ElementMapper)[keyof typeof ElementMapper];
 }) => styled[element]`
   font-size: ${desktopHeadingStyle[heading].size};
   line-height: ${desktopHeadingStyle[heading].lineHeight};
@@ -59,13 +68,17 @@ export const Heading = ({
   children,
   ...rest
 }: HeadingProps) => {
-  const StyledHeading = createStyledHeading({ heading: name, element: name });
+  const element = ElementMapper[name];
+  const StyledHeading = createStyledHeading({
+    heading: name,
+    element,
+  });
   // eslint-disable-next-line no-console
   console.log(`headingTest-${name}`, children);
   if (!StyledHeading) return null;
 
   return (
-    <StyledHeading color={color} {...rest} id="test-heading-1">
+    <StyledHeading color={color} {...rest} id="test-heading-2">
       {children}
     </StyledHeading>
   );
@@ -145,7 +158,11 @@ export const Text = ({
   console.log(`textTest-${name}`, children);
   if (!StyledText) return null;
 
-  return <StyledText {...rest}>{children}</StyledText>;
+  return (
+    <StyledText {...rest} id="test-text-2">
+      {children}
+    </StyledText>
+  );
 };
 
 // ------------------------------------------------------------

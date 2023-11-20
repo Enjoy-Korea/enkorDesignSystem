@@ -1,9 +1,17 @@
 import React, { HTMLAttributes, PropsWithChildren } from "react";
 import { ColorType } from "../../colors/types";
 export interface HeadingProps extends PropsWithChildren<HTMLAttributes<HTMLHeadingElement>> {
-    name: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+    name: "t1" | "t2" | "t3" | "t4" | "t5" | "t6";
     color?: ColorType;
 }
+export declare const ElementMapper: {
+    readonly t1: "h1";
+    readonly t2: "h2";
+    readonly t3: "h3";
+    readonly t4: "h4";
+    readonly t5: "h5";
+    readonly t6: "h6";
+};
 export declare const Heading: ({ name, color, children, ...rest }: HeadingProps) => React.JSX.Element | null;
 export interface TextProps extends PropsWithChildren<HTMLAttributes<HTMLElement>> {
     name: "strongM" | "strongS" | "l" | "spacedM" | "m" | "spacedS" | "s" | "xs" | "xxs";
