@@ -207,7 +207,7 @@ var Heading = function Heading(_a) {
     as: element,
     color: color
   }, rest, {
-    id: "test-heading-3"
+    id: "test-heading-4"
   }), children);
 };
 var desktopTextStyle = {
@@ -322,7 +322,7 @@ var Text = function Text(_a) {
   console.log("textTest-".concat(name), children);
   if (!StyledText) return null;
   return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest, {
-    id: "test-text-3"
+    id: "test-text-4"
   }), children);
 };
 // ------------------------------------------------------------
