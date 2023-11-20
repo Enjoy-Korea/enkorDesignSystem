@@ -62,7 +62,7 @@ export const Heading = ({
   if (!StyledHeading) return null;
 
   return (
-    <StyledHeading as={name} {...rest} id="test-heading-6">
+    <StyledHeading as={name} {...rest}>
       {children}
     </StyledHeading>
   );
@@ -142,7 +142,7 @@ export const Text = ({
   if (!StyledText) return null;
 
   return (
-    <StyledText as={element} {...rest} id="test-text-6">
+    <StyledText as={element} {...rest}>
       {children}
     </StyledText>
   );

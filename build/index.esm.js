@@ -190,9 +190,7 @@ var Heading = function Heading(_a) {
   if (!StyledHeading) return null;
   return /*#__PURE__*/React.createElement(StyledHeading, __assign({
     as: name
-  }, rest, {
-    id: "test-heading-6"
-  }), children);
+  }, rest), children);
 };
 var commonTextStyle = {
   desktop: {
@@ -307,9 +305,7 @@ var Text = function Text(_a) {
   if (!StyledText) return null;
   return /*#__PURE__*/React.createElement(StyledText, __assign({
     as: element
-  }, rest, {
-    id: "test-text-6"
-  }), children);
+  }, rest), children);
 };
 // ------------------------------------------------------------
 /**
