@@ -110,83 +110,198 @@ var green = {
   opacity: "#F3FFF4"
 };
 
+var desktopHeadingStyle = {
+  h1: {
+    size: "36px",
+    lineHeight: "44px",
+    weight: "700"
+  },
+  h2: {
+    size: "32px",
+    lineHeight: "40px",
+    weight: "700"
+  },
+  h3: {
+    size: "28px",
+    lineHeight: "36px",
+    weight: "700"
+  },
+  h4: {
+    size: "24px",
+    lineHeight: "32px",
+    weight: "600"
+  },
+  h5: {
+    size: "20px",
+    lineHeight: "28px",
+    weight: "600"
+  },
+  h6: {
+    size: "18px",
+    lineHeight: "24px",
+    weight: "600"
+  }
+};
+var mobileHeadingStyle = {
+  h1: {
+    size: "32px",
+    lineHeight: "40px",
+    weight: "700"
+  },
+  h2: {
+    size: "28px",
+    lineHeight: "36px",
+    weight: "700"
+  },
+  h3: {
+    size: "24px",
+    lineHeight: "32px",
+    weight: "700"
+  },
+  h4: {
+    size: "22px",
+    lineHeight: "28px",
+    weight: "600"
+  },
+  h5: {
+    size: "18px",
+    lineHeight: "24px",
+    weight: "600"
+  },
+  h6: {
+    size: "16px",
+    lineHeight: "22px",
+    weight: "600"
+  }
+};
+var createStyledHeading = function createStyledHeading(_a) {
+  var heading = _a.heading,
+    element = _a.element;
+  return styled[element].withConfig({
+    displayName: "Typo",
+    componentId: "sc-1g34h81-0"
+  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), desktopHeadingStyle[heading].size, desktopHeadingStyle[heading].lineHeight, desktopHeadingStyle[heading].weight, function (props) {
+    return props.color || grayScale.main;
+  }, mobileHeadingStyle[heading].size, mobileHeadingStyle[heading].lineHeight, mobileHeadingStyle[heading].weight);
+};
 var Heading = function Heading(_a) {
   var name = _a.name,
     _b = _a.color,
     color = _b === void 0 ? grayScale.main : _b,
     children = _a.children,
     rest = __rest(_a, ["name", "color", "children"]);
-  var filterHeadingStyle = {
-    h1: {
-      size: "36px",
-      lineHeight: "44px",
-      weight: "700"
-    },
-    h2: {
-      size: "32px",
-      lineHeight: "40px",
-      weight: "700"
-    },
-    h3: {
-      size: "28px",
-      lineHeight: "36px",
-      weight: "700"
-    },
-    h4: {
-      size: "24px",
-      lineHeight: "32px",
-      weight: "600"
-    },
-    h5: {
-      size: "20px",
-      lineHeight: "28px",
-      weight: "600"
-    },
-    h6: {
-      size: "18px",
-      lineHeight: "24px",
-      weight: "600"
-    }
-  };
-  var filterMobileHeadingStyle = {
-    h1: {
-      size: "32px",
-      lineHeight: "40px",
-      weight: "700"
-    },
-    h2: {
-      size: "28px",
-      lineHeight: "36px",
-      weight: "700"
-    },
-    h3: {
-      size: "24px",
-      lineHeight: "32px",
-      weight: "700"
-    },
-    h4: {
-      size: "22px",
-      lineHeight: "28px",
-      weight: "600"
-    },
-    h5: {
-      size: "18px",
-      lineHeight: "24px",
-      weight: "600"
-    },
-    h6: {
-      size: "16px",
-      lineHeight: "22px",
-      weight: "600"
-    }
-  };
-  var StyledHeading = styled[name].withConfig({
-    displayName: "Typo__StyledHeading",
-    componentId: "sc-1g34h81-0"
-  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n\n    @media screen and (max-width: 1024px) {\n      font-size: ", ";\n      line-height: ", ";\n      font-weight: ", ";\n    }\n  "], ["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n\n    @media screen and (max-width: 1024px) {\n      font-size: ", ";\n      line-height: ", ";\n      font-weight: ", ";\n    }\n  "])), filterHeadingStyle[name].size, filterHeadingStyle[name].lineHeight, filterHeadingStyle[name].weight, color, filterMobileHeadingStyle[name].size, filterMobileHeadingStyle[name].lineHeight, filterMobileHeadingStyle[name].weight);
-  return /*#__PURE__*/React.createElement(StyledHeading, __assign({}, rest, {
+  var StyledHeading = createStyledHeading({
+    heading: name,
+    element: name
+  });
+  // eslint-disable-next-line no-console
+  console.log("headingTest-".concat(name), children);
+  if (!StyledHeading) return null;
+  return /*#__PURE__*/React.createElement(StyledHeading, __assign({
+    color: color
+  }, rest, {
     id: "test-heading-1"
   }), children);
+};
+var desktopTextStyle = {
+  strongM: {
+    size: "16px",
+    lineHeight: "22px",
+    weight: "600"
+  },
+  strongS: {
+    size: "14px",
+    lineHeight: "20px",
+    weight: "600"
+  },
+  spacedM: {
+    size: "16px",
+    lineHeight: "26px",
+    weight: "400"
+  },
+  spacedS: {
+    size: "14px",
+    lineHeight: "22px",
+    weight: "400"
+  },
+  l: {
+    size: "18px",
+    lineHeight: "30px",
+    weight: "400"
+  },
+  m: {
+    size: "16px",
+    lineHeight: "22px",
+    weight: "400"
+  },
+  s: {
+    size: "14px",
+    lineHeight: "20px",
+    weight: "400"
+  },
+  xs: {
+    size: "12px",
+    lineHeight: "16px",
+    weight: "400"
+  },
+  xxs: {
+    size: "10px",
+    lineHeight: "14px",
+    weight: "400"
+  }
+};
+var mobileTextStyle = {
+  strongM: {
+    size: "16px",
+    lineHeight: "22px",
+    weight: "600"
+  },
+  strongS: {
+    size: "14px",
+    lineHeight: "20px",
+    weight: "600"
+  },
+  spacedM: {
+    size: "16px",
+    lineHeight: "26px",
+    weight: "400"
+  },
+  spacedS: {
+    size: "14px",
+    lineHeight: "22px",
+    weight: "400"
+  },
+  l: {
+    size: "16px",
+    lineHeight: "26px",
+    weight: "400"
+  },
+  m: {
+    size: "16px",
+    lineHeight: "22px",
+    weight: "400"
+  },
+  s: {
+    size: "14px",
+    lineHeight: "20px",
+    weight: "400"
+  },
+  xs: {
+    size: "12px",
+    lineHeight: "16px",
+    weight: "400"
+  },
+  xxs: {
+    size: "10px",
+    lineHeight: "14px",
+    weight: "400"
+  }
+};
+var createStyledText = function createStyledText(name, element, color) {
+  return styled[element].withConfig({
+    displayName: "Typo",
+    componentId: "sc-1g34h81-1"
+  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), desktopTextStyle[name].size, desktopTextStyle[name].lineHeight, desktopTextStyle[name].weight, color !== null && color !== void 0 ? color : grayScale.main, mobileTextStyle[name].size, mobileTextStyle[name].lineHeight, mobileTextStyle[name].weight);
 };
 var Text = function Text(_a) {
   var name = _a.name,
@@ -195,108 +310,58 @@ var Text = function Text(_a) {
     _b = _a.element,
     element = _b === void 0 ? "p" : _b,
     rest = __rest(_a, ["name", "color", "children", "element"]);
-  var filterTextStyle = {
-    strongM: {
-      size: "16px",
-      lineHeight: "22px",
-      weight: "600"
-    },
-    strongS: {
-      size: "14px",
-      lineHeight: "20px",
-      weight: "600"
-    },
-    l: {
-      size: "18px",
-      lineHeight: "30px",
-      weight: "400"
-    },
-    spacedM: {
-      size: "16px",
-      lineHeight: "26px",
-      weight: "400"
-    },
-    m: {
-      size: "16px",
-      lineHeight: "22px",
-      weight: "400"
-    },
-    spacedS: {
-      size: "14px",
-      lineHeight: "22px",
-      weight: "400"
-    },
-    s: {
-      size: "14px",
-      lineHeight: "20px",
-      weight: "400"
-    },
-    xs: {
-      size: "12px",
-      lineHeight: "16px",
-      weight: "400"
-    },
-    xxs: {
-      size: "10px",
-      lineHeight: "14px",
-      weight: "400"
-    }
-  };
-  var filterMobileTextStyle = {
-    strongM: {
-      size: "16px",
-      lineHeight: "22px",
-      weight: "600"
-    },
-    strongS: {
-      size: "14px",
-      lineHeight: "20px",
-      weight: "600"
-    },
-    l: {
-      size: "16px",
-      lineHeight: "26px",
-      weight: "400"
-    },
-    spacedM: {
-      size: "16px",
-      lineHeight: "26px",
-      weight: "400"
-    },
-    m: {
-      size: "16px",
-      lineHeight: "22px",
-      weight: "400"
-    },
-    spacedS: {
-      size: "14px",
-      lineHeight: "22px",
-      weight: "400"
-    },
-    s: {
-      size: "14px",
-      lineHeight: "20px",
-      weight: "400"
-    },
-    xs: {
-      size: "12px",
-      lineHeight: "16px",
-      weight: "400"
-    },
-    xxs: {
-      size: "10px",
-      lineHeight: "14px",
-      weight: "400"
-    }
-  };
-  var StyledText = styled[element].withConfig({
-    displayName: "Typo__StyledText",
-    componentId: "sc-1g34h81-1"
-  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n\n    @media screen and (max-width: 1024px) {\n      font-size: ", ";\n      line-height: ", ";\n      font-weight: ", ";\n    }\n  "], ["\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n    color: ", ";\n    margin: 0;\n\n    @media screen and (max-width: 1024px) {\n      font-size: ", ";\n      line-height: ", ";\n      font-weight: ", ";\n    }\n  "])), filterTextStyle[name].size, filterTextStyle[name].lineHeight, filterTextStyle[name].weight, color, filterMobileTextStyle[name].size, filterMobileTextStyle[name].lineHeight, filterMobileTextStyle[name].weight);
-  return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest, {
-    id: "test-text-1"
-  }), children);
+  var StyledText = createStyledText(name, element, color);
+  // eslint-disable-next-line no-console
+  console.log("textTest-".concat(name), children);
+  if (!StyledText) return null;
+  return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest), children);
 };
+// ------------------------------------------------------------
+/**
+ *  @Heading desktop(데스크탑 환경)
+ *    - h1: { size: 36px, lineHeight: 44px, weight: 700 }
+ *    - h2: { size: 32px, lineHeight: 40px, weight: 700 }
+ *    - h3: { size: 28px, lineHeight: 36px, weight: 700 }
+ *    - h4: { size: 24px, lineHeight: 32px, weight: 600 }
+ *    - h5: { size: 20px, lineHeight: 28px, weight: 600 }
+ *    - h6: { size: 18px, lineHeight: 24px, weight: 600 }
+
+ *  -------------------------------------------------------------------
+
+ *  @Heading mobile(모바일 환경)
+ *    - h1: { size: 32px, lineHeight: 40px, weight: 700 }
+ *    - h2: { size: 28px, lineHeight: 36px, weight: 700 }
+ *    - h3: { size: 24px, lineHeight: 32px, weight: 700 }
+ *    - h4: { size: 22px, lineHeight: 28px, weight: 600 }
+ *    - h5: { size: 18px, lineHeight: 24px, weight: 600 }
+ *    - h6: { size: 16px, lineHeight: 22px, weight: 600 }
+ *
+ *  -------------------------------------------------------------------
+ *
+ *  @Text desktop(데스크탑 환경)
+ *    - strongM: { size: 16px, lineHeight: 22px, weight: 600 }
+ *    - strongS: { size: 14px, lineHeight: 20px, weight: 600 }
+ *    - spacedM: { size: 16px, lineHeight: 26px, weight: 400 }
+ *    - spacedS: { size: 14px, lineHeight: 22px, weight: 400 }
+ *    - l: { size: 18px, lineHeight: 30px, weight: 400 }
+ *    - m: { size: 16px, lineHeight: 22px, weight: 400 }
+ *    - s: { size: 14px, lineHeight: 20px, weight: 400 }
+ *    - xs: { size: 12px, lineHeight: 16px, weight: 400 }
+ *    - xxs: { size: 10px, lineHeight: 14px, weight: 400 }
+ *
+ *  -------------------------------------------------------------------
+ *
+ *  @Text mobile(모바일 환경)
+ *    - strongM: { size: 16px, lineHeight: 22px, weight: 600 }
+ *    - strongS: { size: 14px, lineHeight: 20px, weight: 600 }
+ *    - spacedM: { size: 16px, lineHeight: 26px, weight: 400 }
+ *    - spacedS: { size: 14px, lineHeight: 22px, weight: 400 }
+ *    - l: { size: 16px, lineHeight: 26px, weight: 400 }
+ *    - m: { size: 16px, lineHeight: 22px, weight: 400 }
+ *    - s: { size: 14px, lineHeight: 20px, weight: 400 }
+ *    - xs: { size: 12px, lineHeight: 16px, weight: 400 }
+ *    - xxs: { size: 10px, lineHeight: 14px, weight: 400 }
+ */
 var Typo = {
   Heading: Heading,
   Text: Text
