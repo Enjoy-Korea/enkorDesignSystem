@@ -42,17 +42,17 @@ const mobileHeadingStyle = {
 
 const createStyledHeading = ({
   heading,
-  element,
+  color,
 }: {
   heading: HeadingProps["name"];
+  color: TextProps["color"];
   element: (typeof ElementMapper)[keyof typeof ElementMapper];
-}) => styled[element]`
+}) => styled.h1`
   font-size: ${desktopHeadingStyle[heading].size};
   line-height: ${desktopHeadingStyle[heading].lineHeight};
   font-weight: ${desktopHeadingStyle[heading].weight};
 
-  color: ${(props) => props.color || grayScale.main};
-
+  color: ${color ?? grayScale.main};
   margin: 0;
 
   @media screen and (max-width: 1024px) {
@@ -71,6 +71,7 @@ export const Heading = ({
   const element = ElementMapper[name];
   const StyledHeading = createStyledHeading({
     heading: name,
+    color,
     element,
   });
   // eslint-disable-next-line no-console
@@ -78,7 +79,7 @@ export const Heading = ({
   if (!StyledHeading) return null;
 
   return (
-    <StyledHeading color={color} {...rest} id="test-heading-2">
+    <StyledHeading as={element} color={color} {...rest} id="test-heading-3">
       {children}
     </StyledHeading>
   );
@@ -159,7 +160,7 @@ export const Text = ({
   if (!StyledText) return null;
 
   return (
-    <StyledText {...rest} id="test-text-2">
+    <StyledText {...rest} id="test-text-3">
       {children}
     </StyledText>
   );

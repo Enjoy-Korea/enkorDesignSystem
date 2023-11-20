@@ -182,13 +182,11 @@ var mobileHeadingStyle = {
 };
 var createStyledHeading = function createStyledHeading(_a) {
   var heading = _a.heading,
-    element = _a.element;
-  return styled[element].withConfig({
+    color = _a.color;
+  return styled.h1.withConfig({
     displayName: "Typo",
     componentId: "sc-1g34h81-0"
-  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), desktopHeadingStyle[heading].size, desktopHeadingStyle[heading].lineHeight, desktopHeadingStyle[heading].weight, function (props) {
-    return props.color || grayScale.main;
-  }, mobileHeadingStyle[heading].size, mobileHeadingStyle[heading].lineHeight, mobileHeadingStyle[heading].weight);
+  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), desktopHeadingStyle[heading].size, desktopHeadingStyle[heading].lineHeight, desktopHeadingStyle[heading].weight, color !== null && color !== void 0 ? color : grayScale.main, mobileHeadingStyle[heading].size, mobileHeadingStyle[heading].lineHeight, mobileHeadingStyle[heading].weight);
 };
 var Heading = function Heading(_a) {
   var name = _a.name,
@@ -199,15 +197,17 @@ var Heading = function Heading(_a) {
   var element = ElementMapper[name];
   var StyledHeading = createStyledHeading({
     heading: name,
+    color: color,
     element: element
   });
   // eslint-disable-next-line no-console
   console.log("headingTest-".concat(name), children);
   if (!StyledHeading) return null;
   return /*#__PURE__*/React.createElement(StyledHeading, __assign({
+    as: element,
     color: color
   }, rest, {
-    id: "test-heading-2"
+    id: "test-heading-3"
   }), children);
 };
 var desktopTextStyle = {
@@ -322,7 +322,7 @@ var Text = function Text(_a) {
   console.log("textTest-".concat(name), children);
   if (!StyledText) return null;
   return /*#__PURE__*/React.createElement(StyledText, __assign({}, rest, {
-    id: "test-text-2"
+    id: "test-text-3"
   }), children);
 };
 // ------------------------------------------------------------
