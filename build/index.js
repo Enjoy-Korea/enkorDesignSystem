@@ -3171,6 +3171,42 @@ var HomeIcon = function HomeIcon(_a) {
   }));
 };
 
+var I18NIcon = function I18NIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M11 21a9 9 0 0 1-9-9m9 9c-1.657 0-3-4.03-3-9s1.343-9 3-9m0 18a9 9 0 0 0 3.5-.708M11 3a9 9 0 0 1 8.944 8M11 3a9 9 0 0 0-9 9m9-9c1.544 0 2.816 3.5 2.982 8M2 12h9",
+    stroke: strokeColor
+  }), /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M20 19.353h-1V21a1 1 0 0 1-1.727.687l-2.204-2.334H13c-.55 0-1.064-.232-1.434-.624A2.09 2.09 0 0 1 11 17.294V13.06c0-.528.198-1.046.566-1.435.37-.392.884-.624 1.434-.624h7c.55 0 1.064.232 1.434.624.368.39.566.907.566 1.435v4.235a2.09 2.09 0 0 1-.566 1.435c-.37.392-.885.624-1.434.624Z",
+    stroke: strokeColor
+  }));
+};
+
 var IdentificationIcon = function IdentificationIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -6548,6 +6584,7 @@ exports.GolfIcon = GolfIcon;
 exports.GymIcon = GymIcon;
 exports.HeartIcon = HeartIcon;
 exports.HomeIcon = HomeIcon;
+exports.I18NIcon = I18NIcon;
 exports.IdentificationIcon = IdentificationIcon;
 exports.InformationCircleIcon = InformationCircleIcon;
 exports.InviteIcon = InviteIcon;
