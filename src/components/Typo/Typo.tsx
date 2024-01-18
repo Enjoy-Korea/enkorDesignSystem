@@ -26,7 +26,7 @@ const baseHeadingStyle = {
     h1: { size: "32px", lineHeight: "40px", weight: "700" },
     h2: { size: "28px", lineHeight: "36px", weight: "700" },
     h3: { size: "24px", lineHeight: "32px", weight: "700" },
-    h4: { size: "22px", lineHeight: "28px", weight: "600" },
+    h4: { size: "20px", lineHeight: "28px", weight: "600" },
     h5: { size: "18px", lineHeight: "24px", weight: "600" },
     h6: { size: "16px", lineHeight: "22px", weight: "600" },
   },
