@@ -58,6 +58,7 @@ export { DinerWareIcon } from "./generated/DinerWareIcon";
 export { DishWasherIcon } from "./generated/DishWasherIcon";
 export { DocumentAddIcon } from "./generated/DocumentAddIcon";
 export { DocumentDuplicateIcon } from "./generated/DocumentDuplicateIcon";
+export { DocumentIcon } from "./generated/DocumentIcon";
 export { DoorlockIcon } from "./generated/DoorlockIcon";
 export { DotsCircleHorizontalIcon } from "./generated/DotsCircleHorizontalIcon";
 export { DotsHorizontalIcon } from "./generated/DotsHorizontalIcon";
