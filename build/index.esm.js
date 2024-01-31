@@ -50,64 +50,6 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var grayScale = {
-  black: "#000000",
-  300: "#333333",
-  main: "#515151",
-  500: "#8B8B8B",
-  600: "#A8A8A8",
-  700: "#C1C1C1",
-  800: "#DDDDDD",
-  900: "#ECECEC",
-  1000: "#F5F5F5",
-  white: "#FFFFFF"
-};
-var yellow = {
-  200: "#FFD951",
-  300: "#FFB801",
-  main: "#FFD951",
-  500: "#FFE998",
-  600: "#FFF1C3",
-  700: "#FFFDF4",
-  opacity: "#FFFDF4"
-};
-var blue = {
-  200: "#1A62B8",
-  300: "#066EEE",
-  main: "#2586F9",
-  500: "#74B0F6",
-  600: "#E4EEFD",
-  700: "#F2FAFF",
-  opacity: "#F2FAFF"
-};
-var red = {
-  200: "#BF292D",
-  300: "#DC161A",
-  main: "#F03E41",
-  500: "#FB878C",
-  600: "#FFD6D7",
-  700: "#FFF2F3",
-  opacity: "#FFF2F3"
-};
-var orange = {
-  200: "#DE5B00",
-  300: "#F18409",
-  main: "#FFA33C",
-  500: "#FFC275",
-  600: "#FFDCAF",
-  700: "#FFF7EC",
-  opacity: "#FFF7EC"
-};
-var green = {
-  200: "#009024",
-  300: "#1AB62F",
-  main: "#4BD05D",
-  500: "#93EC9C",
-  600: "#C2F1C7",
-  700: "#F3FFF4",
-  opacity: "#F3FFF4"
-};
-
 var baseHeadingStyle = {
   desktop: {
     h1: {
@@ -174,22 +116,41 @@ var baseHeadingStyle = {
     }
   }
 };
-var createStyledHeading = function createStyledHeading(name, color) {
-  return styled.h1.withConfig({
-    displayName: "Typo",
-    componentId: "sc-1g34h81-0"
-  })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), baseHeadingStyle.desktop[name].size, baseHeadingStyle.desktop[name].lineHeight, baseHeadingStyle.desktop[name].weight, color !== null && color !== void 0 ? color : grayScale.main, baseHeadingStyle.mobile[name].size, baseHeadingStyle.mobile[name].lineHeight, baseHeadingStyle.mobile[name].weight);
-};
+var StyledHeading = styled.h1.withConfig({
+  displayName: "Typo__StyledHeading",
+  componentId: "sc-1g34h81-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 0;\n  color: ", "; // TODO: --default-color \uC5C6\uC744 \uB54C fallback(#515151) \uC815\uC758 \uD544\uC694\n  font-weight: ", ";\n  font-size: ", ";\n  line-height: ", ";\n\n  @media screen and (max-width: 1024px) {\n    font-weight: ", ";\n    font-size: ", ";\n    line-height: ", ";\n  }\n"], ["\n  margin: 0;\n  color: ", "; // TODO: --default-color \uC5C6\uC744 \uB54C fallback(#515151) \uC815\uC758 \uD544\uC694\n  font-weight: ", ";\n  font-size: ", ";\n  line-height: ", ";\n\n  @media screen and (max-width: 1024px) {\n    font-weight: ", ";\n    font-size: ", ";\n    line-height: ", ";\n  }\n"])), function (_a) {
+  var color = _a.color;
+  return color !== null && color !== void 0 ? color : "var(--default-color)";
+}, function (_a) {
+  var name = _a.name;
+  return baseHeadingStyle.desktop[name].weight;
+}, function (_a) {
+  var name = _a.name;
+  return baseHeadingStyle.desktop[name].size;
+}, function (_a) {
+  var name = _a.name;
+  return baseHeadingStyle.desktop[name].lineHeight;
+}, function (_a) {
+  var name = _a.name;
+  return baseHeadingStyle.mobile[name].weight;
+}, function (_a) {
+  var name = _a.name;
+  return baseHeadingStyle.mobile[name].size;
+}, function (_a) {
+  var name = _a.name;
+  return baseHeadingStyle.mobile[name].lineHeight;
+});
 var Heading = function Heading(_a) {
   var name = _a.name,
-    _b = _a.color,
-    color = _b === void 0 ? grayScale.main : _b,
+    color = _a.color,
     children = _a.children,
     rest = __rest(_a, ["name", "color", "children"]);
-  var StyledHeading = createStyledHeading(name, color);
-  if (!StyledHeading) return null;
+  if (!name) return null;
   return /*#__PURE__*/React.createElement(StyledHeading, __assign({
-    as: name
+    as: name,
+    color: color,
+    name: name
   }, rest), children);
 };
 var commonTextStyle = {
@@ -288,12 +249,31 @@ var commonTextStyle = {
     }
   }
 };
-var createStyledText = function createStyledText(name, color) {
-  return styled.p.withConfig({
-    displayName: "Typo",
-    componentId: "sc-1g34h81-1"
-  })(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"], ["\n  font-size: ", ";\n  line-height: ", ";\n  font-weight: ", ";\n\n  color: ", ";\n\n  margin: 0;\n\n  @media screen and (max-width: 1024px) {\n    font-size: ", ";\n    line-height: ", ";\n    font-weight: ", ";\n  }\n"])), commonTextStyle.desktop[name].size, commonTextStyle.desktop[name].lineHeight, commonTextStyle.desktop[name].weight, color !== null && color !== void 0 ? color : grayScale.main, commonTextStyle.mobile[name].size, commonTextStyle.mobile[name].lineHeight, commonTextStyle.mobile[name].weight);
-};
+var StyledText = styled.p.withConfig({
+  displayName: "Typo__StyledText",
+  componentId: "sc-1g34h81-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  margin: 0;\n  white-space: pre-wrap;\n  color: ", ";\n  font-weight: ", ";\n  font-size: ", ";\n  line-height: ", ";\n\n  @media screen and (max-width: 1024px) {\n    font-weight: ", ";\n    font-size: ", ";\n    line-height: ", ";\n  }\n"], ["\n  margin: 0;\n  white-space: pre-wrap;\n  color: ", ";\n  font-weight: ", ";\n  font-size: ", ";\n  line-height: ", ";\n\n  @media screen and (max-width: 1024px) {\n    font-weight: ", ";\n    font-size: ", ";\n    line-height: ", ";\n  }\n"])), function (_a) {
+  var color = _a.color;
+  return color !== null && color !== void 0 ? color : "var(--default-color)";
+}, function (_a) {
+  var name = _a.name;
+  return commonTextStyle.desktop[name].weight;
+}, function (_a) {
+  var name = _a.name;
+  return commonTextStyle.desktop[name].size;
+}, function (_a) {
+  var name = _a.name;
+  return commonTextStyle.desktop[name].lineHeight;
+}, function (_a) {
+  var name = _a.name;
+  return commonTextStyle.mobile[name].weight;
+}, function (_a) {
+  var name = _a.name;
+  return commonTextStyle.mobile[name].size;
+}, function (_a) {
+  var name = _a.name;
+  return commonTextStyle.mobile[name].lineHeight;
+});
 var Text = function Text(_a) {
   var name = _a.name,
     color = _a.color,
@@ -301,60 +281,67 @@ var Text = function Text(_a) {
     _b = _a.element,
     element = _b === void 0 ? "p" : _b,
     rest = __rest(_a, ["name", "color", "children", "element"]);
-  var StyledText = createStyledText(name, color);
-  if (!StyledText) return null;
+  if (!name) return null;
   return /*#__PURE__*/React.createElement(StyledText, __assign({
-    as: element
+    as: element,
+    name: name,
+    color: color
   }, rest), children);
 };
-// ------------------------------------------------------------
-/**
- *  @Heading desktop(데스크탑 환경)
- *    - h1: { size: 36px, lineHeight: 44px, weight: 700 }
- *    - h2: { size: 32px, lineHeight: 40px, weight: 700 }
- *    - h3: { size: 28px, lineHeight: 36px, weight: 700 }
- *    - h4: { size: 24px, lineHeight: 32px, weight: 600 }
- *    - h5: { size: 20px, lineHeight: 28px, weight: 600 }
- *    - h6: { size: 18px, lineHeight: 24px, weight: 600 }
-
- *  -------------------------------------------------------------------
-
- *  @Heading mobile(모바일 환경)
- *    - h1: { size: 32px, lineHeight: 40px, weight: 700 }
- *    - h2: { size: 28px, lineHeight: 36px, weight: 700 }
- *    - h3: { size: 24px, lineHeight: 32px, weight: 700 }
- *    - h4: { size: 22px, lineHeight: 28px, weight: 600 }
- *    - h5: { size: 18px, lineHeight: 24px, weight: 600 }
- *    - h6: { size: 16px, lineHeight: 22px, weight: 600 }
- *
- *  -------------------------------------------------------------------
- *
- *  @Text desktop(데스크탑 환경)
- *    - strongM: { size: 16px, lineHeight: 22px, weight: 600 }
- *    - strongS: { size: 14px, lineHeight: 20px, weight: 600 }
- *    - spacedM: { size: 16px, lineHeight: 26px, weight: 400 }
- *    - spacedS: { size: 14px, lineHeight: 22px, weight: 400 }
- *    - l: { size: 18px, lineHeight: 30px, weight: 400 }
- *    - m: { size: 16px, lineHeight: 22px, weight: 400 }
- *    - s: { size: 14px, lineHeight: 20px, weight: 400 }
- *    - xs: { size: 12px, lineHeight: 16px, weight: 400 }
- *    - xxs: { size: 10px, lineHeight: 14px, weight: 400 }
- *
- *  -------------------------------------------------------------------
- *
- *  @Text mobile(모바일 환경)
- *    - strongM: { size: 16px, lineHeight: 22px, weight: 600 }
- *    - strongS: { size: 14px, lineHeight: 20px, weight: 600 }
- *    - spacedM: { size: 16px, lineHeight: 26px, weight: 400 }
- *    - spacedS: { size: 14px, lineHeight: 22px, weight: 400 }
- *    - l: { size: 16px, lineHeight: 26px, weight: 400 }
- *    - m: { size: 16px, lineHeight: 22px, weight: 400 }
- *    - s: { size: 14px, lineHeight: 20px, weight: 400 }
- *    - xs: { size: 12px, lineHeight: 16px, weight: 400 }
- *    - xxs: { size: 10px, lineHeight: 14px, weight: 400 }
- */
+//-------------------------------------------------------------------
 var Typo = {
+  /**
+  *
+  * \@Heading desktop(데스크탑 환경)
+  * ```
+  *    - h1: { size: 36px, lineHeight: 44px, weight: 700 }
+  *    - h2: { size: 32px, lineHeight: 40px, weight: 700 }
+  *    - h3: { size: 28px, lineHeight: 36px, weight: 700 }
+  *    - h4: { size: 24px, lineHeight: 32px, weight: 600 }
+  *    - h5: { size: 20px, lineHeight: 28px, weight: 600 }
+  *    - h6: { size: 18px, lineHeight: 24px, weight: 600 }
+  * ```
+  *  -------------------------------------------------------------------
+    * \@Heading mobile(모바일 환경)
+  * ```
+  *    - h1: { size: 32px, lineHeight: 40px, weight: 700 }
+  *    - h2: { size: 28px, lineHeight: 36px, weight: 700 }
+  *    - h3: { size: 24px, lineHeight: 32px, weight: 700 }
+  *    - h4: { size: 22px, lineHeight: 28px, weight: 600 }
+  *    - h5: { size: 18px, lineHeight: 24px, weight: 600 }
+  *    - h6: { size: 16px, lineHeight: 22px, weight: 600 }
+  * ```
+   */
   Heading: Heading,
+  /**
+   *
+   * \@Text desktop(데스크탑 환경)
+   * ```
+   *    - strongM: { size: 16px, lineHeight: 22px, weight: 600 }
+   *    - strongS: { size: 14px, lineHeight: 20px, weight: 600 }
+   *    - spacedM: { size: 16px, lineHeight: 26px, weight: 400 }
+   *    - spacedS: { size: 14px, lineHeight: 22px, weight: 400 }
+   *    - l: { size: 18px, lineHeight: 30px, weight: 400 }
+   *    - m: { size: 16px, lineHeight: 22px, weight: 400 }
+   *    - s: { size: 14px, lineHeight: 20px, weight: 400 }
+   *    - xs: { size: 12px, lineHeight: 16px, weight: 400 }
+   *    - xxs: { size: 10px, lineHeight: 14px, weight: 400 }
+   * ```
+   *  -------------------------------------------------------------------
+   *
+   * \@Text mobile(모바일 환경)
+   * ```
+   *    - strongM: { size: 16px, lineHeight: 22px, weight: 600 }
+   *    - strongS: { size: 14px, lineHeight: 20px, weight: 600 }
+   *    - spacedM: { size: 16px, lineHeight: 26px, weight: 400 }
+   *    - spacedS: { size: 14px, lineHeight: 22px, weight: 400 }
+   *    - l: { size: 16px, lineHeight: 26px, weight: 400 }
+   *    - m: { size: 16px, lineHeight: 22px, weight: 400 }
+   *    - s: { size: 14px, lineHeight: 20px, weight: 400 }
+   *    - xs: { size: 12px, lineHeight: 16px, weight: 400 }
+   *    - xxs: { size: 10px, lineHeight: 14px, weight: 400 }
+   * ```
+   */
   Text: Text
 };
 var templateObject_1, templateObject_2;
@@ -2356,6 +2343,36 @@ var DocumentDuplicateIcon = function DocumentDuplicateIcon(_a) {
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M8 7v8a2 2 0 0 0 2 2h6M8 7V5a2 2 0 0 1 2-2h4.586a1 1 0 0 1 .707.293l4.414 4.414a1 1 0 0 1 .293.707V15a2 2 0 0 1-2 2h-2M8 7H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2",
+    stroke: strokeColor
+  }));
+};
+
+var DocumentIcon = function DocumentIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2Z",
     stroke: strokeColor
   }));
 };
@@ -6502,5 +6519,63 @@ var ZoomOutIcon = function ZoomOutIcon(_a) {
   }));
 };
 
-export { AdjustmentsIcon, AirConditinerIcon, AlignIcon, AllGenderIcon, ArrowCircleDownIcon, ArrowCircleLeftIcon, ArrowCircleRightIcon, ArrowCircleUpIcon, ArrowDownIcon, ArrowLeftIcon, ArrowNarrowDownIcon, ArrowNarrowLeftIcon, ArrowNarrowRightIcon, ArrowNarrowUpIcon, ArrowRightIcon, ArrowUpIcon, ArrowsExpandIcon, BadgeCheckIcon, BagIcon, BanIcon, BathroomIcon, BbqIcon, BeddingSetIcon, BellIcon, BilliardsIcon, BookmarkIcon, CalendarIcon, CameraIcon, ChairIcon, ChatAlt2Icon, ChatAltIcon, ChatIcon, CheckCircleIcon, CheckIcon, CheckInIcon, CheckInoutIcon, CheckOutIcon, ChevronDoubleDownIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, CleaningGuestIcon, CleaningHostIcon, CloseCircleIcon, CloseIcon, CloudIcon, CollectionIcon, CookingToolsIcon, CreditCardIcon, DeskIcon, DeviceMobileIcon, DinerWareIcon, DishWasherIcon, DocumentAddIcon, DocumentDuplicateIcon, DoorlockIcon, DotsCircleHorizontalIcon, DotsHorizontalIcon, DotsVerticalIcon, DownloadIcon, DressingTableIcon, DryingRackIcon, ExclamationCircleIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FastForwardIcon, FemaleIcon, Filter2Icon, ForkSpoonIcon, GoToTopIcon, GolfIcon, GymIcon, HeartIcon, HomeIcon, I18NIcon, IdentificationIcon, InformationCircleIcon, InviteIcon, IronIcon, LiftIcon, LinkIcon, LivingRoomIcon, LocationIcon, LockClosedIcon, LockOpenIcon, LoftIcon, LundryDryerIcon, LundryWasherIcon, MaleIcon, MapIcon, MenuIcon, MessageIcon, MicrophoneIcon, MicrowaveIcon, MinusCircleIcon, MinusIcon, MoonIcon, NewsPaperIcon, NoInviteIcon, NoPetIcon, NoSmokingIcon, OfficeBuildingIcon, OvenIcon, PaperClipIcon, ParkingIcon, PauseCircleIcon, PencilAltIcon, PencilIcon, PetIcon, PhotographIcon, PingpongIcon, PlayCircleIcon, PlayIcon, PlusCircleIcon, PlusIcon, QuestionMarkCircleIcon, RefreshIcon, ReplyIcon, RewindIcon, RooftopIcon, RssIcon, SaunaIcon, SaveIcon, SearchCircleIcon, SearchIcon, SettingIcon, ShareIcon, ShieldCheckIcon, ShieldExclamationIcon, ShoppingBagIcon, ShoppingCartIcon, ShouldAskInviteIcon, ShuttleBusIcon, SimCardIcon, SingleBedroomIcon, SmokingIcon, SolidQuestionMarkCircleIcon, SpaIcon, SparklesIcon, SpeakerPhoneIcon, SquashIcon, StarIcon, StationIcon, StopCircleIcon, StoveIcon, SunIcon, SurfaceIcon, SwimmingPoolIcon, TagIcon, TerraceIcon, ThumbDownIcon, ThumbUpIcon, ToastMachineIcon, TranslateIcon, TrashIcon, TvIcon, Typo, UserAddIcon, UserGroupIcon, UserIcon, UserRemoveIcon, VideoCameraIcon, VolumeOffIcon, VolumeUpIcon, WalkingIcon, WardrobeIcon, WaterDispenser2Icon, WaterDispenserIcon, WifiIcon, ZoomInIcon, ZoomOutIcon, blue, grayScale, green, orange, red, yellow };
+var grayScale = {
+  black: "#000000",
+  300: "#333333",
+  main: "#515151",
+  500: "#8B8B8B",
+  600: "#A8A8A8",
+  700: "#C1C1C1",
+  800: "#DDDDDD",
+  900: "#ECECEC",
+  1000: "#F5F5F5",
+  white: "#FFFFFF"
+};
+var yellow = {
+  200: "#FFD951",
+  300: "#FFB801",
+  main: "#FFD951",
+  500: "#FFE998",
+  600: "#FFF1C3",
+  700: "#FFFDF4",
+  opacity: "#FFFDF4"
+};
+var blue = {
+  200: "#1A62B8",
+  300: "#066EEE",
+  main: "#2586F9",
+  500: "#74B0F6",
+  600: "#E4EEFD",
+  700: "#F2FAFF",
+  opacity: "#F2FAFF"
+};
+var red = {
+  200: "#BF292D",
+  300: "#DC161A",
+  main: "#F03E41",
+  500: "#FB878C",
+  600: "#FFD6D7",
+  700: "#FFF2F3",
+  opacity: "#FFF2F3"
+};
+var orange = {
+  200: "#DE5B00",
+  300: "#F18409",
+  main: "#FFA33C",
+  500: "#FFC275",
+  600: "#FFDCAF",
+  700: "#FFF7EC",
+  opacity: "#FFF7EC"
+};
+var green = {
+  200: "#009024",
+  300: "#1AB62F",
+  main: "#4BD05D",
+  500: "#93EC9C",
+  600: "#C2F1C7",
+  700: "#F3FFF4",
+  opacity: "#F3FFF4"
+};
+
+export { AdjustmentsIcon, AirConditinerIcon, AlignIcon, AllGenderIcon, ArrowCircleDownIcon, ArrowCircleLeftIcon, ArrowCircleRightIcon, ArrowCircleUpIcon, ArrowDownIcon, ArrowLeftIcon, ArrowNarrowDownIcon, ArrowNarrowLeftIcon, ArrowNarrowRightIcon, ArrowNarrowUpIcon, ArrowRightIcon, ArrowUpIcon, ArrowsExpandIcon, BadgeCheckIcon, BagIcon, BanIcon, BathroomIcon, BbqIcon, BeddingSetIcon, BellIcon, BilliardsIcon, BookmarkIcon, CalendarIcon, CameraIcon, ChairIcon, ChatAlt2Icon, ChatAltIcon, ChatIcon, CheckCircleIcon, CheckIcon, CheckInIcon, CheckInoutIcon, CheckOutIcon, ChevronDoubleDownIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, CleaningGuestIcon, CleaningHostIcon, CloseCircleIcon, CloseIcon, CloudIcon, CollectionIcon, CookingToolsIcon, CreditCardIcon, DeskIcon, DeviceMobileIcon, DinerWareIcon, DishWasherIcon, DocumentAddIcon, DocumentDuplicateIcon, DocumentIcon, DoorlockIcon, DotsCircleHorizontalIcon, DotsHorizontalIcon, DotsVerticalIcon, DownloadIcon, DressingTableIcon, DryingRackIcon, ExclamationCircleIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FastForwardIcon, FemaleIcon, Filter2Icon, ForkSpoonIcon, GoToTopIcon, GolfIcon, GymIcon, HeartIcon, HomeIcon, I18NIcon, IdentificationIcon, InformationCircleIcon, InviteIcon, IronIcon, LiftIcon, LinkIcon, LivingRoomIcon, LocationIcon, LockClosedIcon, LockOpenIcon, LoftIcon, LundryDryerIcon, LundryWasherIcon, MaleIcon, MapIcon, MenuIcon, MessageIcon, MicrophoneIcon, MicrowaveIcon, MinusCircleIcon, MinusIcon, MoonIcon, NewsPaperIcon, NoInviteIcon, NoPetIcon, NoSmokingIcon, OfficeBuildingIcon, OvenIcon, PaperClipIcon, ParkingIcon, PauseCircleIcon, PencilAltIcon, PencilIcon, PetIcon, PhotographIcon, PingpongIcon, PlayCircleIcon, PlayIcon, PlusCircleIcon, PlusIcon, QuestionMarkCircleIcon, RefreshIcon, ReplyIcon, RewindIcon, RooftopIcon, RssIcon, SaunaIcon, SaveIcon, SearchCircleIcon, SearchIcon, SettingIcon, ShareIcon, ShieldCheckIcon, ShieldExclamationIcon, ShoppingBagIcon, ShoppingCartIcon, ShouldAskInviteIcon, ShuttleBusIcon, SimCardIcon, SingleBedroomIcon, SmokingIcon, SolidQuestionMarkCircleIcon, SpaIcon, SparklesIcon, SpeakerPhoneIcon, SquashIcon, StarIcon, StationIcon, StopCircleIcon, StoveIcon, SunIcon, SurfaceIcon, SwimmingPoolIcon, TagIcon, TerraceIcon, ThumbDownIcon, ThumbUpIcon, ToastMachineIcon, TranslateIcon, TrashIcon, TvIcon, Typo, UserAddIcon, UserGroupIcon, UserIcon, UserRemoveIcon, VideoCameraIcon, VolumeOffIcon, VolumeUpIcon, WalkingIcon, WardrobeIcon, WaterDispenser2Icon, WaterDispenserIcon, WifiIcon, ZoomInIcon, ZoomOutIcon, blue, grayScale, green, orange, red, yellow };
 //# sourceMappingURL=index.esm.js.map
