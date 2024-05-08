@@ -3676,6 +3676,36 @@ var LundryWasherIcon = function LundryWasherIcon(_a) {
   }));
 };
 
+var MailIcon = function MailIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m3 8 7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2Z",
+    stroke: strokeColor
+  }));
+};
+
 var MaleIcon = function MaleIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -6031,6 +6061,36 @@ var TvIcon = function TvIcon(_a) {
   }));
 };
 
+var UsageIcon = function UsageIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z",
+    stroke: strokeColor
+  }));
+};
+
 var UserAddIcon = function UserAddIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -6674,6 +6734,7 @@ exports.LockOpenIcon = LockOpenIcon;
 exports.LoftIcon = LoftIcon;
 exports.LundryDryerIcon = LundryDryerIcon;
 exports.LundryWasherIcon = LundryWasherIcon;
+exports.MailIcon = MailIcon;
 exports.MaleIcon = MaleIcon;
 exports.MapIcon = MapIcon;
 exports.MenuIcon = MenuIcon;
@@ -6743,6 +6804,7 @@ exports.TranslateIcon = TranslateIcon;
 exports.TrashIcon = TrashIcon;
 exports.TvIcon = TvIcon;
 exports.Typo = Typo;
+exports.UsageIcon = UsageIcon;
 exports.UserAddIcon = UserAddIcon;
 exports.UserGroupIcon = UserGroupIcon;
 exports.UserIcon = UserIcon;
