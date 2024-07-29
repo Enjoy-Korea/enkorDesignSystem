@@ -4966,6 +4966,36 @@ var SettingIcon = function SettingIcon(_a) {
   }));
 };
 
+var Share2Icon = function Share2Icon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m13 2 9 9-9 8.5V14c-7 0-10 7.5-10 7.5 0-8.5 2.5-14 10-14V2Z",
+    stroke: strokeColor
+  }));
+};
+
 var ShareIcon = function ShareIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -6061,6 +6091,36 @@ var TvIcon = function TvIcon(_a) {
   }));
 };
 
+var UploadIcon = function UploadIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 12v5a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-5m-4-4-4-4m0 0L8 8m4-4v12",
+    stroke: strokeColor
+  }));
+};
+
 var UsageIcon = function UsageIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -6773,6 +6833,7 @@ exports.SaveIcon = SaveIcon;
 exports.SearchCircleIcon = SearchCircleIcon;
 exports.SearchIcon = SearchIcon;
 exports.SettingIcon = SettingIcon;
+exports.Share2Icon = Share2Icon;
 exports.ShareIcon = ShareIcon;
 exports.ShieldCheckIcon = ShieldCheckIcon;
 exports.ShieldExclamationIcon = ShieldExclamationIcon;
@@ -6804,6 +6865,7 @@ exports.TranslateIcon = TranslateIcon;
 exports.TrashIcon = TrashIcon;
 exports.TvIcon = TvIcon;
 exports.Typo = Typo;
+exports.UploadIcon = UploadIcon;
 exports.UsageIcon = UsageIcon;
 exports.UserAddIcon = UserAddIcon;
 exports.UserGroupIcon = UserGroupIcon;
