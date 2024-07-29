@@ -4964,6 +4964,36 @@ var SettingIcon = function SettingIcon(_a) {
   }));
 };
 
+var Share2Icon = function Share2Icon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "m13 2 9 9-9 8.5V14c-7 0-10 7.5-10 7.5 0-8.5 2.5-14 10-14V2Z",
+    stroke: strokeColor
+  }));
+};
+
 var ShareIcon = function ShareIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -6059,6 +6089,36 @@ var TvIcon = function TvIcon(_a) {
   }));
 };
 
+var UploadIcon = function UploadIcon(_a) {
+  var _b = _a.size,
+    size = _b === void 0 ? 24 : _b,
+    _c = _a.fillColor,
+    fillColor = _c === void 0 ? "none" : _c,
+    _d = _a.strokeColor,
+    strokeColor = _d === void 0 ? "#515151" : _d,
+    _e = _a.className,
+    className = _e === void 0 ? "" : _e,
+    _f = _a.style,
+    style = _f === void 0 ? {} : _f,
+    _g = _a.viewBox,
+    viewBox = _g === void 0 ? "0 0 24 24" : _g;
+  return /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    fill: fillColor,
+    style: style,
+    className: className,
+    viewBox: viewBox
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M4 12v5a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-5m-4-4-4-4m0 0L8 8m4-4v12",
+    stroke: strokeColor
+  }));
+};
+
 var UsageIcon = function UsageIcon(_a) {
   var _b = _a.size,
     size = _b === void 0 ? 24 : _b,
@@ -6637,5 +6697,5 @@ var green = {
   opacity: "#F3FFF4"
 };
 
-export { AdjustmentsIcon, AirConditinerIcon, AlignIcon, AllGenderIcon, ArrowCircleDownIcon, ArrowCircleLeftIcon, ArrowCircleRightIcon, ArrowCircleUpIcon, ArrowDownIcon, ArrowLeftIcon, ArrowNarrowDownIcon, ArrowNarrowLeftIcon, ArrowNarrowRightIcon, ArrowNarrowUpIcon, ArrowRightIcon, ArrowUpIcon, ArrowsExpandIcon, BadgeCheckIcon, BagIcon, BanIcon, BathroomIcon, BbqIcon, BeddingSetIcon, BellIcon, BilliardsIcon, BookmarkIcon, CalendarIcon, CameraIcon, ChairIcon, ChatAlt2Icon, ChatAltIcon, ChatIcon, CheckCircleIcon, CheckIcon, CheckInIcon, CheckInoutIcon, CheckOutIcon, ChevronDoubleDownIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, CleaningGuestIcon, CleaningHostIcon, CloseCircleIcon, CloseIcon, CloudIcon, CollectionIcon, CookingToolsIcon, CreditCardIcon, DeskIcon, DeviceMobileIcon, DinerWareIcon, DishWasherIcon, DocumentAddIcon, DocumentDuplicateIcon, DocumentIcon, DoorlockIcon, DotsCircleHorizontalIcon, DotsHorizontalIcon, DotsVerticalIcon, DownloadIcon, DressingTableIcon, DryingRackIcon, ExclamationCircleIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FastForwardIcon, FemaleIcon, Filter2Icon, ForkSpoonIcon, GoToTopIcon, GolfIcon, GymIcon, HeartIcon, HomeIcon, I18NIcon, IdentificationIcon, InformationCircleIcon, InviteIcon, IronIcon, LiftIcon, LinkIcon, LivingRoomIcon, LocationIcon, LockClosedIcon, LockOpenIcon, LoftIcon, LundryDryerIcon, LundryWasherIcon, MailIcon, MaleIcon, MapIcon, MenuIcon, MessageIcon, MicrophoneIcon, MicrowaveIcon, MinusCircleIcon, MinusIcon, MoonIcon, NewsPaperIcon, NoInviteIcon, NoPetIcon, NoSmokingIcon, OfficeBuildingIcon, OvenIcon, PaperClipIcon, ParkingIcon, PauseCircleIcon, PencilAltIcon, PencilIcon, PetIcon, PhotographIcon, PingpongIcon, PlayCircleIcon, PlayIcon, PlusCircleIcon, PlusIcon, QuestionMarkCircleIcon, RefreshIcon, ReplyIcon, RewindIcon, RooftopIcon, RssIcon, SaunaIcon, SaveIcon, SearchCircleIcon, SearchIcon, SettingIcon, ShareIcon, ShieldCheckIcon, ShieldExclamationIcon, ShoppingBagIcon, ShoppingCartIcon, ShouldAskInviteIcon, ShuttleBusIcon, SimCardIcon, SingleBedroomIcon, SmokingIcon, SolidQuestionMarkCircleIcon, SpaIcon, SparklesIcon, SpeakerPhoneIcon, SquashIcon, StarIcon, StationIcon, StopCircleIcon, StoveIcon, SunIcon, SurfaceIcon, SwimmingPoolIcon, TagIcon, TerraceIcon, ThumbDownIcon, ThumbUpIcon, ToastMachineIcon, TranslateIcon, TrashIcon, TvIcon, Typo, UsageIcon, UserAddIcon, UserGroupIcon, UserIcon, UserRemoveIcon, VideoCameraIcon, VolumeOffIcon, VolumeUpIcon, WalkingIcon, WardrobeIcon, WaterDispenser2Icon, WaterDispenserIcon, WifiIcon, ZoomInIcon, ZoomOutIcon, blue, grayScale, green, orange, red, yellow };
+export { AdjustmentsIcon, AirConditinerIcon, AlignIcon, AllGenderIcon, ArrowCircleDownIcon, ArrowCircleLeftIcon, ArrowCircleRightIcon, ArrowCircleUpIcon, ArrowDownIcon, ArrowLeftIcon, ArrowNarrowDownIcon, ArrowNarrowLeftIcon, ArrowNarrowRightIcon, ArrowNarrowUpIcon, ArrowRightIcon, ArrowUpIcon, ArrowsExpandIcon, BadgeCheckIcon, BagIcon, BanIcon, BathroomIcon, BbqIcon, BeddingSetIcon, BellIcon, BilliardsIcon, BookmarkIcon, CalendarIcon, CameraIcon, ChairIcon, ChatAlt2Icon, ChatAltIcon, ChatIcon, CheckCircleIcon, CheckIcon, CheckInIcon, CheckInoutIcon, CheckOutIcon, ChevronDoubleDownIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, CleaningGuestIcon, CleaningHostIcon, CloseCircleIcon, CloseIcon, CloudIcon, CollectionIcon, CookingToolsIcon, CreditCardIcon, DeskIcon, DeviceMobileIcon, DinerWareIcon, DishWasherIcon, DocumentAddIcon, DocumentDuplicateIcon, DocumentIcon, DoorlockIcon, DotsCircleHorizontalIcon, DotsHorizontalIcon, DotsVerticalIcon, DownloadIcon, DressingTableIcon, DryingRackIcon, ExclamationCircleIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FastForwardIcon, FemaleIcon, Filter2Icon, ForkSpoonIcon, GoToTopIcon, GolfIcon, GymIcon, HeartIcon, HomeIcon, I18NIcon, IdentificationIcon, InformationCircleIcon, InviteIcon, IronIcon, LiftIcon, LinkIcon, LivingRoomIcon, LocationIcon, LockClosedIcon, LockOpenIcon, LoftIcon, LundryDryerIcon, LundryWasherIcon, MailIcon, MaleIcon, MapIcon, MenuIcon, MessageIcon, MicrophoneIcon, MicrowaveIcon, MinusCircleIcon, MinusIcon, MoonIcon, NewsPaperIcon, NoInviteIcon, NoPetIcon, NoSmokingIcon, OfficeBuildingIcon, OvenIcon, PaperClipIcon, ParkingIcon, PauseCircleIcon, PencilAltIcon, PencilIcon, PetIcon, PhotographIcon, PingpongIcon, PlayCircleIcon, PlayIcon, PlusCircleIcon, PlusIcon, QuestionMarkCircleIcon, RefreshIcon, ReplyIcon, RewindIcon, RooftopIcon, RssIcon, SaunaIcon, SaveIcon, SearchCircleIcon, SearchIcon, SettingIcon, Share2Icon, ShareIcon, ShieldCheckIcon, ShieldExclamationIcon, ShoppingBagIcon, ShoppingCartIcon, ShouldAskInviteIcon, ShuttleBusIcon, SimCardIcon, SingleBedroomIcon, SmokingIcon, SolidQuestionMarkCircleIcon, SpaIcon, SparklesIcon, SpeakerPhoneIcon, SquashIcon, StarIcon, StationIcon, StopCircleIcon, StoveIcon, SunIcon, SurfaceIcon, SwimmingPoolIcon, TagIcon, TerraceIcon, ThumbDownIcon, ThumbUpIcon, ToastMachineIcon, TranslateIcon, TrashIcon, TvIcon, Typo, UploadIcon, UsageIcon, UserAddIcon, UserGroupIcon, UserIcon, UserRemoveIcon, VideoCameraIcon, VolumeOffIcon, VolumeUpIcon, WalkingIcon, WardrobeIcon, WaterDispenser2Icon, WaterDispenserIcon, WifiIcon, ZoomInIcon, ZoomOutIcon, blue, grayScale, green, orange, red, yellow };
 //# sourceMappingURL=index.esm.js.map
